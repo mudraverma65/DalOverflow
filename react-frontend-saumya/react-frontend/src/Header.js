@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLayerGroup } from '@fortawesome/free-solid-svg-icons';
+import {Link} from 'react-router-dom';
 
 const HeaderStyle = styled.header`
     background-color: #393939;
@@ -8,7 +9,7 @@ const HeaderStyle = styled.header`
     grid-template-columns: 200px 1fr 200px;
 `;
 
-const Logo = styled.a`
+const Logo = styled(Link)`
     color: #fff;
     text-decoration: none;
     display: inline-block;
@@ -43,7 +44,7 @@ const Search = styled.input`
 function Header(){
     return(
         <HeaderStyle>
-            <Logo href="" className="logo">
+            <Logo to={'/'} className="logo">
                 <FontAwesomeIcon icon={faLayerGroup} size="2x" />
             <span> Dal<b>Overflow</b></span>
             </Logo>
