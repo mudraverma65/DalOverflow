@@ -1,0 +1,15 @@
+This doc will be deleted later and is for temporary usage.
+It is jst for recording the incremental changes that we would need in the project to make it more robust.
+
+Database:
+1)The primary ke column is varchar. would be better if its text. the PK should be auto increment in the database.
+2)Check the logic behind the random pk generated in the seeding data if that is needed.
+3) we might have to change the seed data to accommodate the changes in the PK.
+
+Utils class:
+We have added a basic utility class DALOUtility to the project.
+Add the basic utilities like encyrption logic, basic parsers to this class.
+The methods should be static so that it can be used appropriately.
+
+VM:
+We need to upgrade the openjdk version of the VM to accommodate latest java files being complied and pushed to the repo.
