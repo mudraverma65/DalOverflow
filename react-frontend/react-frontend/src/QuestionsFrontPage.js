@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import {Link} from 'react-router-dom';
+import QuestionList from './QuestionList';
 
 const StyledHeader = styled.h1`
     font-size: 1.5rem;
@@ -7,37 +8,34 @@ const StyledHeader = styled.h1`
 
 const TopRow = styled.div`
   display: grid;
-  grid-template-columns: 1fr min-content;
+  background: #222222;
+  grid-template-columns: 6fr 1fr;
   padding: 30px 20px;
 `;
 
 const Button = styled(Link)`
     font-size: 1.5rem;
-    color:#fff;
-    border:0;
-    background-color: #378ad3;
-    border-radius: 5px;
+    height: 50px;
+    color: #00000;
+    background: #FFD401;
+    border-radius: 10px;
     text-decoration: none;
+    line-height: 50px;
 `;
 
-const QuestionList = styled.div`
-    background-color: rgba(255,255,255,.100);
-    display: grid;
-    padding: 15px 25px;
-    border-top: 1px solid #999;
-`;
 
-const QuestionAsked = styled.div`
-    padding: 0 30px;
-`;
 
-const QuestionLink = styled.a`
-    text-decoration: none;
-    color: #3ca4ff
-    font-size: 1.2rem;
-    margin-bottom: 5px;
-    display: block;
-`;
+// const QuestionAsked = styled.div`
+//     padding: 0 30px;
+// `;
+
+// const QuestionLink = styled.a`
+//     text-decoration: none;
+//     color: #3ca4ff
+//     font-size: 1.2rem;
+//     margin-bottom: 5px;
+//     display: block;
+// `;
 
 function QuestionsFrontPage() {
     return(
@@ -45,27 +43,16 @@ function QuestionsFrontPage() {
             <TopRow>
             <StyledHeader>Top Questions</StyledHeader>
             <Button to={'/ask'}>Ask Question</Button>
-            </TopRow>
-            <QuestionList>
-                <QuestionAsked>
-                    <QuestionLink>Getting string in quotes in javascript</QuestionLink>
-                </QuestionAsked>
-            </QuestionList>
-            <QuestionList>
-                <QuestionAsked>
-                    <QuestionLink>Getting string in quotes in javascript</QuestionLink>
-                </QuestionAsked>
-            </QuestionList>
-            <QuestionList>
-                <QuestionAsked>
-                    <QuestionLink>Getting string in quotes in javascript</QuestionLink>
-                </QuestionAsked>
-            </QuestionList>  
-            <QuestionList>
-                <QuestionAsked>
-                    <QuestionLink>Getting string in quotes in javascript</QuestionLink>
-                </QuestionAsked>
-            </QuestionList>                
+            </TopRow> 
+            <QuestionList/>
+            <QuestionList/>
+            <QuestionList/>
+            <QuestionList/>
+            <QuestionList/>
+            <QuestionList/>
+            <QuestionList/>
+            <QuestionList/>
+            <QuestionList/>                
         </main>        
     );
 }
