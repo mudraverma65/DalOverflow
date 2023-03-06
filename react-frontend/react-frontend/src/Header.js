@@ -2,6 +2,8 @@ import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLayerGroup } from '@fortawesome/free-solid-svg-icons';
 import {Link} from 'react-router-dom';
+import {useContext} from 'react';
+import UserLoggedIn from './UserLoggedIn';
 
 const HeaderStyle = styled.header`
     background-color: #393939;
@@ -23,11 +25,12 @@ const Logo = styled(Link)`
         font-weight: bold;
     }
 `;
-const ProfileLink = styled.a`
+const ProfileLink = styled(Link)`
     color: #fff;
     line-height: 55px;
     text-decoration: none;
     display: inline-block;
+    padding: 0 20px;
 `;
 
 const Search = styled.input`
@@ -42,6 +45,7 @@ const Search = styled.input`
 
 
 function Header(){
+    const {user} = useContext(UserLoggedIn)
     return(
         <HeaderStyle>
             <Logo to={'/'} className="logo">
@@ -51,7 +55,17 @@ function Header(){
             <form action="" className="Search">
                 <Search type="text" placeholder="Search Questions"/>
             </form>
-            <ProfileLink href="" className="profile">Login</ProfileLink>
+            {user && (
+                <ProfileLink to={'/profile'} className="profile">Saumya</ProfileLink>
+            )}
+            {!user && (
+                <div>
+                    <ProfileLink to={'/login'} className="profile">Log in</ProfileLink>
+                    <ProfileLink to={'/registration'} className="registration">SignUp</ProfileLink>
+
+                </div>
+
+            )}
         </HeaderStyle>
     );
 }

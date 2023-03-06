@@ -9,6 +9,11 @@ import {
   Route,
   Link
 }from "react-router-dom";
+import { useState } from 'react';
+import UserLoggedIn from './UserLoggedIn';
+import LoginPage from './LoginPage';
+import axios from 'axios';
+import RegistrationPage from './RegistrationPage';
 
 const Styles = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap');
@@ -19,7 +24,9 @@ const Styles = createGlobalStyle`
   } 
 `;
 
+
 function App() {
+  const[user, setUser] = useState(null);
   return (
     <div>
       <Reset />
@@ -27,11 +34,16 @@ function App() {
       
 
       <Router>
-        <Header />
-        <Routes>
-          <Route path="/ask" element = {<AskQuestion/>} />
-          <Route path="/" element = {<QuestionsFrontPage/>} />
-        </Routes >
+        <UserLoggedIn.Provider value={{user}}>
+          <Header />
+          <Routes>
+            <Route path="/ask" element = {<AskQuestion/>} />
+            <Route path="/" element = {<QuestionsFrontPage/>} />
+            <Route path="/login" element = {<LoginPage/>} />
+            <Route path="/registration" element = {<RegistrationPage/>} />
+          </Routes >
+          </UserLoggedIn.Provider>
+        
       </Router>
 
     </div>
