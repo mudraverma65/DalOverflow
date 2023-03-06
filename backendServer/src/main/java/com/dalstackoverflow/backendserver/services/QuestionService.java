@@ -19,6 +19,10 @@ public class QuestionService {
     @Autowired
     QuestionRepository questionRepository;
 
+    /**
+     * @param userQuestion
+     * This method will be called on posting the questions from the Ask Question Page.
+     */
     @Transactional
     public void postUserQuestion(Question userQuestion){
         questionRepository.save(userQuestion);

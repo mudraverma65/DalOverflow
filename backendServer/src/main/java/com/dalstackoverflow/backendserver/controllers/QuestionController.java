@@ -12,6 +12,8 @@ import org.springframework.web.bind.annotation.*;
  * @author Sreejith Nair
  * This is the primary controller class of the Questions api.
  */
+
+@CrossOrigin(origins = "http://localhost:3000")
 @RestController
 @RequestMapping("api/question")
 public class QuestionController {
@@ -31,5 +33,6 @@ public class QuestionController {
         LOGGER.info("Calling Question Service");
         LOGGER.info("Request Object:"+question.toString());
         questionService.postUserQuestion(question);
+        //return ResponseEntity.status(HttpStatus.CREATED).body("Question created successfully");
     }
 }
