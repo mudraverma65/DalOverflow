@@ -65,7 +65,7 @@ export default function AskQuestion(){
                 })
                 .catch(error => {
                     if (error.response && error.response.status === 500) {
-                        setErrorMessage('500 response, some issue with the backend server');
+                        //setErrorMessage('500 response, some issue with the backend server');
                     }
                     else{
                         console.error(error);

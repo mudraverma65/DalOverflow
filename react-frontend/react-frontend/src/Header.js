@@ -6,15 +6,17 @@ import {useContext} from 'react';
 import UserLoggedIn from './UserLoggedIn';
 
 const HeaderStyle = styled.header`
-    background-color: #393939;
+    padding-top: 8px;
+    padding-bottom: 8px;
     display: grid;
-    grid-template-columns: 200px 1fr 200px;
+    grid-template-columns: 200px 1fr 150px;
+    background: #000000;
 `;
 
 const Logo = styled(Link)`
     color: #fff;
     text-decoration: none;
-    display: inline-block;
+    display: flex;
     line-height: 35px;
     padding: 8px 15px;
     span{
@@ -25,22 +27,21 @@ const Logo = styled(Link)`
         font-weight: bold;
     }
 `;
-const ProfileLink = styled(Link)`
-    color: #fff;
+const ProfileLink = styled.a`
+    background: #FFD401;
+    border-radius: 10px;
+    color: #00000;
     line-height: 55px;
     text-decoration: none;
     display: inline-block;
-    padding: 0 20px;
 `;
 
 const Search = styled.input`
+    background: #222222;
     display: inline-block;
     width: 90%;
-    border:2px solid #999;
-    margin-top: 9px;
-    margin-left: 16px;
-    padding: 10px 6px;
-    background: rgba(0,0,0,.1);
+    border:1px solid #ffd401;
+    height: 40px;
 `;
 
 
