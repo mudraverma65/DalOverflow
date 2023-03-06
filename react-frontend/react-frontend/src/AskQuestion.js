@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import axios from 'axios';
+import React, { useState } from 'react';
 
 const StyledHeader = styled.h1`
     font-size: 1.5rem;
@@ -42,13 +44,44 @@ const SubmitButton = styled.button`
 `;
 
 export default function AskQuestion(){
+    const [success, setSuccess] = useState(false);
+
+    const api = axios.create({
+        baseURL: "http://localhost:8080"
+    });
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+        const question = {
+            questionTitle: event.target.elements.title.value,
+            questionDescription: event.target.elements.body.value,
+        };
+        const confirmed = window.confirm("Are you sure you want to submit the form?");
+        if(confirmed){
+            console.log(api);
+            await axios.post('http://localhost:8080/api/question', question)
+                .then(response => {
+                    setSuccess(true);
+                    window.alert("Your question was posted successfully!");
+                })
+                .catch(error => {
+                    if (error.response && error.response.status === 500) {
+                        setErrorMessage('500 response, some issue with the backend server');
+                    }
+                    else{
+                        console.error(error);
+                    }
+                });
+        }
+    };
 
     return(
         <QuesTitle>
-            <StyledHeader>Ask a Questions</StyledHeader>
-            <QuestionTitle type="text" placeholder="Question Title"/>
-            <MainQuestion placeholder = "Question Body"></MainQuestion>
-            <SubmitButton> Submit </SubmitButton>
+            <StyledHeader>Ask a Question</StyledHeader>
+            <form onSubmit={handleSubmit}>
+                <QuestionTitle type="text" placeholder="Question Title" name="title" />
+                <MainQuestion placeholder="Question Body" name="body" />
+                <SubmitButton type="submit">Submit</SubmitButton>
+            </form>
         </QuesTitle>
     );
 }
