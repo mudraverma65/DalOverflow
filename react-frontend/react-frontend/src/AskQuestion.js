@@ -45,7 +45,7 @@ const SubmitButton = styled.button`
 
 export default function AskQuestion(){
     const [success, setSuccess] = useState(false);
-
+    const [errorMessage, setErrorMessage] = useState('');
     const api = axios.create({
         baseURL: "http://localhost:8080"
     });
