@@ -49,18 +49,18 @@ class LoginPage extends Component{
     constructor(props){
         super(props);
         this.state = {
-            email:'',
+            userId:'',
             password:'',
         }
     }
     LoginInfo(){
-        axios.post('http://localhost:8080/register/authenticate',{email:this.state.email,password:this.state.password})
+        axios.post('http://localhost:8080/register/authenticate',{userId:this.state.userId,password:this.state.password})
     }
     render(){
         return(
             <Container>
                 <h1>Login</h1>
-                <UsernameInput placeholder = {'email'} type="email" value={this.state.email} onChange={ev => this.setState({email:ev.target.value})} />
+                <UsernameInput placeholder = {'userId'} type="userId" value={this.state.userId} onChange={ev => this.setState({userId:ev.target.value})} />
                 <PasswordInput placeholder = {'password'} type="password" value={this.state.password} onChange={ev => this.setState({password:ev.target.value})}/>
                 <SubmitButton onClick={()=>this.LoginInfo()}> Login </SubmitButton>
             </Container>
