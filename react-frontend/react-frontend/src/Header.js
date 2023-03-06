@@ -9,7 +9,7 @@ const HeaderStyle = styled.header`
     padding-top: 8px;
     padding-bottom: 8px;
     display: grid;
-    grid-template-columns: 200px 1fr 150px;
+    grid-template-columns: 200px 1fr 200px;
     background: #000000;
 `;
 
@@ -27,13 +27,15 @@ const Logo = styled(Link)`
         font-weight: bold;
     }
 `;
-const ProfileLink = styled.a`
+const ProfileLink = styled(Link)`
     background: #FFD401;
     border-radius: 10px;
     color: #00000;
     line-height: 55px;
     text-decoration: none;
     display: inline-block;
+    padding: 0 20px;
+    margin-right: 5px;
 `;
 
 const Search = styled.input`
