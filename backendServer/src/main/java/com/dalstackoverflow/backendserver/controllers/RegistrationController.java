@@ -1,54 +1,42 @@
 package com.dalstackoverflow.backendserver.controllers;
 
-import com.dalstackoverflow.backendserver.models.Registration;
 import com.dalstackoverflow.backendserver.services.RegistrationService;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.dalstackoverflow.backendserver.models.Registration;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
+import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
-import java.util.Base64;
 
+@CrossOrigin(origins = "http://localhost:3000")
 @RestController
-@RequestMapping("/user1")
+@RequestMapping("user/add")
 public class RegistrationController {
+    private static final Logger LOGGER = LoggerFactory.getLogger(RegistrationController.class);
+    private final RegistrationService registrationService;
 
-    @Autowired
-    private RegistrationService registrationService;
-
-    @GetMapping("/homepage")
-    public String viewHomePage() {
-        return "index";
+    public RegistrationController(RegistrationService registrationService) {
+        this.registrationService = registrationService;
     }
 
-    @PostMapping("/add")
-    public String add(@RequestBody Registration register) throws NoSuchAlgorithmException {
-        String password = register.getPassword();
+    @PostMapping
+    @ResponseStatus(HttpStatus.CREATED)
+    public void userRegister(@RequestBody Registration user) throws NoSuchAlgorithmException {
+        LOGGER.info("Request Object:" + user.toString());
+
         MessageDigest md = MessageDigest.getInstance("SHA-256");
-        byte[] hashedPwd = md.digest(password.getBytes());
-        String encryptedPassword = Base64.getEncoder().encodeToString(hashedPwd);
-        register.setPassword(encryptedPassword);
-        registrationService.saveRegistration(register);
-        return "New user is added";
-    }
-
-    @PostMapping("/authenticate")
-    public String authenticate(@RequestBody Registration registration) throws NoSuchAlgorithmException {
-        int userId = registration.getUserId();
-        String password = registration.getPassword();
-
-        Registration storedRegistration = registrationService.getRegistrationById(Integer.parseInt(String.valueOf(userId)));
-
-        if (storedRegistration != null) {
-            MessageDigest md = MessageDigest.getInstance("SHA-256");
-            byte[] hashedPwd = md.digest(password.getBytes());
-            String encryptedPassword = Base64.getEncoder().encodeToString(hashedPwd);
-
-            if (storedRegistration.getPassword().equals(encryptedPassword)) {
-                return "Login successful";
-            }
+        byte[] hash = md.digest(user.getPassword().getBytes(StandardCharsets.UTF_8));
+        StringBuilder sb = new StringBuilder();
+        for (byte b : hash) {
+            sb.append(String.format("%02x", b));
         }
-        return "Login failed";
-    }
+        String encryptedPassword = sb.toString();
+        user.setPassword(encryptedPassword);
 
+        registrationService.postUserQuestion((Registration) user);
+    }
 }

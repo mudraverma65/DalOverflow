@@ -29,10 +29,10 @@ public class QuestionController {
      */
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public void postUserQuestion(@RequestBody Question question){
+    public void postUserQuestion(@RequestBody Question question)
+    {
         LOGGER.info("Calling Question Service");
         LOGGER.info("Request Object:"+question.toString());
         questionService.postUserQuestion(question);
-        //return ResponseEntity.status(HttpStatus.CREATED).body("Question created successfully");
     }
 }

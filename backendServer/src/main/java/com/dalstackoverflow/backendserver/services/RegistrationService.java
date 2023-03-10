@@ -1,11 +1,23 @@
 package com.dalstackoverflow.backendserver.services;
+
+import com.dalstackoverflow.backendserver.repositories.RegistrationRepository;
+
 import com.dalstackoverflow.backendserver.models.Registration;
+import jakarta.transaction.Transactional;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
-import java.security.NoSuchAlgorithmException;
+@Service
+public class RegistrationService {
+    private final RegistrationRepository registrationRepository;
 
-public interface RegistrationService
-{
-    public Registration saveRegistration(Registration register);
+    @Autowired
+    public RegistrationService(RegistrationRepository registrationRepository) {
+        this.registrationRepository = registrationRepository;
+    }
 
-    public Registration getRegistrationById(int iduser) throws NoSuchAlgorithmException;
+    @Transactional
+    public void postUserQuestion(Registration user1) {
+        registrationRepository.save(user1);
+    }
 }

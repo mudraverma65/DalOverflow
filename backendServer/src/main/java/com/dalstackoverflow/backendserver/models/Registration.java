@@ -1,42 +1,48 @@
 package com.dalstackoverflow.backendserver.models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 @Entity
-@Table(name = "user1")
+@Table(name = "user")
 public class Registration {
     @Id
-    private int iduser;
-    private String username;
+
+    @Column(name = "u_id")
+    private int userId;
+
+
+    @Column(name = "u_username", nullable = false, unique = true)
+    private String userName;
+
+    @Column(name = "u_email", nullable = false)
+    private String emailId;
+
+    @Column(name = "u_password", nullable = false)
     private String password;
-    private String email;
-    public Registration()
-    {
-    }
-    public Registration(int iduser,String username, String password, String email)
-    {
-        this.iduser = iduser;
-        this.username = username;
-        this.password = password;
-        this.email = email;
-    }
+
 
     public int getUserId() {
-        return iduser;
+        return userId;
     }
 
-    public void setUserId(int iduser) {
-        this.iduser = iduser;
+    public void setUserId(int userId) {
+        this.userId = userId;
     }
 
     public String getUserName() {
-        return username;
+        return userName;
     }
 
-    public void setUserName(String username) {
-        this.username = username;
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public String getEmailId() {
+        return emailId;
+    }
+
+    public void setEmailId(String emailId) {
+        this.emailId = emailId;
     }
 
     public String getPassword() {
@@ -47,14 +53,5 @@ public class Registration {
         this.password = password;
     }
 
-    public String getEmailId() {
-        return email;
-    }
-
-    public void setEmailId(String email) {
-        if (email == null) {
-            throw new IllegalArgumentException("Email cannot be null");
-        }
-        this.email = email;
-    }
 }
+
