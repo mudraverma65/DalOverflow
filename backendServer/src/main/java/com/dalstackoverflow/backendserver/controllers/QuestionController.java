@@ -44,7 +44,16 @@ public class QuestionController {
     AnswerService answerService;
 
 
-
+    /**
+     * @author Utkarsh Shah
+     *
+     *This method just get all answers by question id.
+     * All answers will have each attributes which will be helpful for UI to fetch and display.
+     *
+     * @param questionID
+     * @return whole question with all attributes . One of the attributes will be List<Answer>.
+     *
+     */
     @GetMapping("/{questionID}/answer")
     public Question getAnswersByQuestionID(@PathVariable Integer questionID) {
         LOGGER.info("Calling Answer Service");

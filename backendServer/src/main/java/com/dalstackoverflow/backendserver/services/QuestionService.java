@@ -31,6 +31,11 @@ public class QuestionService {
         LOGGER.info(" Your question was succesfully posted");
     }
 
+    /**
+     * Searches for a Question object with the given questionID and returns it as an Optional.
+     * @param questionID the ID of the question to search for.
+     * @return an Optional containing the Question object if it exists, or an empty Optional if not.
+     */
     public Optional<Question> searchQuestion(Integer questionID){
 
         return questionRepository.findById(questionID);

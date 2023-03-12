@@ -36,6 +36,8 @@ public class Question {
     @Column(name = "q_description")
     private String questionDescription;
 
+
+    // this is used to store all instance of all answers
     @Transient
     public Iterable<Answer> allAnswers;
 

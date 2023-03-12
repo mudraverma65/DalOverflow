@@ -5,6 +5,11 @@ import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
 
+/**
+ * @author Utkarsh Shah
+ * This is the model class for Answer table.
+ * The model class will be used for posting and fetching answers from the UI.
+ */
 @Entity
 @Table(name = "answer")
 public class Answer {
@@ -55,6 +60,7 @@ public class Answer {
 
     }
 
+    // getters and setters
     public int getAnswerID() {
         return answerID;
     }
