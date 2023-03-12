@@ -1,12 +1,16 @@
 package com.dalstackoverflow.backendserver.controllers;
 
+import com.dalstackoverflow.backendserver.models.Answer;
 import com.dalstackoverflow.backendserver.models.Question;
+import com.dalstackoverflow.backendserver.services.AnswerService;
 import com.dalstackoverflow.backendserver.services.QuestionService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.Optional;
 
 /**
  * @author Sreejith Nair
@@ -34,5 +38,26 @@ public class QuestionController {
         LOGGER.info("Calling Question Service");
         LOGGER.info("Request Object:"+question.toString());
         questionService.postUserQuestion(question);
+    }
+
+    @Autowired
+    AnswerService answerService;
+
+
+
+    @GetMapping("/{questionID}/answer")
+    public Question getAnswersByQuestionID(@PathVariable Integer questionID) {
+        LOGGER.info("Calling Answer Service");
+        LOGGER.info("Request Object:" + questionID.toString());
+        Iterable<Answer> allAnswers = answerService.getAllAnswerByQuestionID(questionID);
+        Question questionReceived = new Question();
+        LOGGER.info("Calling Question Service:");
+        Optional<Question> questionClicked = questionService.searchQuestion(questionID);
+        if(questionClicked.isPresent()){
+            questionReceived = questionClicked.get();
+        }
+        questionReceived.setAllAnswers(allAnswers);
+        return questionReceived;
+
     }
 }

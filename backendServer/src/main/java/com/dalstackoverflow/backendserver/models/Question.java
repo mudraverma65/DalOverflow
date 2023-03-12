@@ -36,4 +36,14 @@ public class Question {
     @Column(name = "q_description")
     private String questionDescription;
 
+    @Transient
+    public Iterable<Answer> allAnswers;
+
+    public Iterable<Answer> getAllAnswers() {
+        return allAnswers;
+    }
+
+    public void setAllAnswers(Iterable<Answer> allAnswers) {
+        this.allAnswers = allAnswers;
+    }
 }

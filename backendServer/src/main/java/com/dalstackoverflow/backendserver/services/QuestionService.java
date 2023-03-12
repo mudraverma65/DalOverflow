@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.Optional;
+
 /**
  * @author Sreejith Nair
  * This is the service class for posting and fetching questions
@@ -28,4 +30,11 @@ public class QuestionService {
         questionRepository.save(userQuestion);
         LOGGER.info(" Your question was succesfully posted");
     }
+
+    public Optional<Question> searchQuestion(Integer questionID){
+
+        return questionRepository.findById(questionID);
+    }
+
+
 }
