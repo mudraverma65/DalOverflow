@@ -8,6 +8,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+import java.util.Optional;
+
 /**
  * @author Sreejith Nair
  * This is the service class for posting and fetching questions
@@ -26,6 +29,26 @@ public class QuestionService {
     @Transactional
     public void postUserQuestion(Question userQuestion){
         questionRepository.save(userQuestion);
-        LOGGER.info(" Your question was succesfully posted");
+        LOGGER.info(" Your question was successfully posted");
+    }
+
+    /**
+     * This service method is responsible for calling the repository method to fetch the top questions.
+     * @return List of top questions
+     */
+    @Transactional
+    public List<Question> fetchTopQuestion(){
+        System.out.println("fetchTopQuestion Called!!");
+        return questionRepository.findTopQuestions();
+    }
+
+    /**
+     * Searches for a Question object with the given questionID and returns it as an Optional.
+     * @param questionID the ID of the question to search for.
+     * @return an Optional containing the Question object if it exists, or an empty Optional if not.
+     */
+    public Optional<Question> searchQuestion(Integer questionID){
+
+        return questionRepository.findById(questionID);
     }
 }

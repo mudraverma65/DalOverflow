@@ -132,7 +132,7 @@ export default function AskQuestion(){
         const confirmed = window.confirm("Are you sure you want to submit the form?");
         if(confirmed){
             console.log(api);
-            await axios.post('http://localhost:8080/api/question', question)
+            await axios.post('http://localhost:8080/api/question/postQuestion', question)
                 .then(response => {
                     setSuccess(true);
                     window.alert("Your question was posted successfully!");
