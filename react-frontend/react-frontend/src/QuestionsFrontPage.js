@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import {Link} from 'react-router-dom';
 import QuestionList from './QuestionList';
+import React, { useState, useEffect } from 'react';
 
 const StyledHeader = styled.h1`
     font-size: 1.5rem;
@@ -23,37 +24,35 @@ const Button = styled(Link)`
     line-height: 50px;
 `;
 
-
-
-// const QuestionAsked = styled.div`
-//     padding: 0 30px;
-// `;
-
-// const QuestionLink = styled.a`
-//     text-decoration: none;
-//     color: #3ca4ff
-//     font-size: 1.2rem;
-//     margin-bottom: 5px;
-//     display: block;
-// `;
-
+function DisplayQuestionList(props) {
+    console.log('QuestionList props:', props);
+    return (
+        <ul>
+            {props.questions.map(question => (
+                <li key={question.questionId}>
+                    <QuestionList question={question}/>
+                </li>
+            ))}
+        </ul>
+    );
+}
 function QuestionsFrontPage() {
-    return(
+    const [questions, setQuestions] = useState([]);
+    console.log("Calling Fetch Top Question API");
+    useEffect(() => {
+        fetch('http://localhost:8080/api/question/fetchTopQuestions')
+            .then(response => response.json())
+            .then(data => setQuestions(data));
+    }, []);
+    console.log("Question API response:"+questions);
+    return (
         <main>
             <TopRow>
-            <StyledHeader>Top Questions</StyledHeader>
-            <Button to={'/ask'}>Ask Question</Button>
-            </TopRow> 
-            <QuestionList/>
-            <QuestionList/>
-            <QuestionList/>
-            <QuestionList/>
-            <QuestionList/>
-            <QuestionList/>
-            <QuestionList/>
-            <QuestionList/>
-            <QuestionList/>                
-        </main>        
+                <StyledHeader>Top Questions</StyledHeader>
+                <Button to="/ask">Ask Question</Button>
+            </TopRow>
+            <DisplayQuestionList questions={questions} />
+        </main>
     );
 }
 

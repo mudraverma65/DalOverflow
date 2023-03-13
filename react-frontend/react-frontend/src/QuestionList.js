@@ -70,31 +70,33 @@ const Tag = styled.span`
   }
 `;
 
-function QuestionList() {
+function QuestionList(props) {
+    console.log("Question List Props:"+props);
+    const { question } = props;
+    if (!question) {
+        return <div>Loading...</div>;
+    }
+    if (question.length === 0) {
+        return <div>No questions found.</div>;
+    } else if (question.error) {
+        return <div>Error retrieving questions.</div>;
+    }
+
     return (
-      <StyledQuestionRow>
-        <QuestionStat>0<span>votes</span></QuestionStat>
-        <QuestionStat>1<span>answers</span></QuestionStat>
-        <QuestionStat>6<span>views</span></QuestionStat>
-        <QuestionTitleArea>
-            <QuestionLink>Question 1</QuestionLink>
-            <Tag>Java</Tag>
-            <Tag>Python</Tag>
-            <Tag>R</Tag>
-            <WhoAndWhen>
-                Asked 2 minutes ago    
-            </WhoAndWhen>
-        </QuestionTitleArea>
-    </StyledQuestionRow>
+        <>
+            <StyledQuestionRow key={question.questionID}>
+                <QuestionStat>0<span>votes</span></QuestionStat>
+                <QuestionStat>1<span>answers</span></QuestionStat>
+                <QuestionStat>6<span>views</span></QuestionStat>
+                <QuestionTitleArea>
+                    <QuestionLink>{question.questionTitle}</QuestionLink>
+                    <Tag>Java</Tag>
+                    <WhoAndWhen>Asked 2 minutes ago</WhoAndWhen>
+                </QuestionTitleArea>
+            </StyledQuestionRow>
+        </>
     );
 }
 
-QuestionList.propTypes = {
-    createdAt: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    id: PropTypes.number.isRequired,
-    tags: PropTypes.string,
-    author: PropTypes.object,
-  };
-  
+
   export default QuestionList;
