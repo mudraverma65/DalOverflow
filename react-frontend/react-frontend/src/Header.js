@@ -11,6 +11,7 @@ const HeaderStyle = styled.header`
     display: grid;
     grid-template-columns: 200px 1fr 200px;
     background: #000000;
+
 `;
 
 const Logo = styled(Link)`
@@ -26,6 +27,7 @@ const Logo = styled(Link)`
     b{
         font-weight: bold;
     }
+
 `;
 const ProfileLink = styled(Link)`
     background: #FFD401;
@@ -36,6 +38,7 @@ const ProfileLink = styled(Link)`
     display: inline-block;
     padding: 0 20px;
     margin-right: 5px;
+
 `;
 
 const Search = styled.input`
@@ -44,6 +47,7 @@ const Search = styled.input`
     width: 90%;
     border:1px solid #ffd401;
     height: 40px;
+
 `;
 
 

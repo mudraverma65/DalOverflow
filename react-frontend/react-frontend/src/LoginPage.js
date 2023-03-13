@@ -7,6 +7,7 @@ const Container = styled.h1`
     margin-bottom: 10px;
     margin-top: 10px;
     margin-left: 10px;
+    font-family: 'Sans Serif', cursive;
 `;
 
 
@@ -20,6 +21,7 @@ const UsernameInput = styled.input`
     box-sizing: border-box;
     margin-top:30px;
     margin-left: 10px;
+    font-family: 'Sans Serif', cursive;
 `;
 
 const PasswordInput = styled.input`
@@ -31,6 +33,7 @@ const PasswordInput = styled.input`
     display: block;
     box-sizing: border-box;
     margin-top:20px;
+    font-family: 'Sans Serif', cursive;
     margin-left: 10px;
 `;
 
@@ -43,6 +46,7 @@ const SubmitButton = styled.button`
     text-decoration: none;
     margin-top: 10px;
     margin-left: 10px;
+    font-family: 'Sans Serif', cursive;
 `;
 
 class LoginPage extends Component{

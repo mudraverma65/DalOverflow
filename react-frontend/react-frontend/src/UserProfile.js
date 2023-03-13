@@ -1,11 +1,19 @@
 import axios from "axios";
 import { useState } from "react";
+import styled from "styled-components";
+import {Navigate} from "react-router-dom";
+
 
 const Container = styled.div`
     font-size: 1.5rem;
     margin-bottom: 10px;
     margin-top: 10px;
     margin-left: 10px;
+`;
+
+const Header1 = styled.h1`
+    font-size: 1.5rem;
+    margin-bottom: 10px;
 `;
 
 const Button = styled.button`
@@ -30,13 +38,13 @@ function UserProfile() {
 
         <>
             {BackToHomePage && (
-                <Redirect to={'/'}/>
+                <Navigate to={'/'}/>
             )}
             <Container>
                 <Header1>Profile</Header1>
-                
+                <Button onClick={() => Logout()}>Logout</Button>
             </Container>
-            <Button onClick={() => logout()}>Logout</Button>
+            
         </>
     );
 

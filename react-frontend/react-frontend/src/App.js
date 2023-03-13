@@ -9,11 +9,12 @@ import {
   Route,
   Link
 }from "react-router-dom";
-import { useState } from 'react';
+import { useState, Component } from 'react';
 import UserLoggedIn from './UserLoggedIn';
 import LoginPage from './LoginPage';
 import axios from 'axios';
 import RegistrationPage from './RegistrationPage';
+import UserProfile from './UserProfile';
 
 const Styles = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap');
@@ -38,6 +39,7 @@ function App() {
           <Header />
           <Routes>
             <Route path="/ask" element = {<AskQuestion/>} />
+            <Route path="/profile" element = {<UserProfile/>} />
             <Route path="/" element = {<QuestionsFrontPage/>} />
             <Route path="/login" element = {<LoginPage/>} />
             <Route path="/registration" element = {<RegistrationPage/>} />
