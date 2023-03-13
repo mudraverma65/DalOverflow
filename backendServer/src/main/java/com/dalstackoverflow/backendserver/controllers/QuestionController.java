@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.Optional;
 
 /**
@@ -31,13 +32,30 @@ public class QuestionController {
      * @param question
      * This method is used for posting the question posted from the UI.
      */
-    @PostMapping
+    @PostMapping("/postQuestion")
     @ResponseStatus(HttpStatus.CREATED)
     public void postUserQuestion(@RequestBody Question question)
     {
         LOGGER.info("Calling Question Service");
         LOGGER.info("Request Object:"+question.toString());
         questionService.postUserQuestion(question);
+    }
+
+    /**
+     * This method will be called from the homepage which will
+     * fetch the list of top questions to be rendered on the homepage.
+     * @return list of questions fetched by the api call.
+     */
+    @GetMapping("/fetchTopQuestions")
+    @ResponseStatus(HttpStatus.FOUND)
+    public List<Question> fetchTopUserQuestions(){
+        LOGGER.info("Fetching Top user Questions!!");
+        List<Question> questionList = questionService.fetchTopQuestion();
+        for(Question q : questionList){
+            System.out.println("Question : "+q.toString());
+        }
+        return questionList;
+
     }
 
     @Autowired

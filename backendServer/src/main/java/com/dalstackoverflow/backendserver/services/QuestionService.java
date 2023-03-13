@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
 import java.util.Optional;
 
 /**
@@ -28,7 +29,17 @@ public class QuestionService {
     @Transactional
     public void postUserQuestion(Question userQuestion){
         questionRepository.save(userQuestion);
-        LOGGER.info(" Your question was succesfully posted");
+        LOGGER.info(" Your question was successfully posted");
+    }
+
+    /**
+     * This service method is responsible for calling the repository method to fetch the top questions.
+     * @return List of top questions
+     */
+    @Transactional
+    public List<Question> fetchTopQuestion(){
+        System.out.println("fetchTopQuestion Called!!");
+        return questionRepository.findTopQuestions();
     }
 
     /**
@@ -40,6 +51,4 @@ public class QuestionService {
 
         return questionRepository.findById(questionID);
     }
-
-
 }

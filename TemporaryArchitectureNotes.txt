@@ -13,3 +13,16 @@ The methods should be static so that it can be used appropriately.
 
 VM:
 We need to upgrade the openjdk version of the VM to accommodate latest java files being complied and pushed to the repo.
+
+Question table:
+we need have a column for question status. I.e if the question is already answered.
+we need to fetch answer count somewhere.i.e how many answers are there to a particular question.
+
+Answer table :
+we currently have a_status table whic will indicate if this is the answer selected by the user
+default value should be false.
+once the question user marks this answer correct, then the value should be marked true.
+
+Editing a question:
+we should let the user who is posting the question to edit and delete the question posted.
+similarly we should also the user who is posting th answer to edit and delete the answer if its not marked answered by the question user.

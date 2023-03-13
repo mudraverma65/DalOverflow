@@ -30,12 +30,17 @@ public class Question {
     @Column(name = "u_id")
     private int userID;
 
-    @Column(name = "question_title")
+    @Column(name = "q_title")
     private String questionTitle;
 
     @Column(name = "q_description")
     private String questionDescription;
 
+    @Column(name="q_code")
+    private String questionCode;
+
+    @Column(name="q_date")
+    private String questionDate;
 
     // this is used to store all instance of all answers
     @Transient
