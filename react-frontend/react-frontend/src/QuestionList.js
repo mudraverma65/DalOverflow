@@ -42,7 +42,7 @@ const StyledQuestionRow = styled.div`
   background-color: #000000;
   padding: 15px 15px 10px;
   display: grid;
-  grid-template-columns: repeat(3, 50px) 1fr;
+  grid-template-columns: repeat(2, 50px) 1fr;
   border-top: 1px solid #555;
 `;
 
@@ -86,12 +86,13 @@ function QuestionList(props) {
         <>
             <StyledQuestionRow key={question.questionID}>
                 <QuestionStat>0<span>votes</span></QuestionStat>
-                <QuestionStat>1<span>answers</span></QuestionStat>
-                <QuestionStat>6<span>views</span></QuestionStat>
+                <QuestionStat>{question.answerCount}<span>answers</span></QuestionStat>
                 <QuestionTitleArea>
                     <QuestionLink>{question.questionTitle}</QuestionLink>
-                    <Tag>Java</Tag>
-                    <WhoAndWhen>Asked 2 minutes ago</WhoAndWhen>
+                    {question.tags.map(tag => (
+                        <Tag key={tag}>{tag}</Tag>
+                    ))}
+                    <WhoAndWhen>Asked by {question.userName} at {question.questionDate}</WhoAndWhen>
                 </QuestionTitleArea>
             </StyledQuestionRow>
         </>

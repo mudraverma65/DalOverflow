@@ -14,5 +14,11 @@ public interface AnswerRepository extends CrudRepository<Answer,Integer> {
      */
     Iterable<Answer> findByQuestionID(Integer questionID);
 
+    /**
+     * This method is used to fetch the total number of answers for a particular question
+     * @param questionID
+     * @return total number of answers for a question
+     */
+    long countByQuestionID(int questionID);
 
 }

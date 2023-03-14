@@ -3,6 +3,9 @@ package com.dalstackoverflow.backendserver.models;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 /**
  * @author Sreejith Nair
@@ -14,7 +17,6 @@ import lombok.*;
 @EqualsAndHashCode
 @Entity
 @AllArgsConstructor
-@NoArgsConstructor
 @ToString
 @Table(name = "question")
 public class Question {
@@ -42,15 +44,17 @@ public class Question {
     @Column(name="q_date")
     private String questionDate;
 
-    /*Temporary Code*/
+    /*Temporary Code Start*/
     @Transient
     private String userName;
 
     @Transient
-    private String tags;
+    private List<String> tags;
 
     @Transient
     private long answerCount;
+    /*Temporary Code End*/
+
     // this is used to store all instance of all answers
     @Transient
     public Iterable<Answer> allAnswers;
@@ -61,5 +65,12 @@ public class Question {
 
     public void setAllAnswers(Iterable<Answer> allAnswers) {
         this.allAnswers = allAnswers;
+    }
+
+    /**
+     * Adding default constructor to initialize the List.
+     */
+    public Question() {
+        this.tags = new ArrayList<String>();
     }
 }

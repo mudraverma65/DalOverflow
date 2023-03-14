@@ -26,3 +26,8 @@ once the question user marks this answer correct, then the value should be marke
 Editing a question:
 we should let the user who is posting the question to edit and delete the question posted.
 similarly we should also the user who is posting th answer to edit and delete the answer if its not marked answered by the question user.
+
+we need to add comments module to the question answer thread.
+
+How will the user posting the question decide which answer to select.
+we need a UI component to select an answer from the list of answers which also marks the question complete.

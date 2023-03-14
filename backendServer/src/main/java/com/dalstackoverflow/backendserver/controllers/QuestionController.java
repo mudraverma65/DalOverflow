@@ -51,9 +51,6 @@ public class QuestionController {
     public List<Question> fetchTopUserQuestions(){
         LOGGER.info("Fetching Top user Questions!!");
         List<Question> questionList = questionService.fetchTopQuestion();
-        for(Question q : questionList){
-            System.out.println("Question : "+q.toString());
-        }
         return questionList;
 
     }
