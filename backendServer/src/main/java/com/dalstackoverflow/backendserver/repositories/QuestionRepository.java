@@ -18,6 +18,6 @@ public interface QuestionRepository extends JpaRepository<Question,Integer> {
      * This method will fire the query to return the list of latest questions from the database.
      * @return list of questions
      */
-    @Query(value = "SELECT q_id,u_id,q_title,q_description,q_date FROM question ORDER BY q_date DESC LIMIT 8", nativeQuery = true)
+    @Query(value = "SELECT q_id,u_id,q_title,q_description,q_date,q_code FROM question ORDER BY q_date DESC LIMIT 8", nativeQuery = true)
     List<Question> findTopQuestions();
 }

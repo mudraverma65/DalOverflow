@@ -24,7 +24,7 @@ public class Question {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "q_id")
-    private String questionID;
+    private int questionID;
 
     @NonNull
     @Column(name = "u_id")
@@ -42,6 +42,15 @@ public class Question {
     @Column(name="q_date")
     private String questionDate;
 
+    /*Temporary Code*/
+    @Transient
+    private String userName;
+
+    @Transient
+    private String tags;
+
+    @Transient
+    private long answerCount;
     // this is used to store all instance of all answers
     @Transient
     public Iterable<Answer> allAnswers;
