@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import axios from "axios";
 import { Component } from "react";
+import {Navigate} from 'react-router-dom';
 
 const Container = styled.h1`
     font-size: 1.5rem;
@@ -55,10 +56,14 @@ class LoginPage extends Component{
         this.state = {
             username:'',
             password:'',
+            redirectToHomePage: false,
         }
     }
     LoginInfo(){
         axios.post('http://127.0.0.1:8080/user/login',{username:this.state.username,password:this.state.password})
+        .then(response => {
+            this.setState({redirectToHomePage: true})
+        })
         .catch((error) => {
                     if (error.response) {
                         console.log(error.response.data);
@@ -72,15 +77,19 @@ class LoginPage extends Component{
                 })
     }
     render(){
-        return(
+        return(<>
+            {this.state.redirectToHomePage && (
+                <Navigate to = {'/'} />
+            )}
             <Container>
                 <h1>Login</h1>
                 <UsernameInput placeholder = {'username'} type="username" value={this.state.username} onChange={ev => this.setState({username:ev.target.value})} />
                 <PasswordInput placeholder = {'password'} type="password" value={this.state.password} onChange={ev => this.setState({password:ev.target.value})}/>
                 <SubmitButton onClick={()=>this.LoginInfo()}> Login </SubmitButton>
             </Container>
-        );
+        </>);
     }
-
+    
 }
+
 export default LoginPage;

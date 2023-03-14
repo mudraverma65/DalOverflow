@@ -5,7 +5,6 @@ import React, { useState, useEffect } from 'react';
 
 const StyledHeader = styled.h1`
     font-size: 1.5rem;
-    font-family: 'Sans Serif', cursive;
 `;
 
 const TopRow = styled.div`
@@ -13,7 +12,6 @@ const TopRow = styled.div`
   background: #222222;
   grid-template-columns: 6fr 1fr;
   padding: 30px 20px;
-  font-family: 'Sans Serif', cursive;
 `;
 
 const Button = styled(Link)`
@@ -25,8 +23,7 @@ const Button = styled(Link)`
     text-decoration: none;
     line-height: 50px;
     padding: 2px;
-    padding: 0 35px;
-    font-family: 'Sans Serif', cursive;
+    padding: 0 38px;
 `;
 
 function DisplayQuestionList(props) {

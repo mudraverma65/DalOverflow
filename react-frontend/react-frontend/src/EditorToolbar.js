@@ -1,4 +1,5 @@
 import React from "react";
+import "./CheckBoxes.css"
 
 
 // Modules object for setting up the Quill editor
@@ -10,13 +11,13 @@ export const modules =(props)=>({
   history: {
     delay: 500,
     maxStack: 100,
-    userOnly: true
+    userOnly: true,
+    
   }
 });
 
 // Formats objects for setting up the Quill editor
 export const formats = [
-  
   "code-block"
 ];
 
@@ -26,7 +27,6 @@ export const QuillToolbar = (props) => {
   return  (<> 
   {props.toolbarId !== undefined && 
   <div id={props.toolbarId}>
-    
     <span className="ql-formats">
       <button className="ql-code-block" />
     </span>

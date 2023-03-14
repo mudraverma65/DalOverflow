@@ -17,7 +17,6 @@ const QuestionStat = styled.div`
   border: 1px #BDA115 solid;
   border-radius: 8px;
   margin-right: 2px;
-  font-family: 'Sans Serif', cursive;
 `;
 
 // const QuestionList = styled.div`
@@ -29,7 +28,6 @@ const QuestionStat = styled.div`
 
 const QuestionTitleArea = styled.div`
   padding: 0 30px;
-  font-family: 'Sans Serif', cursive;
 `;
 
 const QuestionLink = styled(Link)`
@@ -38,7 +36,6 @@ const QuestionLink = styled(Link)`
   font-size: 1.1rem;
   display: block;
   margin-bottom: 5px;
-  font-family: 'Sans Serif', cursive;
 `;
 
 const StyledQuestionRow = styled.div`
@@ -47,7 +44,6 @@ const StyledQuestionRow = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 50px) 1fr;
   border-top: 1px solid #555;
-  font-family: 'Sans Serif', cursive;
 `;
 
 const WhoAndWhen = styled.div`
@@ -56,7 +52,6 @@ const WhoAndWhen = styled.div`
   font-size: .8rem;
   float:right;
   padding: 10px 0;
-  font-family: 'Sans Serif', cursive;
 `;
 
 const Tag = styled.span`
@@ -72,7 +67,6 @@ const Tag = styled.span`
   &:hover{
     background-color: #7C7C7C;
     color:#000000;
-    font-family: 'Sans Serif', cursive;
   }
 `;
 

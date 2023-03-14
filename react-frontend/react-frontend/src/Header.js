@@ -68,7 +68,7 @@ function Header(){
             {!user && (
                 <div>
                     <ProfileLink to={'/login'} className="profile">Log in</ProfileLink>
-                    <ProfileLink to={'/registration'} className="registration">SignUp</ProfileLink>
+                    <ProfileLink to={'/registration'} className="registration">Sign up</ProfileLink>
 
                 </div>
 

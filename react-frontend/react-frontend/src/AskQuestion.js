@@ -5,17 +5,20 @@ import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
 import EditorToolbar, { modules, formats } from "./EditorToolbar";
 import "react-quill/dist/quill.snow.css";
-
+import "./CheckBoxes.css"
 
 const StyledHeader = styled.h1`
     font-size: 1.5rem;
     margin-bottom: 10px;
-    font-family: 'Sans Serif', cursive;
+`;
+
+const AdditionalInfo = styled.h1`
+    font-size: 1.2rem;
+    margin-bottom: 10px;
 `;
 
 const QuesTitle = styled.div`
     padding: 30px 20px;
-    font-family: 'Sans Serif', cursive;
 `;
 
 const QuestionTitle = styled.input`
@@ -25,7 +28,6 @@ const QuestionTitle = styled.input`
     color: #fff;
     border: 2px solid #aaa;
     display: block;
-    font-family: 'Sans Serif', cursive;
     box-sizing: border-box;
 `;
 
@@ -39,11 +41,10 @@ const MainQuestion = styled.textarea`
     display: block;
     box-sizing: border-box;
     min-height: 200px;
-    font-family: 'Sans Serif', cursive;
 `;
 
 const SubmitButton = styled.button`
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color:#fff;
     border:0;
     background-color: #378ad3;
@@ -52,7 +53,7 @@ const SubmitButton = styled.button`
     margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
-    font-family: 'Sans Serif', cursive;
+    padding: 8px 8px;
 
 `;
 
@@ -151,53 +152,55 @@ export default function AskQuestion(){
     return(
 
         <QuesTitle>
-            <StyledHeader>Ask a Question</StyledHeader>
+            <StyledHeader>Describe your question</StyledHeader>
             <form onSubmit={handleSubmit}>
-                <QuestionTitle type="text" placeholder="Question Title" name="title" />
-                <MainQuestion placeholder="Question Body" name="body" />
+                <QuestionTitle type="text" placeholder="Introduce the problem." name="title" />
+                <MainQuestion placeholder="Describe any difficulties that have prevented you from solving it yourself." name="body" />
                 <br/>
-                <StyledHeader className="font-weight-bold"> Additional information and code <span className="required"> </span> </StyledHeader>
-                 <EditorToolbar toolbarId={'t1'}/>
+                <AdditionalInfo> Additional information and code </AdditionalInfo>
+                <EditorToolbar toolbarId={'t1'}/>
                 <ReactQuill
-                theme="snow"
-                value={userInfo.description}
-                onChange={ondescription}
-                placeholder={"Write something ..."}
-                modules={modules('t1')}
-                formats={formats}
+                    theme="snow"
+                    value={userInfo.description}
+                    onChange={ondescription}
+                    placeholder={"Please enter additional information and code"}
+                    modules={modules('t1')}
+                    formats={formats}
                 />
                 <br />
-                <label>
+                <br />
+                <AdditionalInfo> Please select appropriate tags related to the question </AdditionalInfo>
+                <label className="checkbox-label">
                     <input type="checkbox" checked={checked1} onChange={handleChange1}/>
-                    Java
+                    <span className="checkbox-text">Java</span>
                 </label>
-                <label>
+                <label className="checkbox-label">
                     <input type="checkbox" checked={checked2} onChange={handleChange2}/>
-                    Python
+                    <span className="checkbox-text">Python</span>
                 </label>
-                <label>
+                <label className="checkbox-label">
                     <input type="checkbox" checked={checked3} onChange={handleChange3}/>
-                    C++
+                    <span className="checkbox-text">C++</span>
                 </label>
-                <label>
+                <label className="checkbox-label">
                     <input type="checkbox" checked={checked4} onChange={handleChange4}/>
-                    Swift
+                    <span className="checkbox-text">Swift</span>
                 </label>
-                <label>
+                <label className="checkbox-label">
                     <input type="checkbox" checked={checked5} onChange={handleChange5}/>
-                    Cloud Computing
+                    <span className="checkbox-text">Cloud Computing</span>
                 </label>
-                <label>
+                <label className="checkbox-label">
                     <input type="checkbox" checked={checked6} onChange={handleChange6}/>
-                    Database Technologies
+                    <span className="checkbox-text">Database Technologies</span>
                 </label>
-                <label>
+                <label className="checkbox-label">
                     <input type="checkbox" checked={checked7} onChange={handleChange7}/>
-                    HTML
+                    <span className="checkbox-text">HTML</span>
                 </label>
-                <label>
+                <label className="checkbox-label">
                     <input type="checkbox" checked={checked8} onChange={handleChange8}/>
-                    Springboot
+                    <span className="checkbox-text">Springboot</span>
                 </label>
                 <br/>
                 <br/>    

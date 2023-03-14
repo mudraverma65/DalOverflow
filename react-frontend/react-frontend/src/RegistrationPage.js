@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import axios from "axios";
 import { Component } from "react";
+import { Navigate } from "react-router-dom";
 
 const Container = styled.h1`
     font-size: 1.5rem;
@@ -52,10 +53,14 @@ class RegistrationPage extends Component{
             userName:'',
             emailId:'',
             password:'',
+            redirectToHomePage: false
         }
     }
     RegisterInfo(){
         axios.post('http://127.0.0.1:8080/user/add',{userName:this.state.userName, emailId:this.state.emailId, password:this.state.password})
+        .then(response => {
+            this.setState({redirectToHomePage: true})
+        })
         .catch((error) => {
                             if (error.response) {
                                 console.log(error.response.data);
@@ -70,15 +75,20 @@ class RegistrationPage extends Component{
     }
     render(){
         return(
+            <>
+            {this.state.redirectToHomePage && (
+                <Navigate to = {'/'} />
+            )}
             <Container>
                 <h1>Registration</h1>
 
-                <UsernameInput placeholder = {'userName'} type="userName" value={this.state.userName} onChange={ev => this.setState({userName:ev.target.value})} />
-                <UsernameInput placeholder = {'emailId'} type="emailId" value={this.state.emailId} onChange={ev => this.setState({emailId:ev.target.value})} />
-                <PasswordInput placeholder = {'password'} type="password" value={this.state.password} onChange={ev => this.setState({password:ev.target.value})}/>
+                <UsernameInput placeholder = {'User Name'} type="userName" value={this.state.userName} onChange={ev => this.setState({userName:ev.target.value})} />
+                <UsernameInput placeholder = {'Email'} type="emailId" value={this.state.emailId} onChange={ev => this.setState({emailId:ev.target.value})} />
+                <PasswordInput placeholder = {'Password'} type="password" value={this.state.password} onChange={ev => this.setState({password:ev.target.value})}/>
+                <PasswordInput placeholder = {'Confirm password'} type="password" value={this.state.password} onChange={ev => this.setState({password:ev.target.value})}/>
                 <SubmitButton onClick={()=>this.RegisterInfo()}> Register </SubmitButton>
             </Container>
-        );
+        </>);
     }
 
 }
