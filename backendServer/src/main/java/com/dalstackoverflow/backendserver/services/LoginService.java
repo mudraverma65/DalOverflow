@@ -15,12 +15,14 @@ public class LoginService {
     }
 
     public LoginResponse loginUser(LoginRequest loginRequest) {
-        Registration user = (Registration) loginRepository.findByUserNameAndPassword(loginRequest.getUsername(), loginRequest.getPassword());
+        Registration user = loginRepository.findByUserNameAndPassword(loginRequest.getUsername(), loginRequest.getPassword());
 
         if (user != null) {
-            return new LoginResponse("Login successful!");
+            int userId = user.getUserId();
+            return new LoginResponse("Login successful!", userId);
         } else {
-            return new LoginResponse("Invalid credentials. Please try again.");
+            return new LoginResponse("Invalid credentials. Please try again.", null);
         }
     }
 }
+

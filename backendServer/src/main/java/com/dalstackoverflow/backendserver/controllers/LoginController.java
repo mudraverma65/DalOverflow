@@ -6,6 +6,7 @@ import com.dalstackoverflow.backendserver.services.LoginService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.nio.charset.StandardCharsets;
@@ -24,14 +25,22 @@ public class LoginController {
     }
 
     @PostMapping
-    @ResponseStatus(HttpStatus.OK)
-    public LoginResponse loginUser(@RequestBody LoginRequest loginRequest) {
+    public ResponseEntity<LoginResponse> loginUser(@RequestBody LoginRequest loginRequest) throws Exception {
         LOGGER.info("Calling Login Service");
         LOGGER.info("Request Object:" + loginRequest.toString());
         String encryptedPassword = getEncrypted(loginRequest.getPassword());
         loginRequest.setPassword(encryptedPassword);
-        return loginService.loginUser(loginRequest);
+        LoginResponse response = loginService.loginUser(loginRequest);
+        if (response.getMessage().equals("Login successful!")) {
+            int userId = response.getUserId();
+            response.setMessage("Login successful! Your user ID is " + userId);
+            return ResponseEntity.ok(response);
+        } else {
+            response.setMessage("Invalid username or password");
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(response);
+        }
     }
+
 
     private static String getEncrypted(String password) {
         String encryptedPassword = null;
