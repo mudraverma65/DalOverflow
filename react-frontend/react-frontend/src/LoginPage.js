@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import axios from "axios";
 import { Component } from "react";
+import './styles.css';
 import { Navigate } from "react-router-dom";
 
 const Container = styled.h1`

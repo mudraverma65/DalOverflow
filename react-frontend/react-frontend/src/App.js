@@ -15,6 +15,10 @@ import LoginPage from './LoginPage';
 import axios from 'axios';
 import RegistrationPage from './RegistrationPage';
 import UserProfile from './UserProfile';
+import QuestionAnswer from './QuestionAnswer';
+import QuestionDetails from './QuestionDetails';
+import AnswersDisplay from './AnswerDisplay';
+import test from './test';
 
 const Styles = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap');
@@ -41,6 +45,7 @@ function App() {
             <Route path="/ask" element = {<AskQuestion/>} />
             <Route path="/profile" element = {<UserProfile/>} />
             <Route path="/" element = {<QuestionsFrontPage/>} />
+            <Route path="/QuestionAnswer" element = {<QuestionAnswer/>} />
             <Route path="/login" element = {<LoginPage/>} />
             <Route path="/registration" element = {<RegistrationPage/>} />
           </Routes >

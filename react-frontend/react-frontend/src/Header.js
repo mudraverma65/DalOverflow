@@ -47,7 +47,7 @@ const Search = styled.input`
     width: 90%;
     border:1px solid #ffd401;
     height: 40px;
-
+    position: relative;
 `;
 
 

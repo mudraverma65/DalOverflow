@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import {Link} from "react-router-dom";
+import QuestionAnswer from "./QuestionAnswer";
 
 const QuestionStat = styled.div`
   text-align: center;
@@ -42,7 +43,7 @@ const StyledQuestionRow = styled.div`
   background-color: #000000;
   padding: 15px 15px 10px;
   display: grid;
-  grid-template-columns: repeat(2, 50px) 1fr;
+  grid-template-columns: repeat(3, 50px) 1fr;
   border-top: 1px solid #555;
 `;
 
@@ -88,7 +89,7 @@ function QuestionList(props) {
                 <QuestionStat>0<span>votes</span></QuestionStat>
                 <QuestionStat>{question.answerCount}<span>answers</span></QuestionStat>
                 <QuestionTitleArea>
-                    <QuestionLink>{question.questionTitle}</QuestionLink>
+                    <QuestionLink><Link to={"./QuestionAnswer"}>{question.questionTitle}</Link></QuestionLink>
                     {question.tags.map(tag => (
                         <Tag key={tag}>{tag}</Tag>
                     ))}

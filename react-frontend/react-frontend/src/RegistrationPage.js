@@ -2,6 +2,7 @@ import styled from "styled-components";
 import axios from "axios";
 import { Component } from "react";
 import { Navigate } from "react-router-dom";
+import './styles.css';
 
 const Container = styled.h1`
     font-size: 1.5rem;
