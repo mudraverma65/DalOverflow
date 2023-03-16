@@ -9,6 +9,7 @@ import { createTheme } from '@mui/material/styles';
 import axios from "axios";
 import QuestionDetails from "./QuestionDetails";
 import AnswersDisplay from "./AnswerDisplay";
+import GetAnswer from "./GetAnswer"
 
 const theme = createTheme({
   palette: {
@@ -91,27 +92,6 @@ function QuestionAnswer(){
     );
 }
 
-function GetAnswer(){
-  return(
-    
-    <div class="get_answer_col">
-      <h3>Your Answer</h3>
-      <Box
-        sx={{
-          '& .MuiTextField-root': { m: 1, width: '100%' },
-        }}
-      >
-      <TextField
-        id="outlined-multiline-static"
-        label="Answer"
-        multiline
-        rows={6}
-      />
-      </Box>
-    </div>
-      
-  );
-}
 
 export default QuestionAnswer;
 
