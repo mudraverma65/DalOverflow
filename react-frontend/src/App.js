@@ -30,6 +30,7 @@ const Styles = createGlobalStyle`
 `;
 
 
+
 function App() {
   const[user, setUser] = useState(null);
   return (
@@ -56,5 +57,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;

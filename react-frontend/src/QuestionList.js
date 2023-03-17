@@ -72,6 +72,11 @@ const Tag = styled.span`
 `;
 
 function QuestionList(props) {
+  function handleQuestionClickEvent(questionId){
+    localStorage.setItem("selectedQuestionId",questionId)
+    console.log("selected Question id: " + localStorage.getItem("selectedQuestionId"))
+  }
+
     console.log("Question List Props:"+props);
     const { question } = props;
     if (!question) {
@@ -89,7 +94,7 @@ function QuestionList(props) {
                 <QuestionStat>0<span>votes</span></QuestionStat>
                 <QuestionStat>{question.answerCount}<span>answers</span></QuestionStat>
                 <QuestionTitleArea>
-                    <QuestionLink><Link to={"./QuestionAnswer"}>{question.questionTitle}</Link></QuestionLink>
+                    <QuestionLink  onClick={() => handleQuestionClickEvent(question.questionID)} ><Link to={"./QuestionAnswer"}>{question.questionTitle}</Link></QuestionLink>
                     {question.tags.map(tag => (
                         <Tag key={tag}>{tag}</Tag>
                     ))}

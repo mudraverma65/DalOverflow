@@ -9,6 +9,7 @@ import { createTheme } from '@mui/material/styles';
 import axios from "axios";
 import QuestionDetails from "./QuestionDetails";
 import AnswersDisplay from "./AnswerDisplay";
+import GetAnswer from "./GetAnswer"
 
 const theme = createTheme({
   palette: {
@@ -24,14 +25,15 @@ const theme = createTheme({
 function QuestionAnswer(){
 
   const [questionAnswerInfo, setQuestionAnswerInfo] = useState("");
-
+  const questionID = localStorage.getItem("selectedQuestionId")
+  console.log("selectedQuestionId" + questionID)
   useEffect(() => {  
-
-    const questionID = 1;
 
     
 
-    const URL = `http://localhost:8080/api/question/1/answer`;
+    
+
+    const URL = `http://localhost:8080/api/question/${questionID}/answer`;
     //const URL = `http://25c9aea5-f1c3-48c3-a102-b7ed61759c6d.mock.pstmn.io/question`;
 
     const fetchQuestionByID = async () => {
@@ -91,27 +93,6 @@ function QuestionAnswer(){
     );
 }
 
-function GetAnswer(){
-  return(
-    
-    <div class="get_answer_col">
-      <h3>Your Answer</h3>
-      <Box
-        sx={{
-          '& .MuiTextField-root': { m: 1, width: '100%' },
-        }}
-      >
-      <TextField
-        id="outlined-multiline-static"
-        label="Answer"
-        multiline
-        rows={6}
-      />
-      </Box>
-    </div>
-      
-  );
-}
 
 export default QuestionAnswer;
 
