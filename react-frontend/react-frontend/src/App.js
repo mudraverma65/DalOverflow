@@ -45,8 +45,8 @@ function App() {
           <Routes>
             <Route path="/ask" element = {<AskQuestion/>} />
             <Route path="/profile" element = {<UserProfile/>} />
-            {/* <Route path="/" element = {<QuestionsFrontPage/>} /> */}
-            <Route path="/" element = {<QuestionAnswer/>} />
+            <Route path="/" element = {<QuestionsFrontPage/>} />
+            <Route path="/QuestionAnswer" element = {<QuestionAnswer/>} />
             <Route path="/login" element = {<LoginPage/>} />
             <Route path="/registration" element = {<RegistrationPage/>} />
           </Routes >

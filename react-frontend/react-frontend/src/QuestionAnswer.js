@@ -25,14 +25,15 @@ const theme = createTheme({
 function QuestionAnswer(){
 
   const [questionAnswerInfo, setQuestionAnswerInfo] = useState("");
-
+  const questionID = localStorage.getItem("selectedQuestionId")
+  console.log("selectedQuestionId" + questionID)
   useEffect(() => {  
-
-    const questionID = 1;
 
     
 
-    const URL = `http://localhost:8080/api/question/1/answer`;
+    
+
+    const URL = `http://localhost:8080/api/question/${questionID}/answer`;
     //const URL = `http://25c9aea5-f1c3-48c3-a102-b7ed61759c6d.mock.pstmn.io/question`;
 
     const fetchQuestionByID = async () => {
