@@ -62,8 +62,17 @@ function Header(){
             <form action="" className="Search">
                 <Search type="text" placeholder="Search Questions"/>
             </form>
-            <ProfileLink to={'/login'} className="profile">Log in</ProfileLink>
-            <ProfileLink to={'/registration'} className="registration">Sign up</ProfileLink>
+            {user && (
+                <ProfileLink to={'/profile'} className="profile">Saumya</ProfileLink>
+            )}
+            {!user && (
+                <div>
+                    <ProfileLink to={'/login'} className="profile">Log in</ProfileLink>
+                    <ProfileLink to={'/registration'} className="registration">Sign up</ProfileLink>
+
+                </div>
+
+            )}
         </HeaderStyle>
     );
 }
