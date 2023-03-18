@@ -13,6 +13,10 @@ import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
+/**
+ * @author Ritva Katrodiya
+ * This is the primary controller class of the Login api.
+ */
 @CrossOrigin(origins = "http://localhost:3000")
 @RestController
 @RequestMapping("user/login")
@@ -20,10 +24,21 @@ public class LoginController {
     private static final Logger LOGGER = LoggerFactory.getLogger(LoginController.class);
     private final LoginService loginService;
 
+    /**
+     *
+     * This is LoginController Constructor
+     * @param loginService is used to initialize instance of LoginService
+     */
     public LoginController(LoginService loginService) {
         this.loginService = loginService;
     }
 
+    /**
+     *
+     * @param loginRequest is an instance of LoginRequest Model class
+     * @return it will return userId if Login successful.
+     * @throws Exception when userId or password is invalid
+     */
     @PostMapping
     public ResponseEntity<LoginResponse> loginUser(@RequestBody LoginRequest loginRequest) throws Exception {
         LOGGER.info("Calling Login Service");
@@ -42,6 +57,11 @@ public class LoginController {
     }
 
 
+    /**
+     *
+     * @param password is the raw password got from UI
+     * @return will return encrypted password using SHA-256 algorithm
+     */
     private static String getEncrypted(String password) {
         String encryptedPassword = null;
         try {

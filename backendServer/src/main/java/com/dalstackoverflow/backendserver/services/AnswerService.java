@@ -45,4 +45,26 @@ public class AnswerService {
         }
         return allAnswers;
     }
+
+    /**
+     * @author Ritva Katrodiya
+     * @return It will return iterable answer got from the DB
+     */
+
+    public Iterable<Answer> getAllUsers()
+    {
+        return answerRepository.findAll();
+    }
+
+    /**
+     *
+     * @param id it is used to send userId
+     * @return answer object by particular userId
+     */
+
+    public Answer getUserById(int id) {
+        return answerRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("User not found with id " + id));
+    }
+
 }

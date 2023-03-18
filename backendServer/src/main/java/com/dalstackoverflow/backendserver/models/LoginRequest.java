@@ -1,5 +1,9 @@
 package com.dalstackoverflow.backendserver.models;
 
+/**
+ * @author Ritva Katrodiya
+ * This is the model class for LoginRequest.
+ */
 public class LoginRequest {
     private String userName;
     private String password;
