@@ -1,9 +1,13 @@
 package com.dalstackoverflow.backendserver.services;
 
 import com.dalstackoverflow.backendserver.models.Answer;
+import com.dalstackoverflow.backendserver.models.Comment;
 import com.dalstackoverflow.backendserver.repositories.AnswerRepository;
+import com.dalstackoverflow.backendserver.repositories.CommentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 
 /**
@@ -19,9 +23,26 @@ public class AnswerService {
     /**
      * Returns an Iterable of Answer objects that are associated with the given questionID.
      * @param questionID the ID of the question to retrieve answers for.
-     * @return an Iterable of Answer objects associated with the given questionID.
+     * @return an List of Answer objects associated with the given questionID.
  */
-    public Iterable<Answer> getAllAnswerByQuestionID(Integer questionID) {
+    public List<Answer> getAllAnswerByQuestionID(Integer questionID) {
         return answerRepository.findByQuestionID(questionID);
+    }
+
+    @Autowired
+    CommentRepository commentRepository;
+
+    /**
+     * This method will take input of list<Answer> and iterate over it and for each answer
+     * it will fetch the corresponding comments and save it. Returns the list<Answer>
+     * @param allAnswers
+     * @return an list for answers with the saved comments for each one
+     */
+    public List<Answer> setCommentsForAnswer(List<Answer> allAnswers) {
+        for( Answer answer: allAnswers){
+            List<Comment> comments = commentRepository.fetchAnswerComments(answer.getAnswerID());
+            answer.setAllComments(comments);
+        }
+        return allAnswers;
     }
 }
