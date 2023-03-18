@@ -2,6 +2,7 @@ package com.dalstackoverflow.backendserver.controllers;
 
 import com.dalstackoverflow.backendserver.models.Answer;
 import com.dalstackoverflow.backendserver.models.Question;
+import com.dalstackoverflow.backendserver.models.Tag;
 import com.dalstackoverflow.backendserver.services.AnswerService;
 import com.dalstackoverflow.backendserver.services.QuestionService;
 import org.slf4j.Logger;
@@ -86,6 +87,16 @@ public class QuestionController {
             questionReceived = questionClicked.get();
         }
         questionReceived.setAllAnswers(allAnswers);
+
+        //getting tags
+        List<Tag> tagsReceived = questionService.fetchTagsByQuestionID(questionID);
+
+        if(!tagsReceived.isEmpty())
+            for(Tag questionTag : tagsReceived){
+                LOGGER.info("Question id :"+questionReceived.getQuestionID());
+                LOGGER.info("Found tag :"+questionTag.getTagName());
+                questionReceived.getTags().add(questionTag.getTagName());
+            }
         return questionReceived;
 
     }
