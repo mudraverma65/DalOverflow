@@ -31,3 +31,44 @@ we need to add comments module to the question answer thread.
 
 How will the user posting the question decide which answer to select.
 we need a UI component to select an answer from the list of answers which also marks the question complete.
+
+
+
+
+15th March:
+Next Sprint:
+Comment functionality API--UT
+Comment functionality UI components and integration--MV
+More test classes for validations---SN, UT, RK
+UI component refresh---MV
+UI validations -- SB
+Search mechanism backend services.--SR
+Answer posting integration and testing -- RK
+Tokenization -- less priority
+Search result page with pagination -- SB
+Linking the search result to questionAnswer thread API and UI components--SB, MV
+
+Supporting essential developments:
+Refactoring and optimizing querying -- all
+Integrating additional question UI components to backend api -- SR
+CI pipeline for code smells -- SR
+Setting up the VM -- SR
+Setting up the Webserver -- MV/SB
+Log enhancements -- SR
+More Custom Exception -- UT, SR, RT
+
+Next Sprint:
+User Profile Screen -- SB/MV
+User Profile Screen Backend -- anyone UT,RT, SR
+Coverage report mechanism -- anyone
+Deleting a post by the user who has posted it.
+Voting Mechanism
+Tagging mechanism upgrades.
+backlogs from previous sprints
+Ensuring rubrics checklist
+documentations
+full blown integration validation setup
+Environment based application setup.
+
+Furutre Scope:
+editing a post might be a challenge
