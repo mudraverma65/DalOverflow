@@ -24,3 +24,4 @@ yarn-error.log*
 
 .idea
 node-modules
+react-frontend\node_modules

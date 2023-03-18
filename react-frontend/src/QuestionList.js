@@ -94,7 +94,7 @@ function QuestionList(props) {
                 <QuestionStat>0<span>votes</span></QuestionStat>
                 <QuestionStat>{question.answerCount}<span>answers</span></QuestionStat>
                 <QuestionTitleArea>
-                    <QuestionLink  onClick={() => handleQuestionClickEvent(question.questionID)} ><Link to={"./QuestionAnswer"}>{question.questionTitle}</Link></QuestionLink>
+                    <QuestionLink  onClick={() => handleQuestionClickEvent(question.questionID)} ><Link to={"./question-answer"}>{question.questionTitle}</Link></QuestionLink>
                     {question.tags.map(tag => (
                         <Tag key={tag}>{tag}</Tag>
                     ))}

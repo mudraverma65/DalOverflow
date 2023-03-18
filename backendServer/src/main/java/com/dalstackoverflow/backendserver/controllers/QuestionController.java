@@ -18,7 +18,8 @@ import java.util.Optional;
  * This is the primary controller class of the Questions api.
  */
 
-@CrossOrigin(origins = "http://localhost:3000")
+//@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin
 @RestController
 @RequestMapping("api/question")
 public class QuestionController {
