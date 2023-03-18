@@ -4,6 +4,7 @@ import jakarta.annotation.Nonnull;
 import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 /**
  * @author Utkarsh Shah
@@ -47,6 +48,18 @@ public class Answer {
     @Nonnull
     @Column(name = "a_updates")
     private LocalDateTime answerUpdateStamp;
+
+    //transient values
+    @Transient
+    List<Comment> allComments;
+
+    public List<Comment> getAllComments() {
+        return allComments;
+    }
+
+    public void setAllComments(List<Comment> allComments) {
+        this.allComments = allComments;
+    }
 
     // this will initialize the answerDate to the latest time when creating a answer in the datatbase and while fetching it wont chagne the date and time
     @PrePersist

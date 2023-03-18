@@ -59,6 +59,8 @@ public class QuestionController {
     @Autowired
     AnswerService answerService;
 
+    @Autowired
+    AnswerController answerController;
 
     /**
      * @author Utkarsh Shah
@@ -74,7 +76,9 @@ public class QuestionController {
     public Question getAnswersByQuestionID(@PathVariable Integer questionID) {
         LOGGER.info("Calling Answer Service");
         LOGGER.info("Request Object:" + questionID.toString());
-        Iterable<Answer> allAnswers = answerService.getAllAnswerByQuestionID(questionID);
+        List<Answer> allAnswers = answerController.getAllAnswers(questionID);
+        //all comments will be fetched for all answers
+        allAnswers = answerService.setCommentsForAnswer(allAnswers);
         Question questionReceived = new Question();
         LOGGER.info("Calling Question Service:");
         Optional<Question> questionClicked = questionService.searchQuestion(questionID);
