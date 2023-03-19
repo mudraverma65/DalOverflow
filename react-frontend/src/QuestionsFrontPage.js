@@ -51,6 +51,7 @@ function QuestionsFrontPage() {
         <main>
             <TopRow>
                 <StyledHeader>Top Questions</StyledHeader>
+                
                 <Button to="/ask">Ask Question</Button>
             </TopRow>
             <DisplayQuestionList questions={questions} />

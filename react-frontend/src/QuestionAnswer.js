@@ -9,7 +9,8 @@ import { createTheme } from '@mui/material/styles';
 import axios from "axios";
 import QuestionDetails from "./QuestionDetails";
 import AnswersDisplay from "./AnswerDisplay";
-import GetAnswer from "./GetAnswer"
+import GetAnswer from "./GetAnswer";
+import Comment from "./Comment";
 
 const theme = createTheme({
   palette: {
@@ -34,7 +35,6 @@ function QuestionAnswer(){
     
 
     const URL = `http://localhost:8080/api/question/${questionID}/answer`;
-    //const URL = `http://25c9aea5-f1c3-48c3-a102-b7ed61759c6d.mock.pstmn.io/question`;
 
     const fetchQuestionByID = async () => {
       try { 
@@ -79,6 +79,7 @@ function QuestionAnswer(){
             questionDate={questionAnswerInfo.questionDate}
             questionDescription={questionAnswerInfo.questionDescription}
             questionTitle={questionAnswerInfo.questionTitle}
+            questionTags={questionAnswerInfo.tags}
           />
 
           {
@@ -87,7 +88,7 @@ function QuestionAnswer(){
               : <p>No Data in questionAnswerInfo</p>
             }
 
-          <GetAnswer/>  
+          <GetAnswer questionID={questionAnswerInfo.questionID}/>  
         </div>
       </div>  
     );

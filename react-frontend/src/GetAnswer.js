@@ -3,15 +3,15 @@ import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import { useState } from "react";
 
-function GetAnswer(){
+function GetAnswer(props){
   const[answerBody,setAnswerBody] = useState('')
   const[code, setCode] = useState('')
 
   const handleClick = (e)=>{
     e.preventDefault()
-    const answer = {answerBody}
+    const answer = {answerBody,code}
     console.log(answer)
-    fetch("   ",{
+    fetch(`http://localhost:8080/questions/${props.questionID}/answers/{userId}`,{
       method:"POST",
       headers:{"Content-Type":"application/json"},
       body: JSON.stringify(answer)

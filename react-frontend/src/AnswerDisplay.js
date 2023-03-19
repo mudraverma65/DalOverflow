@@ -4,6 +4,7 @@ import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import "./styles.css";
+import Comment from "./Comment";
 
 import { createTheme } from '@mui/material/styles';
 import axios from "axios";
@@ -32,6 +33,9 @@ function AnswersDisplay(props){
             <div class="comment_col"><h3>Comments</h3>
               <div class="comment"><body>You need ../public/images/logo_2016.png You went up twice, first out of the components folder, then out of the src folder.<comment_user> – user5734311</comment_user><comment_time>May 22, 2017 at 13:44</comment_time> </body></div>
               <div class="comment"><body>You need ../public/images/logo_2016.png You went up twice, first out of the components folder, then out of the src folder.<comment_user> – user5734311</comment_user><comment_time>May 22, 2017 at 13:44</comment_time> </body></div>
+              <div class="comment">
+                <Comment/>
+              </div>
             </div>
           </div>
         </div>
