@@ -2,6 +2,12 @@ package com.dalstackoverflow.backendserver.models;
 
 import jakarta.persistence.*;
 
+/**
+ * @author Ritva Katrodiya
+ * This is the model class for Registration table.
+ * The model class will be used for posting and fetching user details.
+ */
+
 @Entity
 @Table(name = "user")
 public class Registration {
@@ -9,8 +15,6 @@ public class Registration {
 
     @Column(name = "u_id")
     private int userId;
-
-
     @Column(name = "u_username", nullable = false, unique = true)
     private String userName;
 
@@ -20,7 +24,7 @@ public class Registration {
     @Column(name = "u_password", nullable = false)
     private String password;
 
-
+    //getters and setters
     public int getUserId() {
         return userId;
     }

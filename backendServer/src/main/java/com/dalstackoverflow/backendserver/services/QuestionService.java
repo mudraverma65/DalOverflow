@@ -80,4 +80,14 @@ public class QuestionService {
 
         return questionRepository.findById(questionID);
     }
+
+    /**
+     *
+     * @param questionID
+     * @return
+     */
+    public List<Tag> fetchTagsByQuestionID(Integer questionID){
+        List<Tag> questiontags = tagRepository.findByQuestionID(questionID);
+        return questiontags;
+    }
 }

@@ -57,13 +57,13 @@ public class Question {
 
     // this is used to store all instance of all answers
     @Transient
-    public Iterable<Answer> allAnswers;
+    public List<Answer> allAnswers;
 
-    public Iterable<Answer> getAllAnswers() {
+    public List<Answer> getAllAnswers() {
         return allAnswers;
     }
 
-    public void setAllAnswers(Iterable<Answer> allAnswers) {
+    public void setAllAnswers(List<Answer> allAnswers) {
         this.allAnswers = allAnswers;
     }
 

@@ -1,5 +1,6 @@
 package com.dalstackoverflow.backendserver;
 
+import com.dalstackoverflow.backendserver.utils.Constants;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
@@ -18,8 +19,8 @@ public class BackendServerApplication {
 
     public static void main(String[] args) throws UnknownHostException {
         SpringApplication.run(BackendServerApplication.class, args);
-        LOGGER.info("------Application startup completed-------");
+        LOGGER.info(Constants.USER_LOG,"------Application startup completed-------");
         InetAddress address = InetAddress.getLocalHost();
-        LOGGER.info("Host address: " + address.getHostAddress());
+        LOGGER.info(Constants.USER_LOG,"Host address: " + address.getHostAddress());
     }
 }

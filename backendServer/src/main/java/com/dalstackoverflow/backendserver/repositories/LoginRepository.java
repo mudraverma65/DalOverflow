@@ -5,9 +5,19 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 
+/**
+ * @author Ritva Katrodiya
+ * This is the repository interface that will be used by the project for users.
+ */
 @Repository
 public interface LoginRepository extends CrudRepository<Registration, Integer>
 {
+    /**
+     * This method will be used to fetch the User/Registration Object based on the username and password.
+     * @param username
+     * @param password
+     * @return User object
+     */
     Registration findByUserNameAndPassword(String username, String password);
 
     /**

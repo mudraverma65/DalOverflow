@@ -1,5 +1,8 @@
 package com.dalstackoverflow.backendserver.models;
-
+/**
+ * @author Ritva Katrodiya
+ * This is the model class for LoginResponse .
+ */
 public class LoginResponse {
     private String message;
     private Integer userId;

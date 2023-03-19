@@ -115,9 +115,7 @@ class LoginPage extends Component {
                 this.setState({ errors });
               }
             }
-            componentWillUnmount() {
-              localStorage.removeItem("userId");
-            }
+
             render(){
               const { userName, password, errors } = this.state;
               return(<>

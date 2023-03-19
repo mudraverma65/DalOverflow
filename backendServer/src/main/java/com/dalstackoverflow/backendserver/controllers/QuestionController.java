@@ -2,6 +2,7 @@ package com.dalstackoverflow.backendserver.controllers;
 
 import com.dalstackoverflow.backendserver.models.Answer;
 import com.dalstackoverflow.backendserver.models.Question;
+import com.dalstackoverflow.backendserver.models.Tag;
 import com.dalstackoverflow.backendserver.services.AnswerService;
 import com.dalstackoverflow.backendserver.services.QuestionService;
 import org.slf4j.Logger;
@@ -59,6 +60,8 @@ public class QuestionController {
     @Autowired
     AnswerService answerService;
 
+    @Autowired
+    AnswerController answerController;
 
     /**
      * @author Utkarsh Shah
@@ -74,7 +77,9 @@ public class QuestionController {
     public Question getAnswersByQuestionID(@PathVariable Integer questionID) {
         LOGGER.info("Calling Answer Service");
         LOGGER.info("Request Object:" + questionID.toString());
-        Iterable<Answer> allAnswers = answerService.getAllAnswerByQuestionID(questionID);
+        List<Answer> allAnswers = answerController.getAllAnswers(questionID);
+        //all comments will be fetched for all answers
+        allAnswers = answerService.setCommentsForAnswer(allAnswers);
         Question questionReceived = new Question();
         LOGGER.info("Calling Question Service:");
         Optional<Question> questionClicked = questionService.searchQuestion(questionID);
@@ -82,6 +87,16 @@ public class QuestionController {
             questionReceived = questionClicked.get();
         }
         questionReceived.setAllAnswers(allAnswers);
+
+        //getting tags
+        List<Tag> tagsReceived = questionService.fetchTagsByQuestionID(questionID);
+
+        if(!tagsReceived.isEmpty())
+            for(Tag questionTag : tagsReceived){
+                LOGGER.info("Question id :"+questionReceived.getQuestionID());
+                LOGGER.info("Found tag :"+questionTag.getTagName());
+                questionReceived.getTags().add(questionTag.getTagName());
+            }
         return questionReceived;
 
     }
