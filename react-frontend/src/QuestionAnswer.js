@@ -12,6 +12,7 @@ import AnswersDisplay from "./AnswerDisplay";
 import GetAnswer from "./GetAnswer";
 import Comment from "./Comment";
 
+
 const theme = createTheme({
   palette: {
     primary: {
@@ -28,11 +29,7 @@ function QuestionAnswer(){
   const [questionAnswerInfo, setQuestionAnswerInfo] = useState("");
   const questionID = localStorage.getItem("selectedQuestionId")
   console.log("selectedQuestionId" + questionID)
-  useEffect(() => {  
-
-    
-
-    
+  useEffect(() => {   
 
     const URL = `http://localhost:8080/api/question/${questionID}/answer`;
 
@@ -49,24 +46,6 @@ function QuestionAnswer(){
     fetchQuestionByID();
   }, []);
 
-  // useEffect(() => {
-
-
-  //   const fetchItems = async () => {
-  //     try{
-  //       const response = await fetch(URL);
-  //       responseData = await response.json();
-  //       console.log(responseData)
-  //       setQuestionAnswerInfo(responseData);
-  //     }
-  //     catch (err){
-  //       console.log(err.stack)
-  //     }
-  //   }
-
-  //   (async () => await fetchItems())();
-  //   }, []);
-
   console.log(questionAnswerInfo);
   
     return(
@@ -80,11 +59,12 @@ function QuestionAnswer(){
             questionDescription={questionAnswerInfo.questionDescription}
             questionTitle={questionAnswerInfo.questionTitle}
             questionTags={questionAnswerInfo.tags}
+            questionAnswerCount={questionAnswerInfo.answerCount}
           />
 
           {
             (questionAnswerInfo) 
-              ? questionAnswerInfo.allAnswers.map((answerData) => <AnswersDisplay data={answerData}/>)
+              ? questionAnswerInfo.allAnswers.map((answerData) => <AnswersDisplay data={answerData}  />)
               : <p>No Data in questionAnswerInfo</p>
             }
 
