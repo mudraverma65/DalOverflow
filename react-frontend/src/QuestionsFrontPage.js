@@ -1,7 +1,8 @@
 import {Link} from 'react-router-dom';
 import QuestionList from './QuestionList';
 import React, { useState, useEffect } from 'react';
-
+import UserLoggedIn from './UserLoggedIn';
+import { useNavigate } from 'react-router-dom';
 
 function DisplayQuestionList(props) {
     console.log('QuestionList props:', props);
@@ -24,11 +25,13 @@ function QuestionsFrontPage() {
             .then(data => setQuestions(data));
     }, []);
     console.log("Question API response:"+questions);
+    const history = useNavigate();
+
     return (
         <main>
             <div className="TopRow">
                 <h2>Top Questions</h2>
-                <Link to="/ask">
+                <Link to = '/ask'>
                     <div class="button1" >Ask Question</div>
                 </Link>
             </div>

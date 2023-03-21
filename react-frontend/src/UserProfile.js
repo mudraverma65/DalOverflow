@@ -1,7 +1,8 @@
 import axios from "axios";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import styled from "styled-components";
 import {Navigate} from "react-router-dom";
+import UserLoggedIn from './UserLoggedIn';
 
 
 const Container = styled.div`
@@ -29,11 +30,13 @@ const Button = styled.button`
 
 function UserProfile() {
     const[BackToHomePage, setBackToHomePage] = useState(false);
+    const{checkUser} = useContext(UserLoggedIn);
     function Logout(){
-       // axios.post('').then(()=>{
-            setBackToHomePage(true);
-       // });
-    }
+             localStorage.setItem("userId", null);
+             checkUser();
+             setBackToHomePage(true);
+           }
+
     return(
 
         <>
@@ -45,7 +48,7 @@ function UserProfile() {
                 <h2>{localStorage.getItem("username")}</h2>
                 <Button onClick={() => Logout()}>Logout</Button>
             </Container>
-            
+
         </>
     );
 
