@@ -29,29 +29,29 @@ const Styles = createGlobalStyle`
 
 function App() {
   const[user, setUser] = useState(null);
-  
+  const userId = localStorage.getItem("userId")
+
   function checkUser(){
-    axios.get("http://127.0.0.1:8080/user/login")
-  .then(response => {
-    setUser({userName: response.data});
-  })
-  .catch( () => {
-    setUser(null);
-  })
-}
-  
+    axios.get(`http://127.0.0.1:8080/user/login/${userId}`)
+    .then(response => {
+      setUser({userName: response.data});
+    })
+    .catch(() => {
+      setUser(null);
+    })
+  }
+
+
   useEffect(() => {
     checkUser();
-  })
+})
 
 
-  
+
   return (
     <div>
       <Reset />
       <Styles />
-      
-
       <Router>
         <UserLoggedIn.Provider value={{user, checkUser}}>
           <Header />

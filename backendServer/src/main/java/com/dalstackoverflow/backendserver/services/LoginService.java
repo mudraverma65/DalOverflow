@@ -4,7 +4,10 @@ import com.dalstackoverflow.backendserver.models.LoginRequest;
 import com.dalstackoverflow.backendserver.models.LoginResponse;
 import com.dalstackoverflow.backendserver.models.Registration;
 import com.dalstackoverflow.backendserver.repositories.LoginRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.Optional;
 
 /**
  * @author Ritva Katrodiya
@@ -32,10 +35,29 @@ public class LoginService {
 
         if (user != null) {
             int userId = user.getUserId();
-            return new LoginResponse("Login successful!", userId);
+            String userName=user.getUserName();
+            return new LoginResponse("Login successful!", userId,userName);
         } else {
-            return new LoginResponse("Invalid credentials. Please try again.", null);
+            return new LoginResponse("Invalid credentials. Please try again.", null,null);
         }
     }
+
+
+    /**
+     * This method will is used to get the username from DB
+     * @param userId
+     * @return username when user will be logged in
+     */
+    public String getUsername(int userId) {
+        Optional<Registration> userOptional = Optional.ofNullable(loginRepository.findById(userId));
+        if (userOptional.isPresent()) {
+            Registration user = userOptional.get();
+            return user.getUserName();
+        } else {
+            return null;
+        }
+    }
+
+
 }
 

@@ -98,6 +98,7 @@ class LoginPage extends Component {
       })
         .then((response) => {
         localStorage.setItem("userId", response.data.userId);
+        window.location.href = '/';
         this.context.checkUser();
         this.setState({ redirectToHomePage: true });
       })
@@ -113,7 +114,6 @@ class LoginPage extends Component {
                   }alert("Invalid username or password");
                 });
               } else {
-                // Update state with errors
                 this.setState({ errors });
               }
             }

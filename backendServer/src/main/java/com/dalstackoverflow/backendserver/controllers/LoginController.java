@@ -49,12 +49,31 @@ public class LoginController {
         if (response.getMessage().equals("Login successful!")) {
             int userId = response.getUserId();
             response.setMessage("Login successful! Your user ID is " + userId);
+
+            int userName = response.getUserId();
+            response.setMessage("Login successful! Your user ID is " + userName);
             return ResponseEntity.ok(response);
         } else {
             response.setMessage("Invalid username or password");
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(response);
         }
     }
+
+    /**
+     * This method is used to getch the username from DB
+     * @param userId
+     * @return userName when login successful
+     */
+    @GetMapping("/{userId}")
+    public ResponseEntity<String> getUsername(@PathVariable int userId) {
+        String username = loginService.getUsername(userId);
+        if (username != null) {
+            return ResponseEntity.ok(username);
+        } else {
+            return ResponseEntity.notFound().build();
+        }
+    }
+
 
 
     /**

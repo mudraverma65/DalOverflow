@@ -30,9 +30,9 @@ const Button = styled.button`
 function UserProfile() {
     const[BackToHomePage, setBackToHomePage] = useState(false);
     function Logout(){
-        axios.post('').then(()=>{
+       // axios.post('').then(()=>{
             setBackToHomePage(true);
-        });
+       // });
     }
     return(
 
@@ -42,6 +42,7 @@ function UserProfile() {
             )}
             <Container>
                 <Header1>Profile</Header1>
+                <h2>{localStorage.getItem("username")}</h2>
                 <Button onClick={() => Logout()}>Logout</Button>
             </Container>
             
