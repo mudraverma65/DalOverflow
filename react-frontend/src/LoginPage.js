@@ -1,8 +1,9 @@
 import styled from "styled-components";
 import axios from "axios";
-import { Component } from "react";
+import { Component, useContext } from "react";
 import './styles.css';
 import { Navigate } from "react-router-dom";
+import UserLoggedIn from "./UserLoggedIn";
 
 const Container = styled.h1`
     font-size: 1.5rem;
@@ -97,6 +98,7 @@ class LoginPage extends Component {
       })
         .then((response) => {
         localStorage.setItem("userId", response.data.userId);
+        this.context.checkUser();
         this.setState({ redirectToHomePage: true });
       })
         .catch((error) => {
@@ -154,5 +156,7 @@ class LoginPage extends Component {
                       );
                     }
                   }
+LoginPage.contextType = UserLoggedIn;              
+
 export default LoginPage;
 

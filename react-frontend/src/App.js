@@ -9,7 +9,7 @@ import {
   Route,
   Link
 }from "react-router-dom";
-import { useState, Component } from 'react';
+import { useState, Component, useEffect } from 'react';
 import UserLoggedIn from './UserLoggedIn';
 import LoginPage from './LoginPage';
 import axios from 'axios';
@@ -29,6 +29,23 @@ const Styles = createGlobalStyle`
 
 function App() {
   const[user, setUser] = useState(null);
+  
+  function checkUser(){
+    axios.get("http://127.0.0.1:8080/user/login")
+  .then(response => {
+    setUser({userName: response.data});
+  })
+  .catch( () => {
+    setUser(null);
+  })
+}
+  
+  useEffect(() => {
+    checkUser();
+  })
+
+
+  
   return (
     <div>
       <Reset />
@@ -36,7 +53,7 @@ function App() {
       
 
       <Router>
-        <UserLoggedIn.Provider value={{user}}>
+        <UserLoggedIn.Provider value={{user, checkUser}}>
           <Header />
           <Routes>
             <Route path="/ask" element = {<AskQuestion/>} />
