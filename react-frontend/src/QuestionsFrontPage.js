@@ -41,14 +41,14 @@ function QuestionsFrontPage() {
                 <h2>Top Questions</h2>
                 {user && (
                       <Link to={'/ask'}>
-                       <div className="button1" >Ask Question</div>
-                       </Link>
+                        <div className="button1" >Ask Question</div>
+                       </Link>      
                        )}
                 {!user && (
                     <div>
-                        <Link onClick={handleClick}>
+                        <Link to={'/ask'}>
                             <div className="button1" >Ask Question</div>
-                       </Link>
+                       </Link>     
                      </div>
                        )}
 

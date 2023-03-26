@@ -255,6 +255,14 @@ p{
     font-size: 14px;
 }
 
+.LogoText{
+  font-family: 'Inter',Helvetica,Arial,Lucida,sans-serif!important;
+  font-size: 16px!important;
+  color: #333333!important;
+  font-weight: 800!important;
+  display: inline-block;
+}
+
 votes{
   text-align: center;
   font-family: 'Inter',Helvetica,Arial,Lucida,sans-serif;
@@ -494,4 +502,52 @@ a{
   line-height: 1.7em;
   font-weight: 500;
   padding-right: 20px;
+  height: 120px;
+  overflow: hidden;
+  padding: 10px 0px;;
+
+}
+
+.AnswerBody{
+  overflow: hidden;
+}
+
+.Header{
+  width: 100%;
+  max-width: 100%;
+  background-color: #ffffff;
+  margin: auto;
+  position: relative;
+  border-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #ffd401; 
+  align-items: center;
+  display: flex;
+  height: 70px;
+}
+
+.LogoCol{
+  width:15%;
+  float: left;
+  z-index: 2;
+  display: flex;
+}
+
+.SearchBar{
+  width: 65%;
+  float: left;
+  position: relative;
+  z-index: 2;
+}
+
+.LoginHeader {
+  width: 20%;
+  position: relative;
+  z-index: 2;
+  padding-left: 30px;
+}
+
+.LogoCol{
+  display: flex;
+  align-items: center;
 }
