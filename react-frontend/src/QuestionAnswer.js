@@ -1,8 +1,4 @@
-import { FunctionComponent, useState, useEffect  } from "react";
-import ButtonGroup from '@mui/material/ButtonGroup';
-import Button from '@mui/material/Button';
-import Box from '@mui/material/Box';
-import TextField from '@mui/material/TextField';
+import { useState, useEffect  } from "react";
 import "./styles.css";
 
 import { createTheme } from '@mui/material/styles';
@@ -10,7 +6,6 @@ import axios from "axios";
 import QuestionDetails from "./QuestionDetails";
 import AnswersDisplay from "./AnswerDisplay";
 import GetAnswer from "./GetAnswer";
-import Comment from "./Comment";
 
 
 const theme = createTheme({
@@ -51,8 +46,6 @@ function QuestionAnswer(){
     return(
       <div className="jsBeginnerWantToInsertTeParent">
         <div class="thread">
-          {/* {questionAnswerInfo} */}
-          {/* {console.log(questionAnswerInfo)} */}
           <QuestionDetails 
             questionCode={questionAnswerInfo.questionCode}
             questionDate={questionAnswerInfo.questionDate}

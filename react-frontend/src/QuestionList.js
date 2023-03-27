@@ -22,7 +22,7 @@ function QuestionList(props) {
         <div className='Questions'>
           <div className='QuestionListCol'>
             <div className='QuestionInfoList'>
-              <div><strong><span>0</span></strong><span> </span>Votes</div>
+              <div><strong><span>{question.votes}</span></strong><span> </span>Votes</div>
               <div><strong><span>{question.answerCount}</span></strong><span> </span>Answers</div>
             </div>
           </div>

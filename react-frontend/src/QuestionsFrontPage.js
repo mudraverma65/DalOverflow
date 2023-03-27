@@ -32,7 +32,6 @@ function QuestionsFrontPage() {
         if (localStorage.getItem("userId") === 'null') {
           alert("Please login to ask questions");
         }
-
     };
     const {user} = useContext(UserLoggedIn)
     return (

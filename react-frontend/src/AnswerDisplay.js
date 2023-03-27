@@ -8,6 +8,7 @@ import Comment from "./Comment";
 
 import { createTheme } from '@mui/material/styles';
 import axios from "axios";
+import CommentDisplay from "./CommentDisplay";
 
 function AnswersDisplay(props){
 
@@ -31,8 +32,11 @@ function AnswersDisplay(props){
               <div class="question_answer_code">{props.data.answerCode}</div>
             </div>
             <div class="comment_col"><h3>Comments</h3>
-              <div class="comment"><body>You need ../public/images/logo_2016.png You went up twice, first out of the components folder, then out of the src folder.<comment_user> – user5734311</comment_user><comment_time>May 22, 2017 at 13:44</comment_time> </body></div>
-              <div class="comment"><body>You need ../public/images/logo_2016.png You went up twice, first out of the components folder, then out of the src folder.<comment_user> – user5734311</comment_user><comment_time>May 22, 2017 at 13:44</comment_time> </body></div>
+              {
+              (props.data.allComments && props.data.allComments.length > 0) 
+                ? props.data.allComments.map((commentData) => <CommentDisplay data={commentData}  />)
+                : <p>No Comments</p>
+              }
               <div class="comment">
                 <Comment/>
               </div>
