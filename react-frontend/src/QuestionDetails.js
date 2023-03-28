@@ -31,7 +31,9 @@ function QuestionDetails(props) {
             <Link to="/ask">
               <div class="button1" >Ask Question</div>
             </Link>
-            
+          </div>
+          <div>
+               <div class="button1" >Delete Question</div>
           </div>
         </div>
   
