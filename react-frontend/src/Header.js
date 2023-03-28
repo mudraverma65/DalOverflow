@@ -15,11 +15,13 @@ const ProfileLink = styled(Link)`
     display: inline-block;
     padding: 0 20px;
     margin-right: 5px;
+    margin-left: 10px;
 
 `;
 
 function Header(){
-    const {user} = useContext(UserLoggedIn)
+    const {user} = useContext(UserLoggedIn);
+
     return(
         <div className='jsBeginnerWantToInsertTeParent'>
             <div className='Header'>
@@ -31,7 +33,8 @@ function Header(){
                 </div>
                 <SearchBar/>
                 {user && (
-                    <ProfileLink to={'/profile'} className="profile">{user.userName}</ProfileLink>
+
+                    <ProfileLink to={'/profile'} className="profile">Hi, {user.userName.charAt(0).toUpperCase()+ user.userName.slice(1)}</ProfileLink>
                 )}
 
                 {!user && (

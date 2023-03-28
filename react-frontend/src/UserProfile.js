@@ -5,6 +5,7 @@ import {Navigate} from "react-router-dom";
 import UserLoggedIn from './UserLoggedIn';
 
 
+
 const Container = styled.div`
     font-size: 1.5rem;
     margin-bottom: 10px;
@@ -44,8 +45,7 @@ function UserProfile() {
                 <Navigate to={'/'}/>
             )}
             <Container>
-                <Header1>Profile</Header1>
-                <h2>{localStorage.getItem("username")}</h2>
+                <Header1>{localStorage.getItem("username").charAt(0).toUpperCase()+ localStorage.getItem("username").slice(1)}❜s Profile</Header1>
                 <Button onClick={() => Logout()}>Logout</Button>
             </Container>
 

@@ -45,9 +45,7 @@ function QuestionsFrontPage() {
                        )}
                 {!user && (
                     <div>
-                        <Link to={'/ask'}>
-                            <div className="button1" >Ask Question</div>
-                       </Link>     
+                            <div className="button1" onClick={handleClick}>Ask Question</div>
                      </div>
                        )}
 
