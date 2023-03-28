@@ -54,14 +54,17 @@ codeQuality-job: # This job runs in the cod quality stage to fetch the code smel
       - $CI_PROJECT_DIR
 
 issue-job:
+  image: "python:3.10"
   stage: issue
   dependencies:
-    - build-job
-  image: "python:3.10"
+    - codeQuality-job
+  before_script:
+    - apt-get update && apt-get install -y python3
   script:
     - ls smells/ -a
-    - python --version
+    - echo "installing dependencies"
     - pip install -r $CI_PROJECT_DIR/requirements.txt
+    - python --version
     - python $CI_PROJECT_DIR/issue.py $CI_COMMIT_SHA
 
 unit-test-job:   # This job runs in the test stage.
