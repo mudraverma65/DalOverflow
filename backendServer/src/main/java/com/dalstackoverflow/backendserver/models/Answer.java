@@ -26,7 +26,7 @@ public class Answer {
     private int questionID;
 
     @Nonnull
-    @Column(name="u_id")
+    @Column(name = "u_id")
     private int userID;
 
     @Nonnull
@@ -36,13 +36,13 @@ public class Answer {
     @Column(name = "a_description")
     private String answerDescription;
 
-    @Column(name ="a_votes")
+    @Column(name = "a_votes")
     private int votes;
 
-    @Column(name= "a_code")
+    @Column(name = "a_code")
     private String answerCode;
 
-    @Column(name ="a_status", columnDefinition = "TINYINT(1)")
+    @Column(name = "a_status", columnDefinition = "TINYINT(1)")
     private boolean answerStatus;
 
     @Nonnull
@@ -69,7 +69,7 @@ public class Answer {
     }
 
     // constructor to call any method
-    public Answer(){
+    public Answer() {
 
     }
 
@@ -145,5 +145,13 @@ public class Answer {
     public void setAnswerUpdateStamp(LocalDateTime answerUpdateStamp) {
         this.answerUpdateStamp = answerUpdateStamp;
     }
-}
 
+
+    public void incrementVote() {
+        this.votes++;
+    }
+
+    public void decrementVote() {
+        this.votes--;
+    }
+}

@@ -29,7 +29,7 @@ function GetAnswer(props){
     const answer = {answerDescription,answerCode }
    const questionId = localStorage.getItem("selectedQuestionId")
    const userId = localStorage.getItem("userId")
-   const URL = `http://localhost:8080/questions/${props.questionId}/answers/${userId}`
+   const URL = `http://localhost:8080/questions/${questionId}/answers/${userId}`
    axios.post(URL, answer)
                    .then(response => {
                        window.alert("Your answer was posted successfully!");
