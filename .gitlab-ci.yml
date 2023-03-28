@@ -45,7 +45,6 @@ codeQuality-job: # This job runs in the cod quality stage to fetch the code smel
     - build-job
   script:
     - echo "Checking code smells"
-    - mkdir smells/
     - java --version
     - echo $CI_PROJECT_PATH
     - java -jar $CI_PROJECT_DIR/DesigniteJava.jar -i $CI_PROJECT_DIR -o smells/ -d
