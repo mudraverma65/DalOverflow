@@ -26,7 +26,6 @@ cache:
 stages:          # List of stages for jobs, and their order of execution
   - build
   - codeQuality
-  - issue
   - test
   - deploy
 
