@@ -59,7 +59,7 @@ issue-job:
   dependencies:
     - codeQuality-job
   before_script:
-    - apt-get update && apt-get install -y python3
+    - apt-get update && apt-get install -y python3-pip
   script:
     - ls smells/ -a
     - echo "installing dependencies"
