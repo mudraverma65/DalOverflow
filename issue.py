@@ -17,7 +17,7 @@ for sf in smell_files:
     raw_md = table.Table(list_smells).markdown()
 
     title = str(sf).replace(".csv","")+" for commit - "+str(commit)
-    query_params = f"title={title}&labels=quality"
+    query_params = f"title={title}&labels=quality".format(title)
     body={
         "description":{raw_md}
     }
