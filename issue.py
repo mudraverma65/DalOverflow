@@ -21,6 +21,6 @@ for sf in smell_files:
     body={
         "description":{raw_md}
     }
-    gitlab_output = requests.post(f"https://git.cs.dal.ca/api/v4/projects/{69230}/issues?{query_params}",headers=headers, data=body)
+    gitlab_output = requests.post(f"https://git.cs.dal.ca/api/v4/projects/{67459}/issues?{query_params}",headers=headers, data=body)
     if not gitlab_output.status_code == 201:
         raise Exception
