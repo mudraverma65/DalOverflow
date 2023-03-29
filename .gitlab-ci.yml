@@ -56,10 +56,12 @@ codeQuality-job: # This job runs in the cod quality stage to fetch the code smel
 issue-job:
   image: "python:3.10"
   stage: issue
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "pipelineIntegration"'
   dependencies:
     - codeQuality-job
   before_script:
-    - apt-get update && apt-get install -y python3
+    - sudo apt-get update && sudo apt-get install -y python3-pip
   script:
     - ls smells/ -a
     - echo "installing dependencies"
