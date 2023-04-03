@@ -2,8 +2,9 @@ import React, {useState} from "react";
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import "./styles.css";
+import axios from 'axios';
 
-function Comment(){
+function Comment(props){
 
     const [modalComment, setModalComment] = useState(false);
 
@@ -13,18 +14,26 @@ function Comment(){
 
     const[comment,setComment] = useState('')
 
-    const handleClick = (e)=>{
-        e.preventDefault()
-        const comment = {comment}
-        console.log(comment)
-        fetch("   ",{
-        method:"POST",
-        headers:{"Content-Type":"application/json"},
-        body: JSON.stringify(comment)
-        }).then(()=>{
-        console.log("Answer Updated")
-        })
-    } 
+    const handleClick = (e) => {
+        e.preventDefault();
+        const userId = localStorage.getItem("userId")
+        const answerId = props.answerID;
+        const commentData = { commentText: comment,
+        userID: userId,
+        answerID: answerId }
+      
+        axios
+          .post(`http://localhost:8080/api/${answerId}/comment/${userId}/post`, commentData, {
+            headers: { "Content-Type": "application/json" },
+          })
+          .then(() => {
+            console.log("Comment Posted");
+            window.alert("Your comment was posted successfully!");
+          })
+          .catch((err) => {
+            console.error(err);
+          });
+      }; 
 
   
 

@@ -63,7 +63,7 @@ function AnswersDisplay(props){
         <div class="comment_col">
           <h3>Comments</h3>
           <div class="comment">
-            <Comment/>
+            <Comment answerID={props.data.answerID} />
           </div>
         </div>
       </div>
