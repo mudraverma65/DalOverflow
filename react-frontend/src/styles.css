@@ -487,6 +487,7 @@ a{
 }
 
 .QuestionDesCol{
+  cursor: pointer;
   border-style: solid;
   width: 74.25%;
   float: none;
@@ -551,4 +552,14 @@ a{
 .LogoCol{
   display: flex;
   align-items: center;
+}
+
+.SearchResults{
+  display: flex;
+  align-items: center;
+  padding: 20px 100px;
+  height: 50px;
+  border-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #666666; 
 }

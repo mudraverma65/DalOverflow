@@ -1,9 +1,15 @@
 import {Link} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
 
 function QuestionList(props) {
+
+  const navigate = useNavigate();
+
   function handleQuestionClickEvent(questionId){
     localStorage.setItem("selectedQuestionId",questionId)
     console.log("selected Question id: " + localStorage.getItem("selectedQuestionId"))
+    navigate('/question-answer');
   }
 
     console.log("Question List Props:"+props);
@@ -27,7 +33,8 @@ function QuestionList(props) {
             </div>
           </div>
           <div className='QuestionDesCol'>
-            <div onClick={() => handleQuestionClickEvent(question.questionID)} ><Link to={"./question-answer"}><h3>{question.questionTitle}</h3></Link></div>
+            {/* <div onClick={() => handleQuestionClickEvent(question.questionID)} ><Link to={"./question-answer"}><h3>{question.questionTitle}</h3></Link></div> */}
+            <div onClick={() => handleQuestionClickEvent(question.questionID)} ><h3>{question.questionTitle}</h3></div>
             <div>{question.tags.map(tag => (
                         <tags key={tag}>{tag}</tags>
                     ))}

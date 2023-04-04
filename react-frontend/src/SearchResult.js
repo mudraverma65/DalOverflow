@@ -1,25 +1,36 @@
-import {Link} from "react-router-dom";
+import {Link} from 'react-router-dom';
+import QuestionList from './QuestionList';
+import React, { useState, useEffect } from 'react';
+import UserLoggedIn from './UserLoggedIn';
+import {useContext} from 'react';
+import { useLocation } from 'react-router-dom';
 
-function SearchResult(props){
-    return(
+
+function DisplayQuestionList(props) {
+    console.log('QuestionList props:', props);
+    return (
+        <ul>
+            {props.questions.map(question => (
+                <li key={question.questionId}>
+                    <QuestionList question={question}/>
+                </li>
+            ))}
+        </ul>
+    );
+}
+
+
+function SearchResult() {
+    const location = useLocation();
+    const results = location.state.results;
+    return (
         <div className='jsBeginnerWantToInsertTeParent'>
-            <div className='Questions'>
-                <div className='QuestionListCol'>
-                    <div className='QuestionInfoList'>
-                        <div><strong><span>0</span></strong><span> </span>Votes</div>
-                        <div><strong><span>{question.answerCount}</span></strong><span> </span>Answers</div>
-                    </div>
-                </div>
-                <div className='QuestionDesCol'>
-                    <div onClick={() => handleQuestionClickEvent(question.questionID)} ><Link to={"./question-answer"}><h3>{question.questionTitle}</h3></Link></div>
-                    <div>{question.tags.map(tag => (
-                        <tags key={tag}>{tag}</tags>
-                    ))}
-                    </div>
-                    <div className='QuestionStats'>Asked by {question.userName} at {question.questionDate}</div>
-                </div>
+            <div className="TopRow">
+                <h2>Search Results</h2>
             </div>
-        </div>
+            <DisplayQuestionList questions={results} />
+        </div> 
+        
     );
 }
 
