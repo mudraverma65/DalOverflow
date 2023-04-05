@@ -1,68 +1,10 @@
-import styled from "styled-components";
 import axios from "axios";
-import { Component, useContext } from "react";
+import { Component } from "react";
 import './styles.css';
-import { Navigate } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import UserLoggedIn from "./UserLoggedIn";
-
-const Container = styled.h1`
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    margin-left: 10px;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    margin-left: 10px;
-`;
-
-const UsernameInput = styled.input`
-  background: none;
-  padding: 7px;
-  width: 70%;
-  color: #fff;
-  border: 2px solid #aaa;
-  display: block;
-  box-sizing: border-box;
-  margin-left: 10px;
-`;
-
-const PasswordInput = styled.input`
-  background: none;
-  padding: 7px;
-  width: 70%;
-  color: #fff;
-  border: 2px solid #aaa;
-  display: block;
-  box-sizing: border-box;
-  margin-left: 10px;
-`;
-
-const SubmitButton = styled.button`
-  font-size: 1.1rem;
-  color: #fff;
-  border: 0;
-  background-color: #378ad3;
-  border-radius: 5px;
-  text-decoration: none;
-  margin-top: 10px;
-  margin-left: 10px;
-  background: none;
-  padding: 7px;
-  width: 70%;
-  color: #aaa;
-  border: 2px solid #aaa;
-  display: block;
-  box-sizing: border-box;
-  margin-top:30px;
-  margin-left: 10px;
-`;
-
-const Fieldlabel = styled.label`
-    padding: 10px;
-`;
-
-
+import TextField from '@mui/material/TextField';
+import Box from '@mui/material/Box';
 
 class LoginPage extends Component {
   constructor(props) {
@@ -76,7 +18,7 @@ class LoginPage extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
   handleChange(event) {
-    this.setState({ [event.target.name]: event.target.value });
+    this.setState({ [event.target.id]: event.target.value });
   }
   handleSubmit(event) {
     event.preventDefault();
@@ -96,67 +38,81 @@ class LoginPage extends Component {
         username: this.state.userName,
         password: this.state.password,
       })
-        .then((response) => {
+      .then((response) => {
         localStorage.setItem("userId", response.data.userId);
         window.location.href = '/';
         this.context.checkUser();
         this.setState({ redirectToHomePage: true });
       })
-        .catch((error) => {
+      .catch((error) => {
         if (error.response) {
-        console.log(error.response.data);
-        console.log(error.response.status);
-        console.log(error.response.headers);
+          console.log(error.response.data);
+          console.log(error.response.status);
+          console.log(error.response.headers);
         } else if (error.request) {
           console.log(error.request);
-          } else {
-            console.log("Error", error.message);
-                  }alert("Invalid username or password");
-                });
-              } else {
-                this.setState({ errors });
-              }
-            }
+        } else {
+          console.log("Error", error.message);
+        } alert("Invalid username or password");
+      });
+    } else {
+      this.setState({ errors });
+    }
+  }
+  render(){
+    const { userName, password, errors } = this.state;
+    return(<>
+    {this.state.redirectToHomePage && (<Navigate to = {'/'} /> )}
+    <div className="LoginRegistration">
+      <div className="Login"><br/><h2>Login</h2>
+        <Box
+          sx={{
+            width: '100%',
+            '& .MuiTextField-root': { m: 1, width: '90%', textAlign: 'center'},
+          }}
+        >
+          <TextField
+            id="userName"
+            label="username"
+            multiline
+            rows={1}
+            value={userName}
+            onChange={this.handleChange}
+          />
+        </Box>
+        {errors.name && <div className="error">{errors.name}</div>}
+        <br/>
+        <Box
+          sx={{
+            width: '100%',
+            '& .MuiTextField-root': { m: 1, width: '90%', textAlign: 'center'},
+          }}
+        >
+          <TextField
+            id="password"
+            label="password"
+            multiline
+            rows={1}
+            value={password}
+            onChange={this.handleChange}
+          />
+        </Box>
+        {errors.password && <div className="error">{errors.password}</div>}
+        <br/>
+        <div className="button1"onClick={this.handleSubmit}>Login</div>
+        <br/>
+        <div className="PromptRegister">
+          <body>Don't have an account?</body>
+          <div className="LinkText"><Link to="/registration">SignUp Instead</Link></div>
+        </div>
+        <br/><br/>
+      </div>
+    </div>
+    </>
+    );
+  }
+}
 
-            render(){
-              const { userName, password, errors } = this.state;
-              return(<>
-                        {this.state.redirectToHomePage && (<Navigate to = {'/'} /> )}
-                        <form onSubmit={this.handleSubmit}>
-                        <Container><h1>Log In</h1></Container>
-                        <br />
-                        <Fieldlabel htmlFor="name">Please enter your username:</Fieldlabel>
-                        <div>
-                            <UsernameInput
-                            placeholder="Username"
-                            type="text"
-                            id="userName"
-                            name="userName"
-                            value={userName}
-                            onChange={this.handleChange}
-                            />
-                            {errors.name && <div className="error">{errors.name}</div>}
-                        </div>
-                        <br />
-                        <Fieldlabel htmlFor="password">Please enter your password:</Fieldlabel>
-                        <div>
-                            <PasswordInput
-                            placeholder="Password"
-                            type="password"
-                            id="password"
-                            name="password"
-                            value={password}
-                            onChange={this.handleChange}
-                            />
-                            {errors.password && <div className="error">{errors.password}</div>}
-                        </div>
-                        <SubmitButton type="submit">Submit</SubmitButton>
-                        </form>
-                      </>
-                      );
-                    }
-                  }
-LoginPage.contextType = UserLoggedIn;              
+LoginPage.contextType = UserLoggedIn;  
 
 export default LoginPage;
-
