@@ -10,8 +10,7 @@ import {
   Link
 }from "react-router-dom";
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { useState, Component, useEffect } from 'react';
+import { useState,  useEffect } from 'react';
 import UserLoggedIn from './UserLoggedIn';
 import LoginPage from './LoginPage';
 import axios from 'axios';
@@ -58,9 +57,10 @@ function App() {
       <Styles />
       <Router>
         <UserLoggedIn.Provider value={{user, checkUser}}>
-          <Header />
+          <Header/>
           <Routes>
             <Route path="/ask" element = {<AskQuestion/>} />
+
             <Route path="/profile" element = {<UserProfile/>} />
             <Route path="/" element = {<QuestionsFrontPage/>} />
             <Route path="/question-answer" element = {<QuestionAnswer/>} />

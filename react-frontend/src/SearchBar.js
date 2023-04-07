@@ -44,6 +44,7 @@ function SearchBar(){
             >
             <TextField 
                 fullWidth label="Search..." id="fullWidth"
+                name='Search'
                 value = {SearchQuery} 
                 onChange = {(e) => 
                     setSearch(e.target.value)
