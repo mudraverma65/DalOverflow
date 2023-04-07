@@ -3931,3 +3931,662 @@
 07-04-2023 16:56:22.360 [http-nio-8080-exec-6] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Git
 07-04-2023 16:56:22.360 [http-nio-8080-exec-6] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
 07-04-2023 16:56:22.360 [http-nio-8080-exec-6] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Spring Boot
+07-04-2023 17:33:51.935 [http-nio-8080-exec-7] INFO  c.d.b.controllers.LoginController.loginUser - Calling Login Service
+07-04-2023 17:33:51.965 [http-nio-8080-exec-7] INFO  c.d.b.controllers.LoginController.loginUser - Request Object:LoginRequest{username='ritva', password='ritva123'}
+07-04-2023 17:33:52.167 [http-nio-8080-exec-4] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver.logException - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "null"]
+07-04-2023 17:33:52.186 [http-nio-8080-exec-3] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+07-04-2023 17:33:52.295 [http-nio-8080-exec-3] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1005
+07-04-2023 17:33:52.298 [http-nio-8080-exec-3] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Cloud
+07-04-2023 17:33:52.299 [http-nio-8080-exec-3] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1005
+07-04-2023 17:33:52.299 [http-nio-8080-exec-3] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Rest API
+07-04-2023 17:33:52.346 [http-nio-8080-exec-3] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 17:33:52.346 [http-nio-8080-exec-3] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Java
+07-04-2023 17:33:52.347 [http-nio-8080-exec-3] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 17:33:52.347 [http-nio-8080-exec-3] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Git
+07-04-2023 17:33:52.347 [http-nio-8080-exec-3] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 17:33:52.347 [http-nio-8080-exec-3] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Spring Boot
+07-04-2023 17:33:53.259 [http-nio-8080-exec-8] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+07-04-2023 17:33:53.322 [http-nio-8080-exec-8] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1005
+07-04-2023 17:33:53.323 [http-nio-8080-exec-8] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Cloud
+07-04-2023 17:33:53.323 [http-nio-8080-exec-8] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1005
+07-04-2023 17:33:53.323 [http-nio-8080-exec-8] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Rest API
+07-04-2023 17:33:53.345 [http-nio-8080-exec-8] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 17:33:53.345 [http-nio-8080-exec-8] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Java
+07-04-2023 17:33:53.346 [http-nio-8080-exec-8] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 17:33:53.350 [http-nio-8080-exec-8] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Git
+07-04-2023 17:33:53.351 [http-nio-8080-exec-8] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 17:33:53.351 [http-nio-8080-exec-8] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Spring Boot
+07-04-2023 17:33:53.412 [http-nio-8080-exec-5] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+07-04-2023 17:33:53.452 [http-nio-8080-exec-5] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1005
+07-04-2023 17:33:53.453 [http-nio-8080-exec-5] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Cloud
+07-04-2023 17:33:53.453 [http-nio-8080-exec-5] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1005
+07-04-2023 17:33:53.453 [http-nio-8080-exec-5] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Rest API
+07-04-2023 17:33:53.490 [http-nio-8080-exec-5] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 17:33:53.490 [http-nio-8080-exec-5] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Java
+07-04-2023 17:33:53.490 [http-nio-8080-exec-5] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 17:33:53.490 [http-nio-8080-exec-5] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Git
+07-04-2023 17:33:53.491 [http-nio-8080-exec-5] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 17:33:53.494 [http-nio-8080-exec-5] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Spring Boot
+07-04-2023 17:47:24.257 [http-nio-8080-exec-8] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+07-04-2023 17:47:24.299 [http-nio-8080-exec-9] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver.logException - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "null"]
+07-04-2023 17:47:24.336 [http-nio-8080-exec-10] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver.logException - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "null"]
+07-04-2023 17:47:24.340 [http-nio-8080-exec-8] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1005
+07-04-2023 17:47:24.341 [http-nio-8080-exec-8] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Cloud
+07-04-2023 17:47:24.342 [http-nio-8080-exec-8] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1005
+07-04-2023 17:47:24.342 [http-nio-8080-exec-8] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Rest API
+07-04-2023 17:47:24.358 [http-nio-8080-exec-8] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 17:47:24.358 [http-nio-8080-exec-8] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Java
+07-04-2023 17:47:24.358 [http-nio-8080-exec-8] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 17:47:24.358 [http-nio-8080-exec-8] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Git
+07-04-2023 17:47:24.358 [http-nio-8080-exec-8] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 17:47:24.358 [http-nio-8080-exec-8] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Spring Boot
+07-04-2023 17:47:24.399 [http-nio-8080-exec-6] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+07-04-2023 17:47:24.447 [http-nio-8080-exec-6] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1005
+07-04-2023 17:47:24.448 [http-nio-8080-exec-6] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Cloud
+07-04-2023 17:47:24.450 [http-nio-8080-exec-6] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1005
+07-04-2023 17:47:24.451 [http-nio-8080-exec-6] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Rest API
+07-04-2023 17:47:24.469 [http-nio-8080-exec-6] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 17:47:24.470 [http-nio-8080-exec-6] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Java
+07-04-2023 17:47:24.470 [http-nio-8080-exec-6] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 17:47:24.471 [http-nio-8080-exec-6] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Git
+07-04-2023 17:47:24.471 [http-nio-8080-exec-6] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 17:47:24.471 [http-nio-8080-exec-6] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Spring Boot
+07-04-2023 17:47:32.389 [http-nio-8080-exec-4] INFO  c.d.b.controllers.LoginController.loginUser - Calling Login Service
+07-04-2023 17:47:32.389 [http-nio-8080-exec-4] INFO  c.d.b.controllers.LoginController.loginUser - Request Object:LoginRequest{username='ritva', password='ritva123'}
+07-04-2023 17:47:32.431 [http-nio-8080-exec-5] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver.logException - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "null"]
+07-04-2023 17:47:32.462 [http-nio-8080-exec-3] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+07-04-2023 17:47:32.507 [http-nio-8080-exec-3] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1005
+07-04-2023 17:47:32.508 [http-nio-8080-exec-3] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Cloud
+07-04-2023 17:47:32.508 [http-nio-8080-exec-3] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1005
+07-04-2023 17:47:32.508 [http-nio-8080-exec-3] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Rest API
+07-04-2023 17:47:32.528 [http-nio-8080-exec-3] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 17:47:32.529 [http-nio-8080-exec-3] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Java
+07-04-2023 17:47:32.529 [http-nio-8080-exec-3] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 17:47:32.529 [http-nio-8080-exec-3] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Git
+07-04-2023 17:47:32.529 [http-nio-8080-exec-3] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 17:47:32.529 [http-nio-8080-exec-3] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Spring Boot
+07-04-2023 17:47:32.591 [http-nio-8080-exec-1] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+07-04-2023 17:47:32.629 [http-nio-8080-exec-1] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1005
+07-04-2023 17:47:32.630 [http-nio-8080-exec-1] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Cloud
+07-04-2023 17:47:32.630 [http-nio-8080-exec-1] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1005
+07-04-2023 17:47:32.630 [http-nio-8080-exec-1] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Rest API
+07-04-2023 17:47:32.648 [http-nio-8080-exec-1] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 17:47:32.649 [http-nio-8080-exec-1] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Java
+07-04-2023 17:47:32.649 [http-nio-8080-exec-1] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 17:47:32.649 [http-nio-8080-exec-1] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Git
+07-04-2023 17:47:32.649 [http-nio-8080-exec-1] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 17:47:32.649 [http-nio-8080-exec-1] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Spring Boot
+07-04-2023 17:47:33.475 [http-nio-8080-exec-2] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+07-04-2023 17:47:33.521 [http-nio-8080-exec-2] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1005
+07-04-2023 17:47:33.522 [http-nio-8080-exec-2] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Cloud
+07-04-2023 17:47:33.522 [http-nio-8080-exec-2] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1005
+07-04-2023 17:47:33.522 [http-nio-8080-exec-2] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Rest API
+07-04-2023 17:47:33.545 [http-nio-8080-exec-2] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 17:47:33.545 [http-nio-8080-exec-2] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Java
+07-04-2023 17:47:33.545 [http-nio-8080-exec-2] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 17:47:33.546 [http-nio-8080-exec-2] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Git
+07-04-2023 17:47:33.546 [http-nio-8080-exec-2] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 17:47:33.546 [http-nio-8080-exec-2] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Spring Boot
+07-04-2023 17:47:33.622 [http-nio-8080-exec-7] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+07-04-2023 17:47:33.697 [http-nio-8080-exec-7] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1005
+07-04-2023 17:47:33.698 [http-nio-8080-exec-7] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Cloud
+07-04-2023 17:47:33.698 [http-nio-8080-exec-7] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1005
+07-04-2023 17:47:33.698 [http-nio-8080-exec-7] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Rest API
+07-04-2023 17:47:33.715 [http-nio-8080-exec-7] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 17:47:33.716 [http-nio-8080-exec-7] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Java
+07-04-2023 17:47:33.717 [http-nio-8080-exec-7] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 17:47:33.718 [http-nio-8080-exec-7] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Git
+07-04-2023 17:47:33.718 [http-nio-8080-exec-7] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 17:47:33.718 [http-nio-8080-exec-7] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Spring Boot
+07-04-2023 18:15:13.844 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool.run - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=23m50s571ms393µs100ns).
+07-04-2023 18:29:51.499 [http-nio-8080-exec-10] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+07-04-2023 18:29:51.576 [http-nio-8080-exec-10] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1005
+07-04-2023 18:29:51.577 [http-nio-8080-exec-10] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Cloud
+07-04-2023 18:29:51.577 [http-nio-8080-exec-10] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1005
+07-04-2023 18:29:51.577 [http-nio-8080-exec-10] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Rest API
+07-04-2023 18:29:51.598 [http-nio-8080-exec-10] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 18:29:51.599 [http-nio-8080-exec-10] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Java
+07-04-2023 18:29:51.599 [http-nio-8080-exec-10] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 18:29:51.599 [http-nio-8080-exec-10] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Git
+07-04-2023 18:29:51.599 [http-nio-8080-exec-10] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 18:29:51.599 [http-nio-8080-exec-10] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Spring Boot
+07-04-2023 18:29:51.659 [http-nio-8080-exec-8] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+07-04-2023 18:29:51.702 [http-nio-8080-exec-8] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1005
+07-04-2023 18:29:51.702 [http-nio-8080-exec-8] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Cloud
+07-04-2023 18:29:51.702 [http-nio-8080-exec-8] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1005
+07-04-2023 18:29:51.702 [http-nio-8080-exec-8] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Rest API
+07-04-2023 18:29:51.724 [http-nio-8080-exec-8] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 18:29:51.725 [http-nio-8080-exec-8] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Java
+07-04-2023 18:29:51.725 [http-nio-8080-exec-8] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 18:29:51.725 [http-nio-8080-exec-8] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Git
+07-04-2023 18:29:51.725 [http-nio-8080-exec-8] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 18:29:51.725 [http-nio-8080-exec-8] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Spring Boot
+07-04-2023 18:29:54.459 [http-nio-8080-exec-6] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Answer Service
+07-04-2023 18:29:54.460 [http-nio-8080-exec-6] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Request Object:1005
+07-04-2023 18:29:54.600 [http-nio-8080-exec-6] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Question Service:
+07-04-2023 18:29:54.669 [http-nio-8080-exec-6] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Question id :1005
+07-04-2023 18:29:54.670 [http-nio-8080-exec-6] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Found tag :Cloud
+07-04-2023 18:29:54.670 [http-nio-8080-exec-6] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Question id :1005
+07-04-2023 18:29:54.670 [http-nio-8080-exec-6] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Found tag :Rest API
+07-04-2023 18:29:54.675 [http-nio-8080-exec-4] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Answer Service
+07-04-2023 18:29:54.675 [http-nio-8080-exec-4] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Request Object:1005
+07-04-2023 18:29:54.890 [http-nio-8080-exec-4] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Question Service:
+07-04-2023 18:29:54.924 [http-nio-8080-exec-4] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Question id :1005
+07-04-2023 18:29:54.924 [http-nio-8080-exec-4] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Found tag :Cloud
+07-04-2023 18:29:54.924 [http-nio-8080-exec-4] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Question id :1005
+07-04-2023 18:29:54.924 [http-nio-8080-exec-4] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Found tag :Rest API
+07-04-2023 18:37:06.701 [http-nio-8080-exec-1] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+07-04-2023 18:37:06.917 [http-nio-8080-exec-1] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1005
+07-04-2023 18:37:06.918 [http-nio-8080-exec-1] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Cloud
+07-04-2023 18:37:06.918 [http-nio-8080-exec-1] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1005
+07-04-2023 18:37:06.918 [http-nio-8080-exec-1] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Rest API
+07-04-2023 18:37:06.948 [http-nio-8080-exec-1] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 18:37:06.948 [http-nio-8080-exec-1] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Java
+07-04-2023 18:37:06.948 [http-nio-8080-exec-1] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 18:37:06.948 [http-nio-8080-exec-1] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Git
+07-04-2023 18:37:06.948 [http-nio-8080-exec-1] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 18:37:06.948 [http-nio-8080-exec-1] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Spring Boot
+07-04-2023 18:37:07.024 [http-nio-8080-exec-8] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+07-04-2023 18:37:07.089 [http-nio-8080-exec-8] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1005
+07-04-2023 18:37:07.090 [http-nio-8080-exec-8] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Cloud
+07-04-2023 18:37:07.090 [http-nio-8080-exec-8] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1005
+07-04-2023 18:37:07.090 [http-nio-8080-exec-8] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Rest API
+07-04-2023 18:37:07.143 [http-nio-8080-exec-8] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 18:37:07.143 [http-nio-8080-exec-8] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Java
+07-04-2023 18:37:07.143 [http-nio-8080-exec-8] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 18:37:07.143 [http-nio-8080-exec-8] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Git
+07-04-2023 18:37:07.143 [http-nio-8080-exec-8] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 18:37:07.144 [http-nio-8080-exec-8] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Spring Boot
+07-04-2023 18:47:21.628 [http-nio-8080-exec-6] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+07-04-2023 18:47:21.828 [http-nio-8080-exec-6] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1005
+07-04-2023 18:47:21.834 [http-nio-8080-exec-6] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Cloud
+07-04-2023 18:47:21.834 [http-nio-8080-exec-6] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1005
+07-04-2023 18:47:21.834 [http-nio-8080-exec-6] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Rest API
+07-04-2023 18:47:21.858 [http-nio-8080-exec-6] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 18:47:21.859 [http-nio-8080-exec-6] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Java
+07-04-2023 18:47:21.859 [http-nio-8080-exec-6] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 18:47:21.859 [http-nio-8080-exec-6] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Git
+07-04-2023 18:47:21.859 [http-nio-8080-exec-6] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 18:47:21.859 [http-nio-8080-exec-6] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Spring Boot
+07-04-2023 18:47:21.920 [http-nio-8080-exec-7] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+07-04-2023 18:47:21.948 [http-nio-8080-exec-7] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1005
+07-04-2023 18:47:21.953 [http-nio-8080-exec-7] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Cloud
+07-04-2023 18:47:21.954 [http-nio-8080-exec-7] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1005
+07-04-2023 18:47:21.954 [http-nio-8080-exec-7] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Rest API
+07-04-2023 18:47:21.977 [http-nio-8080-exec-7] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 18:47:21.978 [http-nio-8080-exec-7] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Java
+07-04-2023 18:47:21.978 [http-nio-8080-exec-7] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 18:47:21.978 [http-nio-8080-exec-7] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Git
+07-04-2023 18:47:21.978 [http-nio-8080-exec-7] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 18:47:21.978 [http-nio-8080-exec-7] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Spring Boot
+07-04-2023 19:11:03.098 [http-nio-8080-exec-5] WARN  com.zaxxer.hikari.pool.PoolBase.isConnectionDead - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@d989d32 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+07-04-2023 19:11:08.124 [http-nio-8080-exec-5] WARN  com.zaxxer.hikari.pool.PoolBase.isConnectionDead - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3c18ec74 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+07-04-2023 19:11:13.135 [http-nio-8080-exec-5] WARN  com.zaxxer.hikari.pool.PoolBase.isConnectionDead - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@775edb50 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+07-04-2023 19:11:18.167 [http-nio-8080-exec-5] WARN  com.zaxxer.hikari.pool.PoolBase.isConnectionDead - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@51170258 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+07-04-2023 19:11:23.173 [http-nio-8080-exec-5] WARN  com.zaxxer.hikari.pool.PoolBase.isConnectionDead - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5b7a07a5 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+07-04-2023 19:11:28.188 [http-nio-8080-exec-5] WARN  com.zaxxer.hikari.pool.PoolBase.isConnectionDead - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2193645d (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+07-04-2023 19:11:28.328 [http-nio-8080-exec-5] WARN  o.h.e.jdbc.spi.SqlExceptionHelper.logExceptions - SQL Error: 0, SQLState: 08003
+07-04-2023 19:11:28.329 [http-nio-8080-exec-5] ERROR o.h.e.jdbc.spi.SqlExceptionHelper.logExceptions - HikariPool-1 - Connection is not available, request timed out after 30209ms.
+07-04-2023 19:11:28.331 [http-nio-8080-exec-5] ERROR o.h.e.jdbc.spi.SqlExceptionHelper.logExceptions - No operations allowed after connection closed.
+07-04-2023 19:11:28.469 [http-nio-8080-exec-5] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet].log - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.transaction.CannotCreateTransactionException: Could not open JPA EntityManager for transaction] with root cause
+com.mysql.cj.exceptions.ConnectionIsClosedException: No operations allowed after connection closed.
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.NativeSession.checkClosed(NativeSession.java:761)
+	at com.mysql.cj.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:564)
+	at com.mysql.cj.jdbc.ConnectionImpl.setNetworkTimeout(ConnectionImpl.java:2479)
+	at com.zaxxer.hikari.pool.PoolBase.setNetworkTimeout(PoolBase.java:561)
+	at com.zaxxer.hikari.pool.PoolBase.isConnectionDead(PoolBase.java:168)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:170)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:146)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:128)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.internal.NonContextualJdbcConnectionAccess.obtainConnection(NonContextualJdbcConnectionAccess.java:38)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.acquireConnectionIfNeeded(LogicalConnectionManagedImpl.java:107)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.getPhysicalConnection(LogicalConnectionManagedImpl.java:137)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.beginTransaction(HibernateJpaDialect.java:152)
+	at org.springframework.orm.jpa.JpaTransactionManager.doBegin(JpaTransactionManager.java:421)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.startTransaction(AbstractPlatformTransactionManager.java:400)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:373)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.createTransactionIfNecessary(TransactionAspectSupport.java:595)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:382)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:163)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:218)
+	at jdk.proxy4/jdk.proxy4.$Proxy124.findById(Unknown Source)
+	at com.dalstackoverflow.backendserver.services.LoginService.getUsername(LoginService.java:52)
+	at com.dalstackoverflow.backendserver.controllers.LoginController.getUsername(LoginController.java:69)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:705)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+07-04-2023 19:11:33.550 [http-nio-8080-exec-3] WARN  com.zaxxer.hikari.pool.PoolBase.isConnectionDead - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@69c1d322 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+07-04-2023 19:11:38.559 [http-nio-8080-exec-3] WARN  com.zaxxer.hikari.pool.PoolBase.isConnectionDead - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@773db5bb (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+07-04-2023 19:11:43.568 [http-nio-8080-exec-3] WARN  com.zaxxer.hikari.pool.PoolBase.isConnectionDead - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5c3880c5 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+07-04-2023 19:11:48.580 [http-nio-8080-exec-3] WARN  com.zaxxer.hikari.pool.PoolBase.isConnectionDead - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@ee2e33f (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+07-04-2023 19:12:22.794 [http-nio-8080-exec-6] WARN  c.zaxxer.hikari.pool.ProxyConnection.checkException - HikariPool-1 - Connection com.mysql.cj.jdbc.ConnectionImpl@79002bd3 marked as broken because of SQLSTATE(08S01), ErrorCode(0)
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 222 milliseconds ago. The last packet sent successfully to the server was 252 milliseconds ago.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:2048)
+	at com.zaxxer.hikari.pool.ProxyConnection.setAutoCommit(ProxyConnection.java:401)
+	at com.zaxxer.hikari.pool.HikariProxyConnection.setAutoCommit(HikariProxyConnection.java)
+	at org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor.begin(AbstractLogicalConnectionImplementor.java:72)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.begin(LogicalConnectionManagedImpl.java:276)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.begin(JdbcResourceLocalTransactionCoordinatorImpl.java:246)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.begin(TransactionImpl.java:83)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.beginTransaction(HibernateJpaDialect.java:164)
+	at org.springframework.orm.jpa.JpaTransactionManager.doBegin(JpaTransactionManager.java:421)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.startTransaction(AbstractPlatformTransactionManager.java:400)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:373)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.createTransactionIfNecessary(TransactionAspectSupport.java:595)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:382)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:163)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:218)
+	at jdk.proxy4/jdk.proxy4.$Proxy124.findById(Unknown Source)
+	at com.dalstackoverflow.backendserver.services.LoginService.getUsername(LoginService.java:52)
+	at com.dalstackoverflow.backendserver.controllers.LoginController.getUsername(LoginController.java:69)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:705)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 222 milliseconds ago. The last packet sent successfully to the server was 252 milliseconds ago.
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:581)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:761)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:700)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:1051)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryString(NativeProtocol.java:997)
+	at com.mysql.cj.NativeSession.execSQL(NativeSession.java:663)
+	at com.mysql.cj.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:2031)
+	... 72 common frames omitted
+Caused by: java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:313)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:340)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:789)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1025)
+	at com.mysql.cj.protocol.ReadAheadInputStream.fill(ReadAheadInputStream.java:107)
+	at com.mysql.cj.protocol.ReadAheadInputStream.readFromUnderlyingStreamIfNecessary(ReadAheadInputStream.java:150)
+	at com.mysql.cj.protocol.ReadAheadInputStream.read(ReadAheadInputStream.java:180)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:119)
+	at com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:64)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeaderLocal(SimplePacketReader.java:81)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:63)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:45)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:52)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:41)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:54)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:44)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:575)
+	... 78 common frames omitted
+07-04-2023 19:12:22.808 [http-nio-8080-exec-6] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet].log - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.transaction.CannotCreateTransactionException: Could not open JPA EntityManager for transaction] with root cause
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:313)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:340)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:789)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1025)
+	at com.mysql.cj.protocol.ReadAheadInputStream.fill(ReadAheadInputStream.java:107)
+	at com.mysql.cj.protocol.ReadAheadInputStream.readFromUnderlyingStreamIfNecessary(ReadAheadInputStream.java:150)
+	at com.mysql.cj.protocol.ReadAheadInputStream.read(ReadAheadInputStream.java:180)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:119)
+	at com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:64)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeaderLocal(SimplePacketReader.java:81)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:63)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:45)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:52)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:41)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:54)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:44)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:575)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:761)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:700)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:1051)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryString(NativeProtocol.java:997)
+	at com.mysql.cj.NativeSession.execSQL(NativeSession.java:663)
+	at com.mysql.cj.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:2031)
+	at com.zaxxer.hikari.pool.ProxyConnection.setAutoCommit(ProxyConnection.java:401)
+	at com.zaxxer.hikari.pool.HikariProxyConnection.setAutoCommit(HikariProxyConnection.java)
+	at org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor.begin(AbstractLogicalConnectionImplementor.java:72)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.begin(LogicalConnectionManagedImpl.java:276)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.begin(JdbcResourceLocalTransactionCoordinatorImpl.java:246)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.begin(TransactionImpl.java:83)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.beginTransaction(HibernateJpaDialect.java:164)
+	at org.springframework.orm.jpa.JpaTransactionManager.doBegin(JpaTransactionManager.java:421)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.startTransaction(AbstractPlatformTransactionManager.java:400)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:373)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.createTransactionIfNecessary(TransactionAspectSupport.java:595)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:382)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:163)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:218)
+	at jdk.proxy4/jdk.proxy4.$Proxy124.findById(Unknown Source)
+	at com.dalstackoverflow.backendserver.services.LoginService.getUsername(LoginService.java:52)
+	at com.dalstackoverflow.backendserver.controllers.LoginController.getUsername(LoginController.java:69)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:705)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+07-04-2023 19:12:24.830 [http-nio-8080-exec-9] WARN  com.zaxxer.hikari.pool.PoolBase.isConnectionDead - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@167eddb (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+07-04-2023 19:12:24.831 [http-nio-8080-exec-9] WARN  com.zaxxer.hikari.pool.PoolBase.isConnectionDead - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@52b6dd1e (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+07-04-2023 19:12:24.832 [http-nio-8080-exec-9] WARN  com.zaxxer.hikari.pool.PoolBase.isConnectionDead - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2d04c20b (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+07-04-2023 19:12:24.832 [http-nio-8080-exec-9] WARN  com.zaxxer.hikari.pool.PoolBase.isConnectionDead - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3e55a29a (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+07-04-2023 19:12:24.833 [http-nio-8080-exec-9] WARN  com.zaxxer.hikari.pool.PoolBase.isConnectionDead - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6289be (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+07-04-2023 19:12:24.834 [http-nio-8080-exec-9] WARN  com.zaxxer.hikari.pool.PoolBase.isConnectionDead - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@64d8ea81 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+07-04-2023 19:12:24.835 [http-nio-8080-exec-9] WARN  com.zaxxer.hikari.pool.PoolBase.isConnectionDead - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6fc7688b (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+07-04-2023 19:12:24.836 [http-nio-8080-exec-9] WARN  com.zaxxer.hikari.pool.PoolBase.isConnectionDead - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7c95569b (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+07-04-2023 19:12:24.837 [http-nio-8080-exec-9] WARN  com.zaxxer.hikari.pool.PoolBase.isConnectionDead - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@682e0fce (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+07-04-2023 19:16:50.005 [http-nio-8080-exec-2] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Answer Service
+07-04-2023 19:16:50.006 [http-nio-8080-exec-2] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Request Object:1005
+07-04-2023 19:16:50.240 [http-nio-8080-exec-2] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Question Service:
+07-04-2023 19:16:50.264 [http-nio-8080-exec-2] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Question id :1005
+07-04-2023 19:16:50.264 [http-nio-8080-exec-2] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Found tag :Cloud
+07-04-2023 19:16:50.264 [http-nio-8080-exec-2] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Question id :1005
+07-04-2023 19:16:50.264 [http-nio-8080-exec-2] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Found tag :Rest API
+07-04-2023 19:16:50.269 [http-nio-8080-exec-6] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Answer Service
+07-04-2023 19:16:50.269 [http-nio-8080-exec-6] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Request Object:1005
+07-04-2023 19:16:50.355 [http-nio-8080-exec-6] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Question Service:
+07-04-2023 19:16:50.380 [http-nio-8080-exec-6] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Question id :1005
+07-04-2023 19:16:50.380 [http-nio-8080-exec-6] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Found tag :Cloud
+07-04-2023 19:16:50.381 [http-nio-8080-exec-6] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Question id :1005
+07-04-2023 19:16:50.381 [http-nio-8080-exec-6] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Found tag :Rest API
+07-04-2023 19:29:28.963 [http-nio-8080-exec-7] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+07-04-2023 19:29:29.460 [http-nio-8080-exec-7] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1005
+07-04-2023 19:29:29.469 [http-nio-8080-exec-7] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Cloud
+07-04-2023 19:29:29.470 [http-nio-8080-exec-7] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1005
+07-04-2023 19:29:29.472 [http-nio-8080-exec-7] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Rest API
+07-04-2023 19:29:29.497 [http-nio-8080-exec-7] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 19:29:29.498 [http-nio-8080-exec-7] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Java
+07-04-2023 19:29:29.498 [http-nio-8080-exec-7] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 19:29:29.498 [http-nio-8080-exec-7] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Git
+07-04-2023 19:29:29.498 [http-nio-8080-exec-7] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 19:29:29.498 [http-nio-8080-exec-7] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Spring Boot
+07-04-2023 19:29:29.592 [http-nio-8080-exec-9] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+07-04-2023 19:29:29.620 [http-nio-8080-exec-9] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1005
+07-04-2023 19:29:29.620 [http-nio-8080-exec-9] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Cloud
+07-04-2023 19:29:29.620 [http-nio-8080-exec-9] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1005
+07-04-2023 19:29:29.621 [http-nio-8080-exec-9] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Rest API
+07-04-2023 19:29:29.641 [http-nio-8080-exec-9] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 19:29:29.641 [http-nio-8080-exec-9] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Java
+07-04-2023 19:29:29.642 [http-nio-8080-exec-9] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 19:29:29.643 [http-nio-8080-exec-9] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Git
+07-04-2023 19:29:29.643 [http-nio-8080-exec-9] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 19:29:29.643 [http-nio-8080-exec-9] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Spring Boot
+07-04-2023 19:29:36.519 [http-nio-8080-exec-2] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+07-04-2023 19:29:36.569 [http-nio-8080-exec-2] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1005
+07-04-2023 19:29:36.569 [http-nio-8080-exec-2] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Cloud
+07-04-2023 19:29:36.570 [http-nio-8080-exec-2] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1005
+07-04-2023 19:29:36.570 [http-nio-8080-exec-2] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Rest API
+07-04-2023 19:29:36.593 [http-nio-8080-exec-2] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 19:29:36.595 [http-nio-8080-exec-2] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Java
+07-04-2023 19:29:36.595 [http-nio-8080-exec-2] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 19:29:36.595 [http-nio-8080-exec-2] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Git
+07-04-2023 19:29:36.595 [http-nio-8080-exec-2] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 19:29:36.596 [http-nio-8080-exec-2] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Spring Boot
+07-04-2023 19:29:36.648 [http-nio-8080-exec-9] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+07-04-2023 19:29:36.701 [http-nio-8080-exec-9] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1005
+07-04-2023 19:29:36.701 [http-nio-8080-exec-9] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Cloud
+07-04-2023 19:29:36.701 [http-nio-8080-exec-9] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1005
+07-04-2023 19:29:36.701 [http-nio-8080-exec-9] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Rest API
+07-04-2023 19:29:36.721 [http-nio-8080-exec-9] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 19:29:36.721 [http-nio-8080-exec-9] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Java
+07-04-2023 19:29:36.721 [http-nio-8080-exec-9] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 19:29:36.722 [http-nio-8080-exec-9] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Git
+07-04-2023 19:29:36.722 [http-nio-8080-exec-9] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 19:29:36.722 [http-nio-8080-exec-9] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Spring Boot
+07-04-2023 19:29:38.198 [http-nio-8080-exec-8] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Answer Service
+07-04-2023 19:29:38.355 [http-nio-8080-exec-8] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Request Object:1005
+07-04-2023 19:29:39.417 [http-nio-8080-exec-8] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Question Service:
+07-04-2023 19:29:39.527 [http-nio-8080-exec-8] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Question id :1005
+07-04-2023 19:29:39.527 [http-nio-8080-exec-8] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Found tag :Cloud
+07-04-2023 19:29:39.527 [http-nio-8080-exec-8] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Question id :1005
+07-04-2023 19:29:39.527 [http-nio-8080-exec-8] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Found tag :Rest API
+07-04-2023 19:29:39.540 [http-nio-8080-exec-7] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Answer Service
+07-04-2023 19:29:39.540 [http-nio-8080-exec-7] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Request Object:1005
+07-04-2023 19:29:39.692 [http-nio-8080-exec-7] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Question Service:
+07-04-2023 19:29:39.723 [http-nio-8080-exec-7] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Question id :1005
+07-04-2023 19:29:39.723 [http-nio-8080-exec-7] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Found tag :Cloud
+07-04-2023 19:29:39.724 [http-nio-8080-exec-7] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Question id :1005
+07-04-2023 19:29:39.724 [http-nio-8080-exec-7] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Found tag :Rest API
+07-04-2023 19:29:50.405 [http-nio-8080-exec-6] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+07-04-2023 19:29:50.443 [http-nio-8080-exec-6] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1005
+07-04-2023 19:29:50.443 [http-nio-8080-exec-6] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Cloud
+07-04-2023 19:29:50.444 [http-nio-8080-exec-6] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1005
+07-04-2023 19:29:50.444 [http-nio-8080-exec-6] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Rest API
+07-04-2023 19:29:50.470 [http-nio-8080-exec-6] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 19:29:50.471 [http-nio-8080-exec-6] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Java
+07-04-2023 19:29:50.471 [http-nio-8080-exec-6] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 19:29:50.471 [http-nio-8080-exec-6] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Git
+07-04-2023 19:29:50.471 [http-nio-8080-exec-6] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 19:29:50.471 [http-nio-8080-exec-6] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Spring Boot
+07-04-2023 19:29:50.533 [http-nio-8080-exec-5] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+07-04-2023 19:29:50.566 [http-nio-8080-exec-5] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1005
+07-04-2023 19:29:50.567 [http-nio-8080-exec-5] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Cloud
+07-04-2023 19:29:50.567 [http-nio-8080-exec-5] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1005
+07-04-2023 19:29:50.567 [http-nio-8080-exec-5] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Rest API
+07-04-2023 19:29:50.591 [http-nio-8080-exec-5] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 19:29:50.591 [http-nio-8080-exec-5] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Java
+07-04-2023 19:29:50.592 [http-nio-8080-exec-5] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 19:29:50.592 [http-nio-8080-exec-5] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Git
+07-04-2023 19:29:50.592 [http-nio-8080-exec-5] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 19:29:50.592 [http-nio-8080-exec-5] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Spring Boot
+07-04-2023 19:29:50.915 [http-nio-8080-exec-9] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Answer Service
+07-04-2023 19:29:50.915 [http-nio-8080-exec-9] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Request Object:1005
+07-04-2023 19:29:51.008 [http-nio-8080-exec-9] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Question Service:
+07-04-2023 19:29:51.033 [http-nio-8080-exec-9] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Question id :1005
+07-04-2023 19:29:51.034 [http-nio-8080-exec-9] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Found tag :Cloud
+07-04-2023 19:29:51.034 [http-nio-8080-exec-9] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Question id :1005
+07-04-2023 19:29:51.034 [http-nio-8080-exec-9] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Found tag :Rest API
+07-04-2023 19:29:51.040 [http-nio-8080-exec-3] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Answer Service
+07-04-2023 19:29:51.040 [http-nio-8080-exec-3] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Request Object:1005
+07-04-2023 19:29:51.138 [http-nio-8080-exec-3] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Question Service:
+07-04-2023 19:29:51.169 [http-nio-8080-exec-3] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Question id :1005
+07-04-2023 19:29:51.170 [http-nio-8080-exec-3] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Found tag :Cloud
+07-04-2023 19:29:51.170 [http-nio-8080-exec-3] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Question id :1005
+07-04-2023 19:29:51.170 [http-nio-8080-exec-3] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Found tag :Rest API
+07-04-2023 19:34:32.813 [http-nio-8080-exec-4] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Answer Service
+07-04-2023 19:34:32.814 [http-nio-8080-exec-4] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Request Object:1005
+07-04-2023 19:34:32.903 [http-nio-8080-exec-4] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Question Service:
+07-04-2023 19:34:32.931 [http-nio-8080-exec-4] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Question id :1005
+07-04-2023 19:34:32.931 [http-nio-8080-exec-4] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Found tag :Cloud
+07-04-2023 19:34:32.931 [http-nio-8080-exec-4] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Question id :1005
+07-04-2023 19:34:32.931 [http-nio-8080-exec-4] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Found tag :Rest API
+07-04-2023 19:34:32.936 [http-nio-8080-exec-10] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Answer Service
+07-04-2023 19:34:32.937 [http-nio-8080-exec-10] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Request Object:1005
+07-04-2023 19:34:33.020 [http-nio-8080-exec-10] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Question Service:
+07-04-2023 19:34:33.047 [http-nio-8080-exec-10] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Question id :1005
+07-04-2023 19:34:33.048 [http-nio-8080-exec-10] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Found tag :Cloud
+07-04-2023 19:34:33.048 [http-nio-8080-exec-10] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Question id :1005
+07-04-2023 19:34:33.048 [http-nio-8080-exec-10] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Found tag :Rest API
+07-04-2023 19:34:58.364 [http-nio-8080-exec-2] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Answer Service
+07-04-2023 19:34:58.365 [http-nio-8080-exec-2] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Request Object:1005
+07-04-2023 19:34:58.478 [http-nio-8080-exec-2] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Question Service:
+07-04-2023 19:34:58.504 [http-nio-8080-exec-2] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Question id :1005
+07-04-2023 19:34:58.505 [http-nio-8080-exec-2] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Found tag :Cloud
+07-04-2023 19:34:58.505 [http-nio-8080-exec-2] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Question id :1005
+07-04-2023 19:34:58.505 [http-nio-8080-exec-2] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Found tag :Rest API
+07-04-2023 19:34:58.508 [http-nio-8080-exec-3] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Answer Service
+07-04-2023 19:34:58.508 [http-nio-8080-exec-3] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Request Object:1005
+07-04-2023 19:34:58.615 [http-nio-8080-exec-3] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Question Service:
+07-04-2023 19:34:58.644 [http-nio-8080-exec-3] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Question id :1005
+07-04-2023 19:34:58.645 [http-nio-8080-exec-3] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Found tag :Cloud
+07-04-2023 19:34:58.645 [http-nio-8080-exec-3] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Question id :1005
+07-04-2023 19:34:58.645 [http-nio-8080-exec-3] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Found tag :Rest API
+07-04-2023 19:35:09.013 [http-nio-8080-exec-2] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Answer Service
+07-04-2023 19:35:09.014 [http-nio-8080-exec-2] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Request Object:1005
+07-04-2023 19:35:09.133 [http-nio-8080-exec-2] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Question Service:
+07-04-2023 19:35:09.158 [http-nio-8080-exec-2] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Question id :1005
+07-04-2023 19:35:09.159 [http-nio-8080-exec-2] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Found tag :Cloud
+07-04-2023 19:35:09.159 [http-nio-8080-exec-2] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Question id :1005
+07-04-2023 19:35:09.159 [http-nio-8080-exec-2] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Found tag :Rest API
+07-04-2023 19:35:09.163 [http-nio-8080-exec-4] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Answer Service
+07-04-2023 19:35:09.163 [http-nio-8080-exec-4] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Request Object:1005
+07-04-2023 19:35:09.278 [http-nio-8080-exec-4] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Question Service:
+07-04-2023 19:35:09.305 [http-nio-8080-exec-4] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Question id :1005
+07-04-2023 19:35:09.306 [http-nio-8080-exec-4] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Found tag :Cloud
+07-04-2023 19:35:09.306 [http-nio-8080-exec-4] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Question id :1005
+07-04-2023 19:35:09.306 [http-nio-8080-exec-4] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Found tag :Rest API
