@@ -257,10 +257,9 @@ p{
 }
 
 .LogoText{
-  font-family: 'Inter',Helvetica,Arial,Lucida,sans-serif!important;
-  font-size: 16px!important;
-  color: #333333!important;
-  font-weight: 800!important;
+  color:#444444;
+  font-size: 16px;
+  font-weight: 800;
   display: inline-block;
 }
 
@@ -599,6 +598,6 @@ a{
   font-size: 15px!important;
   color: #333333!important;
   font-weight: 500!important;
-  text-decoration: underline;
+  text-decoration: none!important;
   text-decoration-color: #333333;
 }
