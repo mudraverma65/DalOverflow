@@ -9,13 +9,21 @@ public class LoginResponse {
 
     private String userName;
 
-    public LoginResponse() {
+    public String getPassword() {
+        return password;
     }
 
-    public LoginResponse(String message, Integer userId, String userName) {
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    private String password;
+
+    public LoginResponse(String message, Integer userId, String userName,String password) {
         this.message = message;
         this.userId = userId;
         this.userName = userName;
+        this.password=password;
     }
 
     public String getMessage() {
@@ -47,7 +55,7 @@ public class LoginResponse {
         return "LoginResponse{" +
                 "message='" + message + '\'' +
                 ", userId=" + userId +
-                ", userName=" + userName +
+                ", userName=" + userName + ", password="+password +
                 '}';
     }
 }

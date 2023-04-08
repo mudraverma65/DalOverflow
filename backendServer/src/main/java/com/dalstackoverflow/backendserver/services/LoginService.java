@@ -4,7 +4,6 @@ import com.dalstackoverflow.backendserver.models.LoginRequest;
 import com.dalstackoverflow.backendserver.models.LoginResponse;
 import com.dalstackoverflow.backendserver.models.Registration;
 import com.dalstackoverflow.backendserver.repositories.LoginRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
@@ -15,11 +14,10 @@ import java.util.Optional;
  */
 @Service
 public class LoginService {
-    private final LoginRepository loginRepository;
+    public LoginRepository loginRepository;
 
     /**
      * This is a constructor of LoginService class
-     * @param loginRepository is an instance of LoginRepository
      */
     public LoginService(LoginRepository loginRepository) {
         this.loginRepository = loginRepository;
@@ -36,9 +34,10 @@ public class LoginService {
         if (user != null) {
             int userId = user.getUserId();
             String userName=user.getUserName();
-            return new LoginResponse("Login successful!", userId,userName);
+            String password=user.getPassword();
+            return new LoginResponse("Login successful!", userId,userName,password);
         } else {
-            return new LoginResponse("Invalid credentials. Please try again.", null,null);
+            return new LoginResponse("Invalid credentials. Please try again.", null,null,null);
         }
     }
 

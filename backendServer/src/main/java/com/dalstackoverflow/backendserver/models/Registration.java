@@ -23,8 +23,6 @@ public class Registration {
 
     @Column(name = "u_password", nullable = false)
     private String password;
-
-    //getters and setters
     public int getUserId() {
         return userId;
     }

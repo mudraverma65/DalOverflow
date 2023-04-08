@@ -8,6 +8,12 @@ public class LoginRequest {
     private String userName;
     private String password;
 
+    public LoginRequest(String username, String password) {
+        this.userName = username;
+        this.password = password;
+    }
+
+
     public String getUsername() {
         return userName;
     }
@@ -30,4 +36,5 @@ public class LoginRequest {
                 ", password='" + password + '\'' +
                 '}';
     }
+
 }
