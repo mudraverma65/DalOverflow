@@ -1,5 +1,5 @@
 import axios from "axios";
-import { useState, useContext } from "react";
+import { useState, useContext,useEffect} from "react";
 import styled from "styled-components";
 import {Navigate} from "react-router-dom";
 import UserLoggedIn from './UserLoggedIn';
@@ -55,13 +55,19 @@ const tiles = [
 ];
 
 function UserProfile() {
-    const[BackToHomePage, setBackToHomePage] = useState(false);
-    const{checkUser} = useContext(UserLoggedIn);
-    function Logout(){
-             localStorage.setItem("userId", null);
-             checkUser();
-             setBackToHomePage(true);
-           }
+  const [BackToHomePage, setBackToHomePage] = useState(false);
+  const [userId, setUserId] = useState(null);
+  const { checkUser } = useContext(UserLoggedIn);
+
+  useEffect(() => {
+    setUserId(localStorage.getItem("userId"));
+  }, []);
+
+  function Logout() {
+    localStorage.removeItem("userId");
+    checkUser();
+    setBackToHomePage(true);
+  }
 
     return(
 

@@ -41,7 +41,7 @@ class LoginControllerTest {
 
     @Test
     void loginUserInvalidCredentials() throws Exception {
-        LoginRequest loginRequest = new LoginRequest("invalid_username", "invalid_password");
+        LoginRequest loginRequest = new LoginRequest("invalidUsername", "invalidPassword");
         LoginResponse loginResponse = new LoginResponse("Invalid username or password", 0, "", "");
         when(loginService.loginUser(loginRequest)).thenReturn(loginResponse);
 
