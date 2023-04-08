@@ -15,15 +15,15 @@ public class RegistrationTest {
     @Test
     public void testGetUserName() {
         Registration registration = new Registration();
-        registration.setUserName("testuser");
-        assertEquals("testuser", registration.getUserName());
+        registration.setUserName("testUser");
+        assertEquals("testUser", registration.getUserName());
     }
 
     @Test
     public void testGetEmailId() {
         Registration registration = new Registration();
-        registration.setEmailId("testuser@example.com");
-        assertEquals("testuser@example.com", registration.getEmailId());
+        registration.setEmailId("testUser@example.com");
+        assertEquals("testUser@example.com", registration.getEmailId());
     }
 
     @Test
