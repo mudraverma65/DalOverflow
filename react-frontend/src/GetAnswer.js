@@ -33,6 +33,10 @@ function GetAnswer(props){
       };
   const handleClick = (e)=>{
     e.preventDefault()
+    if (!answerDescription) {
+        alert("Empty answer cannot be posted");
+        return;
+      }
     const answer = {answerDescription,answerCode }
    const questionId = localStorage.getItem("selectedQuestionId")
    const userId = localStorage.getItem("userId")
