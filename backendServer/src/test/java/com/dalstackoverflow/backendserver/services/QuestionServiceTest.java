@@ -13,6 +13,11 @@ import java.util.Optional;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
+/**
+ * This is the question service test class that will cover all the questions services related test cases
+ * Some methods will be redundant as of now but will be resolved after based on timely refactoring.
+ * @author Sreejith Nair
+ */
 class QuestionServiceTest {
     private static final Logger LOGGER = LoggerFactory.getLogger(QuestionServiceTest.class);
     private Question question;
@@ -49,6 +54,10 @@ class QuestionServiceTest {
         verify(questionService.questionRepository, times(1)).save(question);
     }
 
+    /**
+     * This method tests the question search functionality that is
+     * used by the question answer rendering thread.
+     */
     @Test
     void testSearchQuestion() {
         QuestionRepository mockRepository = mock(QuestionRepository.class);
