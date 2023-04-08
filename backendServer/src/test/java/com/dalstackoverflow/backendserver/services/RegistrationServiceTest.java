@@ -25,8 +25,8 @@ public class RegistrationServiceTest {
     @Test
     public void testPostUser() {
         Registration user = new Registration();
-        user.setUserName("testUser");
-        user.setPassword("testPassword");
+        user.setUserName("testuser");
+        user.setPassword("testpassword");
         user.setEmailId("testuser@test.com");
 
         registrationService.postUser(user);

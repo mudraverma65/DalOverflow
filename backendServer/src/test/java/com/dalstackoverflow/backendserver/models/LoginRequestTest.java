@@ -9,31 +9,37 @@ public class LoginRequestTest {
     @Test
     void testGettersAndSetters() {
 
-        LoginRequest loginRequest = new LoginRequest("testUser", "testPassword");
-        loginRequest.setUsername("newUser");
-        loginRequest.setPassword("newPassword");
-        assertEquals("newUser", loginRequest.getUsername());
-        assertEquals("newPassword", loginRequest.getPassword());
+        LoginRequest loginRequest = new LoginRequest("testuser", "testpassword");
+
+
+        loginRequest.setUsername("newuser");
+        loginRequest.setPassword("newpassword");
+
+        // Assert
+        assertEquals("newuser", loginRequest.getUsername());
+        assertEquals("newpassword", loginRequest.getPassword());
     }
 
     @Test
     void testToString() {
+        // Arrange
+        LoginRequest loginRequest = new LoginRequest("testuser", "testpassword");
 
-        LoginRequest loginRequest = new LoginRequest("testUser", "testPassword");
-
+        // Act
         String result = loginRequest.toString();
 
-        assertEquals("LoginRequest{username='testUser', password='testPassword'}", result);
+        // Assert
+        assertEquals("LoginRequest{username='testuser', password='testpassword'}", result);
     }
 
     @Test
     void testConstructor() {
+        // Arrange and Act
+        LoginRequest loginRequest = new LoginRequest("testuser", "testpassword");
 
-        LoginRequest loginRequest = new LoginRequest("testUer", "testPassword");
-
-
-        assertEquals("testUer", loginRequest.getUsername());
-        assertEquals("testPassword", loginRequest.getPassword());
+        // Assert
+        assertEquals("testuser", loginRequest.getUsername());
+        assertEquals("testpassword", loginRequest.getPassword());
     }
 }
 

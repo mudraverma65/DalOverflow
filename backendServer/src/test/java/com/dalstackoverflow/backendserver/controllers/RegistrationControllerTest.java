@@ -1,4 +1,6 @@
 package com.dalstackoverflow.backendserver.controllers;
+
+
 import com.dalstackoverflow.backendserver.models.Registration;
 import com.dalstackoverflow.backendserver.services.RegistrationService;
 import org.junit.jupiter.api.BeforeEach;
@@ -14,6 +16,7 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.doNothing;
+import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 class RegistrationControllerTest {
@@ -43,7 +46,7 @@ class RegistrationControllerTest {
         MvcResult result = mockMvc.perform(MockMvcRequestBuilders.post("/user/add")
                         .contentType(MediaType.APPLICATION_JSON)
                         .content("{\n" +
-                                "  \"username\": \"testUser\",\n" +
+                                "  \"username\": \"testuser\",\n" +
                                 "  \"password\": \"password\"\n" +
                                 "}"))
                 .andExpect(status().is(HttpStatus.CREATED.value()))
