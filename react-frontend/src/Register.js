@@ -10,6 +10,7 @@ import InputAdornment from '@mui/material/InputAdornment';
 import FormControl from '@mui/material/FormControl';
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
+import { useNavigate } from "react-router-dom";
 
 function Register(){
     const [userName, setUserName] = useState('');
@@ -18,6 +19,7 @@ function Register(){
     const [confirmPassword, setConfirmPassword] = useState('');
     const [errors, setErrors] = useState({});
     const [showPassword, setShowPassword] = useState(false);
+    const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 
     const handleChange = (event) => {
         const { name, value } = event.target;
@@ -31,6 +33,8 @@ function Register(){
             setConfirmPassword(value);
         }
     }
+
+    const navigate = useNavigate();
 
     const isValid = (str) => {
         return !/[\s~`!@#$%\^&*+=\-\[\]\\';,/{}|\\":<>\?()\._]/g.test(str);
@@ -64,8 +68,12 @@ function Register(){
         if (Object.keys(errors).length === 0) {
             // Submit the form
             console.log('Submitting form...');
+            console.log(userName)
+            console.log(emailId)
+            console.log(password)
             axios.post('http://127.0.0.1:8080/user/add', {userName, emailId, password})
                 .then(response => {
+                    navigate('/');
                     // handle success
                     console.log(response.data);
                 })
@@ -80,6 +88,8 @@ function Register(){
     }
 
     const handleClickShowPassword = () => setShowPassword((showPassword) => !showPassword);
+
+    const handleClickShowConfirmPassword = () => setShowConfirmPassword((showConfirmPassword) => !showConfirmPassword);
 
     const handleKeyDown = (event) => {
         if (event.key === 'Enter') {
@@ -98,21 +108,28 @@ function Register(){
                     >
                     <TextField
                         id="userName"
-                        label="username"
-                        name="Username"
-                        autoComplete="username"
+                        label="Username"
+                        name="userName"
                         value={userName}
                         onChange={handleChange}
                     />
+                </Box>
+                {errors.name && <div className="error">{errors.name}</div>}
+                <Box
+                    sx={{
+                        width: '100%',
+                        '& > :not(style)': { m: 1, width: '90%', textAlign: 'center' },
+                      }}
+                    >
                     <TextField
-                        id="userName"
-                        label="username"
-                        name="Username"
-                        autoComplete="username"
-                        value={userName}
+                        id="emailId"
+                        label="Email ID"
+                        name="emailId"
+                        value={emailId}
                         onChange={handleChange}
                     />
                     </Box>
+                    {errors.email && <div className="error">{errors.email}</div>}
                     <FormControl sx={{ m: 1, width: '90%', textAlign:'center' }} variant="outlined">
                         <InputLabel htmlFor="outlined-adornment-password">Password</InputLabel>
                         <OutlinedInput
@@ -134,31 +151,34 @@ function Register(){
                             name="password"
                             value={password} // Added value prop
                             onChange={handleChange}
-                            onKeyDown={handleKeyDown}
                         />
-                        {errors.password && <div className="error">{errors.password}</div>}
+                    </FormControl>
+                    {errors.password && <div className="error">{errors.password}</div>}
+                    <FormControl sx={{ m: 1, width: '90%', textAlign:'center' }} variant="outlined">
                         <InputLabel htmlFor="outlined-adornment-password">Confirm Password</InputLabel>
                         <OutlinedInput
-                            type={showPassword ? 'text' : 'password'}
+                            type={showConfirmPassword ? 'text' : 'password'}
                             endAdornment={
                             <InputAdornment position="end">
                                 <IconButton
                                     aria-label="toggle password visibility"
-                                    onClick={handleClickShowPassword}
+                                    onClick={handleClickShowConfirmPassword}
                                     edge="end"
                                 >
-                                {showPassword ? <VisibilityOff /> : <Visibility />}
+                                {showConfirmPassword ? <VisibilityOff /> : <Visibility />}
                                 </IconButton>
                             </InputAdornment>
                              }
+                            placeholder="Confirm Password"
                             label="Password"
-                            id="password"
-                            name="password"
-                            value={password} // Added value prop
+                            id="confirmPassword"
+                            name="confirmPassword"
+                            value={confirmPassword} // Added value prop
                             onChange={handleChange}
-                            onKeyDown={handleKeyDown}
                         />
                     </FormControl>
+                    {errors.confirmpassword && <div className="error">{errors.confirmpassword}</div>}
+                    <div className="button1"onClick={handleSubmit}>Register</div>
             </div>
         </div>
     );
