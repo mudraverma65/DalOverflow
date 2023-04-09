@@ -123,8 +123,9 @@ function AnswersDisplay(props){
                     <div class="question_answer_code">{props.data.answerCode}</div>  
                   </div>
                   <div class="comment_col">
-                    <h3>Comments</h3>
                     <div class="comment">
+                      <h4>Comments</h4>
+                      <CommentDisplay allComments = {props.data.allComments}/>
                       <CommentDisplay data = {props.data.allComments}/>
                       <Comment/>
                     </div>

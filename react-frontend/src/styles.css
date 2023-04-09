@@ -226,6 +226,15 @@ h3{
   font-weight: 500!important;
 }
 
+h4{
+  font-family: 'Inter',Helvetica,Arial,Lucida,sans-serif!important;
+  font-size: 14px!important;
+  color: #444444!important;
+  padding-bottom: 10px!important;
+  line-height: 10px!important;
+  font-weight: 500!important;
+}
+
 strong {
   font-weight: 700!important;
 }
@@ -354,14 +363,14 @@ tags{
 .comment_col{
   width:100%;
   float: left;
-  margin-top: 20px;
-  padding: 1% 0;
-  /* border-bottom: 1px solid #d8d2d2; */
 }
 
 .comment{
+  width: 93%;
+  float: right;
+  border-top: 1px solid #d8d2d2;
   border-bottom: 1px solid #d8d2d2;
-  padding: 10px 0;
+  padding: 10px 0px;
 }
 
 comment_user{
@@ -378,12 +387,12 @@ comment_time{
 }
 
 .votes_col{
-  width:10%;
+  width:7%;
   float: left;
 }
 
 .answer_col{
-  width:90%;
+  width:93%;
   float: left;
 }
 
@@ -622,20 +631,20 @@ a{
 }
 
 .button2{
+  margin-top: 10px!important;
   text-align: center;
   cursor: pointer;
   color: #000000!important;
-  border: 1px solid #ffd401;
+  border: 0px;
   border-radius: 10px;
-  font-size: 13px;
-  padding-top: 6px!important;
-  padding-right: 18px!important;
-  padding-bottom: 6px!important;
-  padding-left: 18px!important;
+  font-size: 12px;
+  padding: 5px 15px;
+  background-color: #ffd401;
   display: inline-block;
   position: relative;
   font-weight: 550;
-  margin-top: 2.3px;
+  position: relative;
+  text-align: right;
 }
 
 .Footer{
@@ -648,4 +657,20 @@ a{
 .FooterText {
   position: relative;
   text-align: right;
+}
+
+.CommentText{
+  
+  width: 78%;
+  float: left;
+}
+.CommentDate{
+  width: 22%;
+  float: right;
+}
+.CommentDisplay{
+  border-bottom: 1px solid #ffd401!important;
+  margin: auto;
+  width: 95%;
+  padding-bottom: 30px;
 }

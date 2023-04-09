@@ -6,7 +6,7 @@ const CommentDisplay = ({ allComments }) => {
         <div>
         {allComments.map((data) => (
             <div className="CommentDisplay">
-                <div class="CommentText"><body>This is a comment{data.commentText}</body></div>
+                <div class="CommentText"><body>{data.commentText}</body></div>
                 <div class ="CommentDate"><body>Asked at {data.commentDate}</body></div>
             </div>
         ))}
