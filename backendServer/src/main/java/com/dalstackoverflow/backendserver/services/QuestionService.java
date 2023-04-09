@@ -42,7 +42,15 @@ public class QuestionService {
     @Transactional
     public void postUserQuestion(Question userQuestion){
         LOGGER.info("Posting question for user : "+ userQuestion.getUserID());
-        questionRepository.save(userQuestion);
+        Question savedQuestion = questionRepository.save(userQuestion);
+        LOGGER.info("Logged question id:"+savedQuestion.getQuestionID());
+        for (String tagName : userQuestion.getTags()) {
+            Tag tag = new Tag();
+            tag.setTagName(tagName);
+            tag.setQuestionID(savedQuestion.getQuestionID());
+            tagRepository.save(tag);
+            LOGGER.info("Saving tags");
+        }
         LOGGER.info("Your question was successfully posted");
     }
 
