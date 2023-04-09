@@ -189,6 +189,7 @@
     position: relative;
     font-weight: 550;
     margin-top: 2.3px;
+    margin-left: 10px
 
 }
   
@@ -269,7 +270,7 @@ votes{
   color: #333;
   line-height: 1.7em;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 20px;
 
 }
 
