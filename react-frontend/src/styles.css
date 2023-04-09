@@ -636,3 +636,15 @@ a{
   font-weight: 550;
   margin-top: 2.3px;
 }
+
+.Footer{
+  border-top: 1px solid #ffd401;
+  background-color: #ffffff;
+  height: 100px;
+  width: 100%;
+}
+
+.FooterText {
+  position: relative;
+  text-align: right;
+}

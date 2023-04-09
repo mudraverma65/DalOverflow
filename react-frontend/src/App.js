@@ -1,6 +1,7 @@
 import { Reset } from 'styled-reset';
 import styled, {createGlobalStyle} from 'styled-components';
 import Header from "./Header";
+import Footer from "./Footer";
 import QuestionsFrontPage from "./QuestionsFrontPage";
 import AskQuestion from "./AskQuestion";
 import {
@@ -72,6 +73,7 @@ function App() {
             <Route path="/registration" element = {<RegistrationPage/>} />
             <Route path="/search-result" element = {<SearchResult/>} />
           </Routes >
+          <Footer/>
           </UserLoggedIn.Provider>
         
       </Router>

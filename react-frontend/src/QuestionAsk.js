@@ -23,23 +23,26 @@ export default function QuestionAsk(){
     const icon = <CheckBoxOutlineBlankIcon fontSize="small" />;
     const checkedIcon = <CheckBoxIcon fontSize="small" />;
 
-
     const [userInfo, setuserInfo] = useState({
         title: '',
         description: '',
         information: '',
     });
     
-    const ondescription = (value) => {
-        setuserInfo({ ...userInfo,
-          description:value
+    const ondescription = (event) => {
+        const { value } = event.target;
+        setuserInfo({
+          ...userInfo,
+          description: value
         });
-    } 
-    const oninformation = (value) => {
+    }
+
+    const oninformation = (event) => {
+        const { value } = event.target;
         setuserInfo({ ...userInfo,
-          information:value
-        });
-    } 
+            information:value
+          });
+    }
 
     const [checked1, setChecked1] = React.useState(false);
 
@@ -89,6 +92,13 @@ export default function QuestionAsk(){
         baseURL: "http://localhost:8080"
     });
 
+    const [selectedTags, setSelectedTags] = useState([]);
+
+    const handleAutocompleteChange = (event, values) => {
+        setSelectedTags(values);
+        console.log(selectedTags)
+    };
+
     const handleSubmit = async (event) => {
         event.preventDefault();
         const question = {
@@ -115,75 +125,82 @@ export default function QuestionAsk(){
     };
 
     return(
-
-           <div className="jsBeginnerWantToInsertTeParent">
-                <div className="AskQuestion">
-                    <div className="QuestionColumn">
-                        <div className="AskTitle"><h2>Describe your question</h2></div>
-                        <Box
-                        sx={{
-                            width: '100%',
-                            '& > :not(style)': { m: 1, width: '90%' },
-                        }}
-                        >
-                        <TextField
-                            placeholder="Introduce the problem."
-                            name="title"
-
-                        />
-                            
-                        
-    
-                            
-                        <TextField
-                            id="outlined-multiline-static"
-                            placeholder="Describe any difficulties that have prevented you from solving it yourself"
-                            name="body"
-                            multiline
-                            value={userInfo.description}
-                            onChange={ondescription}
-                            rows={6}
-                        />
-                            
-                     
-                        <h3>Additional Information and Code</h3>
-                        <TextField
-                            id="outlined-multiline-static"
-                            placeholder="Please enter additional information and code"
-                            multiline
-                            value={userInfo.information}
-                            onChange={oninformation}
-                            rows={6}
-                        />
-                        </Box>
-                        <h3>Select appropriate tags</h3>
-                        <Autocomplete
-                            multiple
-                            id="checkboxes-tags-demo"
-                            options={Tags}
-                            disableCloseOnSelect
-                            getOptionLabel={(option) => option.title}
-                            renderOption={(props, option, { selected }) => (
-                                <li {...props}>
-                                <Checkbox
-                                    icon={icon}
-                                    checkedIcon={checkedIcon}
-                                    style={{ marginRight: 8 }}
-                                    checked={selected}
-                                />
-                                {option.title}
-                                </li>
-                            )}
-                            style={{ width: '90%' }}
-                            renderInput={(params) => (
-                                <TextField {...params} label="Tags" placeholder="Tags related to the question" />
-                            )}
-                        />
-                        <div class = "FormSubmit"><br/>
-                            <button className="button1" onKeyDown={handleSubmit}>Submit</button>
-                        </div>
+        <div className="jsBeginnerWantToInsertTeParent">
+            <div className="AskQuestion">
+                <div className="QuestionColumn">
+                    <div className="AskTitle"><h2>Describe your question</h2></div>
+                    <Box
+                    sx={{
+                        width: '100%',
+                        '& > :not(style)': { m: 1, width: '90%' },
+                    }}
+                    >
+                    <TextField
+                        placeholder="Introduce the problem."
+                        name="title"
+                    />
+                    </Box>
+                    <Box
+                    sx={{
+                        width: '100%',
+                        '& > :not(style)': { m: 1, width: '90%' },
+                    }}
+                    >                                    
+                    <TextField
+                        id="outlined-multiline-static"
+                        placeholder="Describe any difficulties that have prevented you from solving it yourself"
+                        name="body"
+                        multiline
+                        value={userInfo.description}
+                        onChange={ondescription}
+                        rows={6}
+                    />
+                    </Box> 
+                    <h3>Additional Information and Code</h3>
+                    <Box
+                    sx={{
+                        width: '100%',
+                        '& > :not(style)': { m: 1, width: '90%' },
+                    }}
+                    >                        
+                    <TextField
+                        id="outlined-multiline-static"
+                        placeholder="Please enter additional information and code"
+                        multiline
+                        value={userInfo.information}
+                        onChange={oninformation}
+                        rows={6}
+                    />
+                    </Box>
+                    <h3>Select appropriate tags</h3>
+                    <Autocomplete
+                        multiple
+                        id="checkboxes-tags-demo"
+                        options={Tags}
+                        disableCloseOnSelect
+                        getOptionLabel={(option) => option.title}
+                        renderOption={(props, option, { selected }) => (
+                            <li {...props}>
+                            <Checkbox
+                                icon={icon}
+                                checkedIcon={checkedIcon}
+                                style={{ marginRight: 8 }}
+                                checked={selected}
+                            />
+                            {option.title}
+                            </li>
+                        )}
+                        style={{ width: '90%' }}
+                        renderInput={(params) => (
+                            <TextField {...params} label="Tags" placeholder="Tags related to the question" />
+                        )}
+                        // onChange={handleAutocompleteChange}
+                    />
+                    <div class = "FormSubmit"><br/>
+                        <button className="button1" onKeyDown={handleSubmit}>Submit</button>
                     </div>
                 </div>
-            </div>        
+            </div>
+        </div>        
     );
 }
