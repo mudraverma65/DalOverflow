@@ -6,6 +6,7 @@ import TextField from '@mui/material/TextField';
 import "./styles.css";
 import Comment from "./Comment";
 import { createTheme } from '@mui/material/styles';
+import CommentDisplay from "./CommentDisplay";
 import axios from "axios";
 
 function AnswersDisplay(props){
@@ -94,12 +95,13 @@ function AnswersDisplay(props){
                     <div class="answer_des">
                       <body>{props.data.answerDescription}</body>
                     </div>
-                    <div class="question_answer_code">{props.data.answerCode}</div>
+                    <div class="question_answer_code">{props.data.answerCode}</div>  
                   </div>
                   <div class="comment_col">
                     <h3>Comments</h3>
                     <div class="comment">
-                      <Comment />
+                      <CommentDisplay data = {props.data.allComments}/>
+                      <Comment/>
                     </div>
                   </div>
                 </div>

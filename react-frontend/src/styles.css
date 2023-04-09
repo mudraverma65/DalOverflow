@@ -570,7 +570,7 @@ a{
   height: 90vh;
 }
 
-.Login{
+.LoginRegister{
   background-color: #ffffff;
   margin: auto;
   position: relative;
@@ -618,4 +618,21 @@ a{
   width: 70%;
   max-width: 100%;
   padding: 50px 30px;
+}
+
+.button2{
+  text-align: center;
+  cursor: pointer;
+  color: #000000!important;
+  border: 1px solid #ffd401;
+  border-radius: 10px;
+  font-size: 13px;
+  padding-top: 6px!important;
+  padding-right: 18px!important;
+  padding-bottom: 6px!important;
+  padding-left: 18px!important;
+  display: inline-block;
+  position: relative;
+  font-weight: 550;
+  margin-top: 2.3px;
 }
