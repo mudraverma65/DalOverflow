@@ -29,8 +29,7 @@ function QuestionList(props) {
         <div className='Questions'>
           <div className='QuestionListCol'>
             <div className='QuestionInfoList'>
-              <div><strong><span>{question.votes}</span></strong><span> </span>Votes</div>
-              <div><strong><span>{question.answerCount}</span></strong><span> </span>Answers</div>
+              <div style={{ position: 'absolute', top: 65, left: 300  }}><strong><span>{question.answerCount}</span></strong><span> </span>Answers</div>
             </div>
           </div>
           <div className='QuestionDesCol'>
@@ -40,7 +39,7 @@ function QuestionList(props) {
                         <tags key={tag}>{tag}</tags>
                     ))}
             </div>
-            <div className='QuestionStats'>Asked by {question.userName} at {question.questionDate}</div>
+            <div className='QuestionStats' style={{ position: 'absolute', top: 85, right: 150  }}>Asked by {question.userName} at {question.questionDate}</div>
           </div>
         </div>
       </div>
