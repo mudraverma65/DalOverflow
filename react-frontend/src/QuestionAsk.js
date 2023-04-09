@@ -159,7 +159,7 @@ export default function QuestionAsk(){
                         />
                     </Stack>
                     <br/>
-                    <button className="button1" onKeyDown={handleSubmit}>Submit</button>    
+                    <button className="button1" onClick={handleSubmit}>Submit</button>
                 </div>
             </div>
         </div>        
