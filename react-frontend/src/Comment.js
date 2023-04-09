@@ -39,7 +39,7 @@ function Comment(props){
 
     return(
         <div className="jsBeginnerWantToInsertTeParent">
-            <div class ="button1" onClick={toggleModel}>Comment</div>
+            <div class ="button2" onClick={toggleModel}>Comment</div>
 
             {modalComment && (
                 <div className="modal_comment">

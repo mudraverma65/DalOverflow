@@ -89,7 +89,7 @@ function LoginPage() {
         <>
             {redirectToHomePage && (<Navigate to="/" />)}
             <div className="LoginRegistration">
-                <div className="Login"><br/><h2>Login</h2>
+                <div className="LoginRegister"><br/><h2>Login</h2>
                     <Box
                     sx={{
                         width: '100%',

@@ -29,7 +29,7 @@ function Header(){
                         <Link style={{textDecoration: 'none'}} to={'/login'}>
                             <div class="button1" >Login</div><span> </span>
                         </Link>
-                        <Link style={{textDecoration: 'none'}} to={'/registration'}>
+                        <Link style={{textDecoration: 'none'}} to={'/register'}>
                             <div class="button1" >Register</div>
                         </Link>    
                     </div>

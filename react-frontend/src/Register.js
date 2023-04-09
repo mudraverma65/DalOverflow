@@ -99,7 +99,9 @@ function Register(){
 
     return(
         <div className="LoginRegistration">
-            <div className="LoginRegister"><br/><h2>Register</h2>
+            <div className="LoginRegister">
+                
+                <br/><h2>Register</h2>
                 <Box
                     sx={{
                         width: '100%',
@@ -178,7 +180,7 @@ function Register(){
                         />
                     </FormControl>
                     {errors.confirmpassword && <div className="error">{errors.confirmpassword}</div>}
-                    <div className="button1"onClick={handleSubmit}>Register</div>
+                    <div className="button1"onClick={handleSubmit} onKeyDown={handleSubmit}>Register</div> <br/>
             </div>
         </div>
     );
