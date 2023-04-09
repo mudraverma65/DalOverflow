@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import ButtonGroup from '@mui/material/ButtonGroup';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
@@ -8,6 +8,8 @@ import Comment from "./Comment";
 import { createTheme } from '@mui/material/styles';
 import CommentDisplay from "./CommentDisplay";
 import axios from "axios";
+import UserLoggedIn from './UserLoggedIn';
+
 
 function AnswersDisplay(props){
   const [hasUpvoted, setHasUpvoted] = useState(false);
@@ -49,6 +51,10 @@ function AnswersDisplay(props){
     }
   };
 
+  const handleNotAUser = () =>{
+      alert("Please login to vote the answers");
+  }
+
   const handleDownVote = () =>{
     const userId = localStorage.getItem("userId");
 
@@ -71,17 +77,19 @@ function AnswersDisplay(props){
   const handleLogout = () => {
     localStorage.clear();
   }
-
+  const {user} = useContext(UserLoggedIn)
   return (
     <div className="jsBeginnerWantToInsertTeParent">
       <div class="answer_row">
         <div class="votes_col">
+          {user && (
           <ButtonGroup
             disableElevation
             variant="contained"
             aria-label="Disabled elevation buttons"
             orientation="vertical"
           >
+
             <Button onClick={handleUpVote} disabled={hasUpvoted}>
               Up
             </Button>
@@ -89,7 +97,24 @@ function AnswersDisplay(props){
             <Button onClick={handleDownVote} disabled={hasDownvoted}>
               Down
             </Button>
-          </ButtonGroup>
+          </ButtonGroup>)}
+
+          {!user && (
+             <ButtonGroup
+               disableElevation
+               variant="contained"
+               aria-label="Disabled elevation buttons"
+               orientation="vertical"
+               >
+
+               <Button onClick={handleNotAUser} disabled={hasUpvoted}>
+                  Up
+               </Button>
+               <votes>{props.data.votes}</votes>
+               <Button onClick={handleNotAUser} disabled={hasDownvoted}>
+                  Down
+               </Button>
+               </ButtonGroup>)}
                   </div>
                   <div class="answer_col">
                     <div class="answer_des">
