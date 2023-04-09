@@ -50,8 +50,9 @@ const TileList = ({tiles}) => {
 };
 
 const tiles = [
-  { id: 1, title: 'Tile 1', content: 'This is the content of Tile 1.' },
-  { id: 2, title: 'Tile 2', content: 'This is the content of Tile 2.' }
+    // The values for  will be dynamic in the future releases.
+  { id: 1, title: '24', content: 'Questions Answered' },
+  { id: 2, title: '32', content: 'Questions Asked' }
 ];
 
 function UserProfile() {
