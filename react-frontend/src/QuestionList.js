@@ -6,8 +6,9 @@ function QuestionList(props) {
 
   const navigate = useNavigate();
 
-  function handleQuestionClickEvent(questionId){
-    localStorage.setItem("selectedQuestionId",questionId)
+  function handleQuestionClickEvent(question){
+    localStorage.setItem("selectedQuestionId",question.questionID)
+    localStorage.setItem("questionUserId",question.userID)
     console.log("selected Question id: " + localStorage.getItem("selectedQuestionId"))
     navigate('/question-answer');
   }
@@ -34,7 +35,7 @@ function QuestionList(props) {
           </div>
           <div className='QuestionDesCol'>
             {/* <div onClick={() => handleQuestionClickEvent(question.questionID)} ><Link to={"./question-answer"}><h3>{question.questionTitle}</h3></Link></div> */}
-            <div onClick={() => handleQuestionClickEvent(question.questionID)} ><h3>{question.questionTitle}</h3></div>
+            <div onClick={() => handleQuestionClickEvent(question)} ><h3>{question.questionTitle}</h3></div>
             <div>{question.tags.map(tag => (
                         <tags key={tag}>{tag}</tags>
                     ))}
