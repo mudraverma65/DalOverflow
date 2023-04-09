@@ -18,7 +18,7 @@ import java.util.List;
 public class AnswerService {
 
     @Autowired
-    private AnswerRepository answerRepository;
+    public AnswerRepository answerRepository;
 
     /**
      * Returns an Iterable of Answer objects that are associated with the given questionID.

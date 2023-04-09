@@ -14,13 +14,8 @@ import moment from "moment/moment";
 
 function QuestionDetails(props) {
 
-  console.log(props.questionAnswerCount)
+  const questionDate = props.questionDate;
 
-  
-
-
-    // const questionTitle = props.questionTitle;
-    // console.log(questionTitle);
     return(
       <div className="jsBeginnerWantToInsertTeParent">
         <div class="question_details_row">
@@ -40,7 +35,7 @@ function QuestionDetails(props) {
         <div class="question_details">
           {/* <div class="details_module"><p><strong><span>Asked</span></strong><span> </span><p>{new Date(props.questionDate)}</p><strong><span> Modified</span></strong><span> </span>6 months ago<strong><span> Viewed</span></strong><span> </span>55k times</p></div> */}
         
-          <div class="details_module"><p><strong><span>Asked</span></strong><span> </span>4 years ago</p></div>
+          <div class="details_module"><p><strong><span>Asked</span></strong><span> </span>{questionDate}</p></div>
         </div>
         <div class="question_des_row">
           <div class="question_des"><body>{props.questionDescription}</body></div>
@@ -50,8 +45,6 @@ function QuestionDetails(props) {
           {props.questionTags?.map(tag => (
             <tags>{tag}</tags>
             ))}
-          
-            <tags>java</tags>
           </div>
         </div>
         <div class="question_answer_count"><h3>{props.questionAnswerCount}<span> </span>Answers</h3></div>
