@@ -1,6 +1,6 @@
 package com.dalstackoverflow.backendserver.services;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
@@ -9,8 +9,8 @@ import com.dalstackoverflow.backendserver.models.LoginResponse;
 import com.dalstackoverflow.backendserver.models.Registration;
 import com.dalstackoverflow.backendserver.repositories.LoginRepository;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -22,7 +22,7 @@ public class LoginServiceTest {
 
     private LoginService loginService;
 
-    @Before
+    @BeforeEach
     public void setUp() {
         loginService = new LoginService(loginRepository);
     }

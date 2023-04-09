@@ -100,4 +100,10 @@ public class QuestionController {
         return questionReceived;
 
     }
+
+    @DeleteMapping("/{questionID}")
+    public void deleteQuestion(@PathVariable Integer questionID) {
+        LOGGER.info("Deleting question with ID: " + questionID);
+        questionService.deleteQuestion(questionID);
+    }
 }

@@ -87,7 +87,7 @@ class QuestionServiceTest {
             Reusing it here.
          */
         questionService.questionRepository = questionRepository;
-
+        when(questionRepository.save(question)).thenReturn(question);
         /*
         this is not required as of now since we need to test the save method as well.
         doNothing().when(mockRepository).save(any(Question.class));

@@ -11,12 +11,25 @@ function QuestionDetails(props) {
 
   const ifUser = () => {
     if(questionUserId == userLoggedin){
-        alert("Delete Accepted");
+        deleteQuestion();
     }
     else{
         alert("Only the owner can delete the question");
     }
   }
+    const deleteQuestion = async () => {
+        try {
+            const questionID = localStorage.getItem("selectedQuestionId");
+            console.log("selectedQuestionId" + questionID)
+            const response = await axios.delete(`http://localhost:8080/api/questions/${questionID}`);
+            console.log(response.data);
+            alert("Question deleted successfully!");
+        } catch (error) {
+            console.error(error);
+            alert("Failed to delete question!");
+        }
+    };
+
   const notUser = () => {
     alert("Please login to delete the question");
   }
