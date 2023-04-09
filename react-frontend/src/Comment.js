@@ -29,6 +29,7 @@ function Comment(props){
           .then(() => {
             console.log("Comment Posted");
             window.alert("Your comment was posted successfully!");
+            window.location.reload();
           })
           .catch((err) => {
             console.error(err);
