@@ -90,11 +90,11 @@ function AnswersDisplay(props){
             orientation="vertical"
           >
 
-            <Button onClick={handleUpVote} disabled={hasUpvoted}>
+            <Button sx={{ fontSize: '10px', padding: '5px 12px' }} onClick={handleUpVote} disabled={hasUpvoted}>
               Up
             </Button>
             <votes>{props.data.votes}</votes>
-            <Button onClick={handleDownVote} disabled={hasDownvoted}>
+            <Button sx={{ fontSize: '10px', padding: '5px 12px' }}  onClick={handleDownVote} disabled={hasDownvoted}>
               Down
             </Button>
           </ButtonGroup>)}
@@ -107,11 +107,11 @@ function AnswersDisplay(props){
                orientation="vertical"
                >
 
-               <Button onClick={handleNotAUser} disabled={hasUpvoted}>
+               <Button sx={{ fontSize: '10px', padding: '5px 12px' }} onClick={handleNotAUser} disabled={hasUpvoted}>
                   Up
                </Button>
                <votes>{props.data.votes}</votes>
-               <Button onClick={handleNotAUser} disabled={hasDownvoted}>
+               <Button sx={{ fontSize: '10px', padding: '5px 12px' }} onClick={handleNotAUser} disabled={hasDownvoted}>
                   Down
                </Button>
                </ButtonGroup>)}

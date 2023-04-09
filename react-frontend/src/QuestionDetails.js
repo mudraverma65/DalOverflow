@@ -1,18 +1,7 @@
-import { FunctionComponent, useState, useEffect, useContext  } from "react";
-import ButtonGroup from '@mui/material/ButtonGroup';
-import Button from '@mui/material/Button';
-import Box from '@mui/material/Box';
-import TextField from '@mui/material/TextField';
+import {  useContext  } from "react";
 import "./styles.css";
-import ReactTimeAgo from 'react-time-ago';
 import {Link} from "react-router-dom";
 import UserLoggedIn from './UserLoggedIn';
-
-
-
-import { createTheme } from '@mui/material/styles';
-import axios from "axios";
-import moment from "moment/moment";
 
 function QuestionDetails(props) {
 
@@ -20,8 +9,6 @@ function QuestionDetails(props) {
   const questionUserId = localStorage.getItem("questionUserId");
   const userLoggedin = localStorage.getItem("userId");
 
-    console.log(userLoggedin);
-    console.log(questionUserId);
   const ifUser = () => {
     if(questionUserId == userLoggedin){
         alert("Delete Accepted");
@@ -54,8 +41,6 @@ function QuestionDetails(props) {
         </div>
   
         <div class="question_details">
-          {/* <div class="details_module"><p><strong><span>Asked</span></strong><span> </span><p>{new Date(props.questionDate)}</p><strong><span> Modified</span></strong><span> </span>6 months ago<strong><span> Viewed</span></strong><span> </span>55k times</p></div> */}
-        
           <div class="details_module"><p><strong><span>Asked</span></strong><span> </span>{questionDate}</p></div>
         </div>
         <div class="question_des_row">

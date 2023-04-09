@@ -1,23 +1,9 @@
 import { useState, useEffect  } from "react";
 import "./styles.css";
-
-import { createTheme } from '@mui/material/styles';
 import axios from "axios";
 import QuestionDetails from "./QuestionDetails";
 import AnswersDisplay from "./AnswerDisplay";
 import GetAnswer from "./GetAnswer";
-
-
-const theme = createTheme({
-  palette: {
-    primary: {
-      main: '#ffc107',
-    },
-    secondary: {
-      main: '#f44336',
-    },
-  },
-});
 
 function QuestionAnswer(){
 
@@ -40,8 +26,6 @@ function QuestionAnswer(){
 
     fetchQuestionByID();
   }, []);
-
-  console.log(questionAnswerInfo);
   
     return(
       <div className="jsBeginnerWantToInsertTeParent">
@@ -53,6 +37,7 @@ function QuestionAnswer(){
             questionTitle={questionAnswerInfo.questionTitle}
             questionTags={questionAnswerInfo.tags}
             questionAnswerCount={questionAnswerInfo.answerCount}
+            allComments = {questionAnswerInfo.allComments}
           />
 
           {

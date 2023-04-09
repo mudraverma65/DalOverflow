@@ -1,11 +1,17 @@
-import Comment from "./Comment";
-
-function CommentDisplay(props){
+const CommentDisplay = ({ allComments }) => {
+    if (!allComments) {
+        return <div>No comments</div>;
+    }
     return(
-        <div className="CommentDisplay">
-            <div class="CommentText"><body>This is a comment{props.data.commentText}</body></div>
-            <div class ="CommentDate"><body>Asked at {props.data.commentDate}</body></div>
+        <div>
+        {allComments.map((data) => (
+            <div className="CommentDisplay">
+                <div class="CommentText"><body>This is a comment{data.commentText}</body></div>
+                <div class ="CommentDate"><body>Asked at {data.commentDate}</body></div>
+            </div>
+        ))}
         </div>
+        
     );
 }
 
