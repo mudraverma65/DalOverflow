@@ -4590,3 +4590,222 @@ java.net.SocketException: Connection reset
 07-04-2023 19:35:09.306 [http-nio-8080-exec-4] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Found tag :Cloud
 07-04-2023 19:35:09.306 [http-nio-8080-exec-4] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Question id :1005
 07-04-2023 19:35:09.306 [http-nio-8080-exec-4] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Found tag :Rest API
+07-04-2023 19:45:43.894 [http-nio-8080-exec-4] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Answer Service
+07-04-2023 19:45:43.942 [http-nio-8080-exec-4] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Request Object:1005
+07-04-2023 19:45:44.179 [http-nio-8080-exec-4] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Question Service:
+07-04-2023 19:45:44.241 [http-nio-8080-exec-4] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Question id :1005
+07-04-2023 19:45:44.241 [http-nio-8080-exec-4] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Found tag :Cloud
+07-04-2023 19:45:44.241 [http-nio-8080-exec-4] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Question id :1005
+07-04-2023 19:45:44.241 [http-nio-8080-exec-4] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Found tag :Rest API
+07-04-2023 19:45:44.265 [http-nio-8080-exec-5] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Answer Service
+07-04-2023 19:45:44.265 [http-nio-8080-exec-5] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Request Object:1005
+07-04-2023 19:45:44.350 [http-nio-8080-exec-5] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Question Service:
+07-04-2023 19:45:44.369 [http-nio-8080-exec-5] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Question id :1005
+07-04-2023 19:45:44.370 [http-nio-8080-exec-5] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Found tag :Cloud
+07-04-2023 19:45:44.370 [http-nio-8080-exec-5] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Question id :1005
+07-04-2023 19:45:44.370 [http-nio-8080-exec-5] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Found tag :Rest API
+07-04-2023 19:47:22.141 [http-nio-8080-exec-9] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Answer Service
+07-04-2023 19:47:22.142 [http-nio-8080-exec-9] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Request Object:1005
+07-04-2023 19:47:22.270 [http-nio-8080-exec-9] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Question Service:
+07-04-2023 19:47:22.316 [http-nio-8080-exec-9] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Question id :1005
+07-04-2023 19:47:22.316 [http-nio-8080-exec-9] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Found tag :Cloud
+07-04-2023 19:47:22.316 [http-nio-8080-exec-9] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Question id :1005
+07-04-2023 19:47:22.316 [http-nio-8080-exec-9] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Found tag :Rest API
+07-04-2023 19:47:22.321 [http-nio-8080-exec-8] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Answer Service
+07-04-2023 19:47:22.322 [http-nio-8080-exec-8] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Request Object:1005
+07-04-2023 19:47:22.429 [http-nio-8080-exec-8] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Question Service:
+07-04-2023 19:47:22.469 [http-nio-8080-exec-8] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Question id :1005
+07-04-2023 19:47:22.469 [http-nio-8080-exec-8] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Found tag :Cloud
+07-04-2023 19:47:22.469 [http-nio-8080-exec-8] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Question id :1005
+07-04-2023 19:47:22.469 [http-nio-8080-exec-8] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Found tag :Rest API
+07-04-2023 19:51:33.126 [http-nio-8080-exec-5] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Answer Service
+07-04-2023 19:51:33.126 [http-nio-8080-exec-5] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Request Object:1005
+07-04-2023 19:51:33.230 [http-nio-8080-exec-5] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Question Service:
+07-04-2023 19:51:33.249 [http-nio-8080-exec-5] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Question id :1005
+07-04-2023 19:51:33.249 [http-nio-8080-exec-5] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Found tag :Cloud
+07-04-2023 19:51:33.249 [http-nio-8080-exec-5] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Question id :1005
+07-04-2023 19:51:33.249 [http-nio-8080-exec-5] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Found tag :Rest API
+07-04-2023 19:51:33.252 [http-nio-8080-exec-9] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Answer Service
+07-04-2023 19:51:33.254 [http-nio-8080-exec-9] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Request Object:1005
+07-04-2023 19:51:33.349 [http-nio-8080-exec-9] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Question Service:
+07-04-2023 19:51:33.373 [http-nio-8080-exec-9] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Question id :1005
+07-04-2023 19:51:33.373 [http-nio-8080-exec-9] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Found tag :Cloud
+07-04-2023 19:51:33.373 [http-nio-8080-exec-9] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Question id :1005
+07-04-2023 19:51:33.374 [http-nio-8080-exec-9] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Found tag :Rest API
+07-04-2023 20:09:58.244 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool.run - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13m16s391ms333µs400ns).
+07-04-2023 20:18:10.643 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+07-04-2023 20:18:10.776 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown initiated...
+07-04-2023 20:18:10.798 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown completed.
+07-04-2023 20:18:23.208 [restartedMain] INFO  c.d.b.BackendServerApplication.logStarting - Starting BackendServerApplication using Java 19 with PID 17316 (C:\Users\bhatt\Desktop\Sem-2\ASDC\group22\backendServer\target\classes started by bhatt in C:\Users\bhatt\Desktop\Sem-2\ASDC\group22)
+07-04-2023 20:18:23.212 [restartedMain] INFO  c.d.b.BackendServerApplication.logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+07-04-2023 20:18:23.315 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+07-04-2023 20:18:23.315 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+07-04-2023 20:18:24.565 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+07-04-2023 20:18:24.567 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+07-04-2023 20:18:24.621 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.dalstackoverflow.backendserver.repositories.AnswerRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+07-04-2023 20:18:24.624 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.dalstackoverflow.backendserver.repositories.CommentRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+07-04-2023 20:18:24.626 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.dalstackoverflow.backendserver.repositories.LoginRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+07-04-2023 20:18:24.629 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.dalstackoverflow.backendserver.repositories.QuestionRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+07-04-2023 20:18:24.630 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.dalstackoverflow.backendserver.repositories.RegistrationRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+07-04-2023 20:18:24.632 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.dalstackoverflow.backendserver.repositories.TagRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+07-04-2023 20:18:24.633 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 58 ms. Found 0 JDBC repository interfaces.
+07-04-2023 20:18:24.654 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+07-04-2023 20:18:24.655 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+07-04-2023 20:18:24.751 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 84 ms. Found 6 JPA repository interfaces.
+07-04-2023 20:18:25.333 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+07-04-2023 20:18:25.403 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping.afterPropertiesSet - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+07-04-2023 20:18:26.129 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+07-04-2023 20:18:26.151 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8080"]
+07-04-2023 20:18:26.153 [restartedMain] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+07-04-2023 20:18:26.153 [restartedMain] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/10.1.5]
+07-04-2023 20:18:26.287 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+07-04-2023 20:18:26.291 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2972 ms
+07-04-2023 20:18:26.641 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+07-04-2023 20:18:26.763 [restartedMain] INFO  org.hibernate.Version.logVersion - HHH000412: Hibernate ORM core version 6.1.6.Final
+07-04-2023 20:18:27.111 [restartedMain] WARN  org.hibernate.orm.deprecation.lambda$new$1 - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+07-04-2023 20:18:27.317 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Starting...
+07-04-2023 20:18:27.749 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool.checkFailFast - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@14aeb6e8
+07-04-2023 20:18:27.754 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Start completed.
+07-04-2023 20:18:27.892 [restartedMain] INFO  SQL dialect.logSelectedDialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+07-04-2023 20:18:29.063 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+07-04-2023 20:18:29.077 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+07-04-2023 20:18:29.774 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+07-04-2023 20:18:30.354 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer.startServer - LiveReload server is running on port 35729
+07-04-2023 20:18:30.369 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8080"]
+07-04-2023 20:18:30.402 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+07-04-2023 20:18:30.422 [restartedMain] INFO  c.d.b.BackendServerApplication.logStarted - Started BackendServerApplication in 8.096 seconds (process running for 9.079)
+07-04-2023 20:18:30.429 [restartedMain] INFO  c.d.b.BackendServerApplication.main - ------Application startup completed-------
+07-04-2023 20:18:30.438 [restartedMain] INFO  c.d.b.BackendServerApplication.main - Host address: 192.168.56.1
+07-04-2023 20:18:45.509 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+07-04-2023 20:18:45.510 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
+07-04-2023 20:18:45.512 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 1 ms
+07-04-2023 20:18:45.602 [http-nio-8080-exec-1] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Answer Service
+07-04-2023 20:18:45.603 [http-nio-8080-exec-1] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Request Object:1005
+07-04-2023 20:18:46.041 [http-nio-8080-exec-1] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Question Service:
+07-04-2023 20:18:46.155 [http-nio-8080-exec-1] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Question id :1005
+07-04-2023 20:18:46.155 [http-nio-8080-exec-1] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Found tag :Cloud
+07-04-2023 20:18:46.156 [http-nio-8080-exec-1] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Question id :1005
+07-04-2023 20:18:46.156 [http-nio-8080-exec-1] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Found tag :Rest API
+07-04-2023 20:18:46.258 [http-nio-8080-exec-3] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Answer Service
+07-04-2023 20:18:46.258 [http-nio-8080-exec-3] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Request Object:1005
+07-04-2023 20:18:46.555 [http-nio-8080-exec-3] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Question Service:
+07-04-2023 20:18:46.594 [http-nio-8080-exec-3] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Question id :1005
+07-04-2023 20:18:46.594 [http-nio-8080-exec-3] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Found tag :Cloud
+07-04-2023 20:18:46.594 [http-nio-8080-exec-3] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Question id :1005
+07-04-2023 20:18:46.594 [http-nio-8080-exec-3] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Found tag :Rest API
+07-04-2023 20:18:50.818 [http-nio-8080-exec-6] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+07-04-2023 20:18:50.881 [http-nio-8080-exec-6] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1005
+07-04-2023 20:18:50.881 [http-nio-8080-exec-6] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Cloud
+07-04-2023 20:18:50.881 [http-nio-8080-exec-6] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1005
+07-04-2023 20:18:50.881 [http-nio-8080-exec-6] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Rest API
+07-04-2023 20:18:50.912 [http-nio-8080-exec-6] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 20:18:50.912 [http-nio-8080-exec-6] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Java
+07-04-2023 20:18:50.912 [http-nio-8080-exec-6] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 20:18:50.912 [http-nio-8080-exec-6] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Git
+07-04-2023 20:18:50.912 [http-nio-8080-exec-6] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 20:18:50.912 [http-nio-8080-exec-6] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Spring Boot
+07-04-2023 20:18:50.975 [http-nio-8080-exec-2] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+07-04-2023 20:18:51.022 [http-nio-8080-exec-2] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1005
+07-04-2023 20:18:51.022 [http-nio-8080-exec-2] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Cloud
+07-04-2023 20:18:51.022 [http-nio-8080-exec-2] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1005
+07-04-2023 20:18:51.022 [http-nio-8080-exec-2] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Rest API
+07-04-2023 20:18:51.061 [http-nio-8080-exec-2] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 20:18:51.061 [http-nio-8080-exec-2] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Java
+07-04-2023 20:18:51.061 [http-nio-8080-exec-2] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 20:18:51.061 [http-nio-8080-exec-2] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Git
+07-04-2023 20:18:51.061 [http-nio-8080-exec-2] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Question id :1001
+07-04-2023 20:18:51.061 [http-nio-8080-exec-2] INFO  c.d.b.services.QuestionService.fetchTopQuestion - Found tag :Spring Boot
+07-04-2023 20:18:52.435 [http-nio-8080-exec-5] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Answer Service
+07-04-2023 20:18:52.435 [http-nio-8080-exec-5] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Request Object:1005
+07-04-2023 20:18:52.560 [http-nio-8080-exec-5] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Question Service:
+07-04-2023 20:18:52.577 [http-nio-8080-exec-5] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Question id :1005
+07-04-2023 20:18:52.577 [http-nio-8080-exec-5] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Found tag :Cloud
+07-04-2023 20:18:52.577 [http-nio-8080-exec-5] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Question id :1005
+07-04-2023 20:18:52.577 [http-nio-8080-exec-5] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Found tag :Rest API
+07-04-2023 20:18:52.592 [http-nio-8080-exec-9] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Answer Service
+07-04-2023 20:18:52.592 [http-nio-8080-exec-9] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Request Object:1005
+07-04-2023 20:18:52.718 [http-nio-8080-exec-9] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Question Service:
+07-04-2023 20:18:52.733 [http-nio-8080-exec-9] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Question id :1005
+07-04-2023 20:18:52.733 [http-nio-8080-exec-9] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Found tag :Cloud
+07-04-2023 20:18:52.733 [http-nio-8080-exec-9] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Question id :1005
+07-04-2023 20:18:52.733 [http-nio-8080-exec-9] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Found tag :Rest API
+07-04-2023 21:22:43.164 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+07-04-2023 21:22:43.229 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown initiated...
+07-04-2023 21:22:43.236 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown completed.
+08-04-2023 23:08:06.436 [restartedMain] INFO  c.d.b.BackendServerApplication.logStarting - Starting BackendServerApplication using Java 19 with PID 6480 (C:\Users\bhatt\Desktop\Sem-2\ASDC\group22\backendServer\target\classes started by bhatt in C:\Users\bhatt\Desktop\Sem-2\ASDC\group22)
+08-04-2023 23:08:06.443 [restartedMain] INFO  c.d.b.BackendServerApplication.logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+08-04-2023 23:08:06.556 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+08-04-2023 23:08:06.557 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+08-04-2023 23:08:07.793 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+08-04-2023 23:08:07.795 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+08-04-2023 23:08:07.856 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.dalstackoverflow.backendserver.repositories.AnswerRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+08-04-2023 23:08:07.858 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.dalstackoverflow.backendserver.repositories.CommentRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+08-04-2023 23:08:07.860 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.dalstackoverflow.backendserver.repositories.LoginRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+08-04-2023 23:08:07.862 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.dalstackoverflow.backendserver.repositories.QuestionRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+08-04-2023 23:08:07.863 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.dalstackoverflow.backendserver.repositories.RegistrationRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+08-04-2023 23:08:07.865 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.dalstackoverflow.backendserver.repositories.TagRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+08-04-2023 23:08:07.867 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 62 ms. Found 0 JDBC repository interfaces.
+08-04-2023 23:08:07.885 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+08-04-2023 23:08:07.887 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+08-04-2023 23:08:07.950 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 55 ms. Found 6 JPA repository interfaces.
+08-04-2023 23:08:08.422 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+08-04-2023 23:08:08.465 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping.afterPropertiesSet - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+08-04-2023 23:08:08.955 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+08-04-2023 23:08:08.971 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8080"]
+08-04-2023 23:08:08.972 [restartedMain] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+08-04-2023 23:08:08.973 [restartedMain] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/10.1.5]
+08-04-2023 23:08:09.049 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+08-04-2023 23:08:09.051 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2490 ms
+08-04-2023 23:08:09.275 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+08-04-2023 23:08:09.365 [restartedMain] INFO  org.hibernate.Version.logVersion - HHH000412: Hibernate ORM core version 6.1.6.Final
+08-04-2023 23:08:09.638 [restartedMain] WARN  org.hibernate.orm.deprecation.lambda$new$1 - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+08-04-2023 23:08:09.784 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Starting...
+08-04-2023 23:08:10.045 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool.checkFailFast - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@412bf44d
+08-04-2023 23:08:10.047 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Start completed.
+08-04-2023 23:08:10.103 [restartedMain] INFO  SQL dialect.logSelectedDialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+08-04-2023 23:08:11.058 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+08-04-2023 23:08:11.069 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+08-04-2023 23:08:11.625 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+08-04-2023 23:08:12.171 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer.startServer - LiveReload server is running on port 35729
+08-04-2023 23:08:12.194 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8080"]
+08-04-2023 23:08:12.222 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+08-04-2023 23:08:12.231 [restartedMain] INFO  c.d.b.BackendServerApplication.logStarted - Started BackendServerApplication in 6.794 seconds (process running for 7.763)
+08-04-2023 23:08:12.234 [restartedMain] INFO  c.d.b.BackendServerApplication.main - ------Application startup completed-------
+08-04-2023 23:08:12.239 [restartedMain] INFO  c.d.b.BackendServerApplication.main - Host address: 192.168.56.1
+08-04-2023 23:08:26.205 [http-nio-8080-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+08-04-2023 23:08:26.206 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
+08-04-2023 23:08:26.208 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 2 ms
+08-04-2023 23:08:26.277 [http-nio-8080-exec-1] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+08-04-2023 23:08:26.938 [http-nio-8080-exec-2] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+08-04-2023 23:08:30.002 [http-nio-8080-exec-8] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Answer Service
+08-04-2023 23:08:30.002 [http-nio-8080-exec-8] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Request Object:1025
+08-04-2023 23:08:30.049 [http-nio-8080-exec-8] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Question Service:
+08-04-2023 23:08:30.097 [http-nio-8080-exec-10] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Answer Service
+08-04-2023 23:08:30.097 [http-nio-8080-exec-10] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Request Object:1025
+08-04-2023 23:08:30.128 [http-nio-8080-exec-10] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Question Service:
+08-04-2023 23:09:22.034 [http-nio-8080-exec-4] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+08-04-2023 23:09:22.200 [http-nio-8080-exec-10] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+08-04-2023 23:09:24.423 [http-nio-8080-exec-6] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Answer Service
+08-04-2023 23:09:24.424 [http-nio-8080-exec-6] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Request Object:1026
+08-04-2023 23:09:24.464 [http-nio-8080-exec-6] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Question Service:
+08-04-2023 23:09:24.491 [http-nio-8080-exec-5] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Answer Service
+08-04-2023 23:09:24.491 [http-nio-8080-exec-5] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Request Object:1026
+08-04-2023 23:09:24.523 [http-nio-8080-exec-5] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Question Service:
+08-04-2023 23:09:28.860 [http-nio-8080-exec-6] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+08-04-2023 23:09:29.026 [http-nio-8080-exec-8] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+08-04-2023 23:10:02.035 [http-nio-8080-exec-2] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Answer Service
+08-04-2023 23:10:02.036 [http-nio-8080-exec-2] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Request Object:1028
+08-04-2023 23:10:02.066 [http-nio-8080-exec-2] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Question Service:
+08-04-2023 23:10:02.099 [http-nio-8080-exec-1] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Answer Service
+08-04-2023 23:10:02.100 [http-nio-8080-exec-1] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Request Object:1028
+08-04-2023 23:10:02.127 [http-nio-8080-exec-1] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Question Service:
+08-04-2023 23:10:06.333 [http-nio-8080-exec-2] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+08-04-2023 23:10:06.455 [http-nio-8080-exec-9] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+08-04-2023 23:10:08.064 [http-nio-8080-exec-3] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Answer Service
+08-04-2023 23:10:08.064 [http-nio-8080-exec-3] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Request Object:1024
+08-04-2023 23:10:08.098 [http-nio-8080-exec-3] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Question Service:
+08-04-2023 23:10:08.131 [http-nio-8080-exec-9] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Answer Service
+08-04-2023 23:10:08.131 [http-nio-8080-exec-9] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Request Object:1024
+08-04-2023 23:10:08.161 [http-nio-8080-exec-9] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Question Service:
+08-04-2023 23:10:13.893 [http-nio-8080-exec-8] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+08-04-2023 23:10:14.040 [http-nio-8080-exec-1] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
