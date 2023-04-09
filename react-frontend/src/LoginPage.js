@@ -136,7 +136,7 @@ function LoginPage() {
                     <br/>
                     <div className="PromptRegister">
                         <body>Don't have an account?</body>
-                        <div className="LinkText"><Link to="/registration">SignUp Instead</Link></div>
+                        <div className="LinkText"><Link to="/register">SignUp Instead</Link></div>
                     </div>
                     <br/><br/>
                 </div>

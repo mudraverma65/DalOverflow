@@ -76,8 +76,27 @@ function UserProfile() {
             {BackToHomePage && (
                 <Navigate to={'/'}/>
             )}
-            <div>
-            <Container>
+            <div class = "UserProfilePage">
+            <div class = "UserDetails">
+              <h2>{localStorage.getItem("username").charAt(0).toUpperCase()+ localStorage.getItem("username").slice(1)}❜s Profile</h2>
+            </div>
+              <div class = "UserProfile">
+                <div class = "QuestionAnswered">
+                  <h2>24</h2>
+                  <p>Questions Answered</p>
+                </div>
+                <div class = "QuestionAsked">
+                  <h2>32</h2>
+                  <p>Questions Asked</p>
+                </div>
+              </div>
+              <div class="Logout">
+                <div class="button1" onClick={() => Logout()}> Logout</div>
+              </div>
+
+            </div>
+            
+            {/* <Container>
                 <Header1>{localStorage.getItem("username").charAt(0).toUpperCase()+ localStorage.getItem("username").slice(1)}❜s Profile</Header1>
                 <br />
                 <TileList tiles={tiles} />
@@ -86,7 +105,7 @@ function UserProfile() {
             </div>
             <div>
             <Button onClick={() => Logout()}>Logout</Button>
-            </div>
+            </div> */}
 
         </>
     );

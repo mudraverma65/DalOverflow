@@ -650,7 +650,7 @@ a{
 .Footer{
   border-top: 1px solid #ffd401;
   background-color: #ffffff;
-  height: 100px;
+  height: 50px;
   width: 100%;
 }
 
@@ -664,13 +664,49 @@ a{
   width: 78%;
   float: left;
 }
+
 .CommentDate{
   width: 22%;
   float: right;
 }
+
 .CommentDisplay{
   border-bottom: 1px solid #ffd401!important;
   margin: auto;
   width: 95%;
   padding-bottom: 30px;
+}
+
+.UserProfile{
+  padding: 10px 0px;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.QuestionAnswered{
+  border: 1px solid #ffd401;
+  padding: 30px 30px;
+  float: left;
+  width: 35%;
+}
+.QuestionAsked{
+  margin-left: 20px;
+  border: 1px solid #ffd401;
+  padding: 30px 30px;
+  float: left;
+  width: 35%;
+}
+.Logout{
+  padding: 20px 40px;
+  width: 90%;
+}
+
+.UserDetails{
+  padding: 20px 40px;
+  width: 90%;
+}
+
+.UserProfilePage{
+  min-height: 80vh;
 }
