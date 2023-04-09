@@ -29,7 +29,7 @@ function QuestionsFrontPage() {
     }, []);
     console.log("Question API response:"+questions);
     const handleClick = () => {
-        if (localStorage.getItem("userId") === 'null') {
+        if (localStorage.getItem("userId") === null) {
           alert("Please login to ask questions");
         }
     };
