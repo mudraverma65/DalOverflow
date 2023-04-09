@@ -1,7 +1,10 @@
-import {  useContext  } from "react";
+import { FunctionComponent, useState, useEffect, useContext  } from "react";
 import "./styles.css";
 import {Link} from "react-router-dom";
 import UserLoggedIn from './UserLoggedIn';
+import { createTheme } from '@mui/material/styles';
+import axios from "axios";
+import moment from "moment/moment";
 
 function QuestionDetails(props) {
 
@@ -9,27 +12,16 @@ function QuestionDetails(props) {
   const questionUserId = localStorage.getItem("questionUserId");
   const userLoggedin = localStorage.getItem("userId");
 
+    console.log(userLoggedin);
+    console.log(questionUserId);
   const ifUser = () => {
     if(questionUserId == userLoggedin){
-        deleteQuestion();
+        alert("Delete Accepted");
     }
     else{
         alert("Only the owner can delete the question");
     }
   }
-    const deleteQuestion = async () => {
-        try {
-            const questionID = localStorage.getItem("selectedQuestionId");
-            console.log("selectedQuestionId" + questionID)
-            const response = await axios.delete(`http://localhost:8080/api/questions/${questionID}`);
-            console.log(response.data);
-            alert("Question deleted successfully!");
-        } catch (error) {
-            console.error(error);
-            alert("Failed to delete question!");
-        }
-    };
-
   const notUser = () => {
     alert("Please login to delete the question");
   }
