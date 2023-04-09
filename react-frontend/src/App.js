@@ -18,6 +18,8 @@ import RegistrationPage from './RegistrationPage';
 import UserProfile from './UserProfile';
 import QuestionAnswer from './QuestionAnswer';
 import SearchResult from './SearchResult';
+import QuestionAsk from './QuestionAsk';
+import Register from './Register';
 
 const Styles = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap');
@@ -60,6 +62,8 @@ function App() {
           <Header/>
           <Routes>
             <Route path="/ask" element = {<AskQuestion/>} />
+            <Route path="/askq" element = {<QuestionAsk/>} />
+            <Route path="/register" element = {<Register/>} />
 
             <Route path="/profile" element = {<UserProfile/>} />
             <Route path="/" element = {<QuestionsFrontPage/>} />

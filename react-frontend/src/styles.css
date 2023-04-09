@@ -601,3 +601,21 @@ a{
   text-decoration: none!important;
   text-decoration-color: #333333;
 }
+
+.AskQuestion{
+  background-color: #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.QuestionColumn{  
+  background-color: #ffffff;
+  border-left: #ffd401 1px solid;
+  border-right: #ffd401 1px solid;
+  margin: auto;
+  position: relative;
+  width: 70%;
+  max-width: 100%;
+  padding: 50px 30px;
+}
