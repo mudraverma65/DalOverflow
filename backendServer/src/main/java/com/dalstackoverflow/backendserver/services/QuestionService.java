@@ -42,7 +42,15 @@ public class QuestionService {
     @Transactional
     public void postUserQuestion(Question userQuestion){
         LOGGER.info("Posting question for user : "+ userQuestion.getUserID());
-        questionRepository.save(userQuestion);
+        Question savedQuestion = questionRepository.save(userQuestion);
+        LOGGER.info("Logged question id:"+savedQuestion.getQuestionID());
+        for (String tagName : userQuestion.getTags()) {
+            Tag tag = new Tag();
+            tag.setTagName(tagName);
+            tag.setQuestionID(savedQuestion.getQuestionID());
+            tagRepository.save(tag);
+            LOGGER.info("Saving tags");
+        }
         LOGGER.info("Your question was successfully posted");
     }
 
@@ -89,5 +97,20 @@ public class QuestionService {
     public List<Tag> fetchTagsByQuestionID(Integer questionID){
         List<Tag> questiontags = tagRepository.findByQuestionID(questionID);
         return questiontags;
+    }
+
+    /**
+     * This method will be called when delete button from the front end is hit.
+     * @param questionID
+     */
+    public void deleteQuestion(Integer questionID) {
+        Optional<Question> question = questionRepository.findById(questionID);
+        if (question.isPresent()) {
+            LOGGER.info("Question Found. Proceeding with delete");
+            questionRepository.deleteById(questionID);
+            LOGGER.info("Question with ID " + questionID + " has been deleted.");
+        } else {
+            LOGGER.info("Question with ID " + questionID + " does not exist.");
+        }
     }
 }

@@ -1,6 +1,8 @@
 import {Link} from 'react-router-dom';
 import QuestionList from './QuestionList';
 import React, { useState, useEffect } from 'react';
+import UserLoggedIn from './UserLoggedIn';
+import {useContext} from 'react';
 
 
 function DisplayQuestionList(props) {
@@ -15,6 +17,8 @@ function DisplayQuestionList(props) {
         </ul>
     );
 }
+
+
 function QuestionsFrontPage() {
     const [questions, setQuestions] = useState([]);
     console.log("Calling Fetch Top Question API");
@@ -24,13 +28,27 @@ function QuestionsFrontPage() {
             .then(data => setQuestions(data));
     }, []);
     console.log("Question API response:"+questions);
+    const handleClick = () => {
+        if (localStorage.getItem("userId") === null) {
+          alert("Please login to ask questions");
+        }
+    };
+    const {user} = useContext(UserLoggedIn)
     return (
         <main>
             <div className="TopRow">
                 <h2>Top Questions</h2>
-                <Link to="/ask">
-                    <div class="button1" >Ask Question</div>
-                </Link>
+                {user && (
+                      <Link to={'/ask'}>
+                        <div className="button1" >Ask Question</div>
+                       </Link>      
+                       )}
+                {!user && (
+                    <div>
+                        <div className="button1" onClick={handleClick}>Ask Question</div>
+                     </div>
+                       )}
+
             </div>
             <DisplayQuestionList questions={questions} />
         </main>

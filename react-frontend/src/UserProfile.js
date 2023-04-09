@@ -1,50 +1,45 @@
-import axios from "axios";
-import { useState } from "react";
-import styled from "styled-components";
+import { useState, useContext,useEffect} from "react";
 import {Navigate} from "react-router-dom";
-
-
-const Container = styled.div`
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    margin-left: 10px;
-`;
-
-const Header1 = styled.h1`
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-`;
-
-const Button = styled.button`
-    font-size: 1.1rem;
-    color:#fff;
-    border:0;
-    background-color: #378ad3;
-    border-radius: 5px;
-    text-decoration: none;
-    margin-top: 10px;
-    margin-left: 10px;
-`;
+import UserLoggedIn from './UserLoggedIn';
 
 function UserProfile() {
-    const[BackToHomePage, setBackToHomePage] = useState(false);
-    function Logout(){
-        axios.post('').then(()=>{
-            setBackToHomePage(true);
-        });
-    }
-    return(
+  const [BackToHomePage, setBackToHomePage] = useState(false);
+  const [userId, setUserId] = useState(null);
+  const { checkUser } = useContext(UserLoggedIn);
 
-        <>
+  useEffect(() => {
+    setUserId(localStorage.getItem("userId"));
+  }, []);
+
+  function Logout() {
+    localStorage.removeItem("userId");
+    checkUser();
+    setBackToHomePage(true);
+  }
+    return(
+      <>
             {BackToHomePage && (
                 <Navigate to={'/'}/>
             )}
-            <Container>
-                <Header1>Profile</Header1>
-                <Button onClick={() => Logout()}>Logout</Button>
-            </Container>
-            
+            <div class = "UserProfilePage">
+            <div class = "UserDetails">
+              <h2>{localStorage.getItem("username").charAt(0).toUpperCase()+ localStorage.getItem("username").slice(1)}❜s Profile</h2>
+            </div>
+              <div class = "UserProfile">
+                <div class = "QuestionAnswered">
+                  <h2>24</h2>
+                  <p>Questions Answered</p>
+                </div>
+                <div class = "QuestionAsked">
+                  <h2>32</h2>
+                  <p>Questions Asked</p>
+                </div>
+              </div>
+              <div class="Logout">
+                <div class="button1" onClick={() => Logout()}> Logout</div>
+              </div>
+
+            </div>
         </>
     );
 

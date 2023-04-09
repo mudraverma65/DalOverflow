@@ -3,6 +3,9 @@ import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import { useState } from "react";
 import axios from 'axios';
+import UserLoggedIn from './UserLoggedIn';
+import {useContext} from 'react';
+
 
 // function GetAnswer(props){
 //   const[answerBody,setAnswerBody] = useState('')
@@ -23,16 +26,25 @@ import axios from 'axios';
 function GetAnswer(props){
   const[answerDescription,setAnswerDescription] = useState()
   const[answerCode, setAnswerCode] = useState()
-
+  const notAUser = () => {
+          if (localStorage.getItem("userId") === 'null') {
+            alert("Please login to ask questions");
+          }
+      };
   const handleClick = (e)=>{
     e.preventDefault()
+    if (!answerDescription) {
+        alert("Empty answer cannot be posted");
+        return;
+      }
     const answer = {answerDescription,answerCode }
    const questionId = localStorage.getItem("selectedQuestionId")
    const userId = localStorage.getItem("userId")
-   const URL = `http://localhost:8080/questions/${props.questionId}/answers/${userId}`
+   const URL = `http://localhost:8080/questions/${questionId}/answers/${userId}`
    axios.post(URL, answer)
                    .then(response => {
                        window.alert("Your answer was posted successfully!");
+                       window.location.reload(false);
                    })
                    .catch(error => {
                        if (error.response && error.response.status === 500)
@@ -44,7 +56,7 @@ function GetAnswer(props){
                        }
                    });
   }
-
+  const {user} = useContext(UserLoggedIn)
   return(
     <div class="get_answer_col">
       <div>
@@ -84,7 +96,12 @@ function GetAnswer(props){
         />
         </Box>
       </div>
-      <button className="button1" onClick={handleClick}>Submit</button>
+      {user && (
+           <button className="button1" onClick={handleClick}>Submit</button>
+      )}
+      {!user && (
+           <button className="button1" onClick={notAUser}>Submit</button>
+      )}
 
     </div>
   );

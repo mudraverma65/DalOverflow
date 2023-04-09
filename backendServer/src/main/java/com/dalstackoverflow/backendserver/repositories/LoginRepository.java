@@ -4,6 +4,8 @@ import com.dalstackoverflow.backendserver.models.Registration;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
+import java.util.Optional;
+
 
 /**
  * @author Ritva Katrodiya
@@ -26,5 +28,6 @@ public interface LoginRepository extends CrudRepository<Registration, Integer>
      * @return User Object
      */
     Registration findById(int userID);
+
 }
 

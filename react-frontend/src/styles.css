@@ -188,6 +188,8 @@
     display: inline-block;
     position: relative;
     font-weight: 550;
+    margin-top: 2.3px;
+    margin-left: 10px
 
 }
   
@@ -224,6 +226,15 @@ h3{
   font-weight: 500!important;
 }
 
+h4{
+  font-family: 'Inter',Helvetica,Arial,Lucida,sans-serif!important;
+  font-size: 14px!important;
+  color: #444444!important;
+  padding-bottom: 10px!important;
+  line-height: 10px!important;
+  font-weight: 500!important;
+}
+
 strong {
   font-weight: 700!important;
 }
@@ -255,13 +266,20 @@ p{
     font-size: 14px;
 }
 
+.LogoText{
+  color:#444444;
+  font-size: 16px;
+  font-weight: 800;
+  display: inline-block;
+}
+
 votes{
   text-align: center;
   font-family: 'Inter',Helvetica,Arial,Lucida,sans-serif;
   color: #333;
   line-height: 1.7em;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 20px;
 
 }
 
@@ -345,14 +363,14 @@ tags{
 .comment_col{
   width:100%;
   float: left;
-  margin-top: 20px;
-  padding: 1% 0;
-  /* border-bottom: 1px solid #d8d2d2; */
 }
 
 .comment{
+  width: 93%;
+  float: right;
+  border-top: 1px solid #d8d2d2;
   border-bottom: 1px solid #d8d2d2;
-  padding: 10px 0;
+  padding: 10px 0px;
 }
 
 comment_user{
@@ -369,12 +387,12 @@ comment_time{
 }
 
 .votes_col{
-  width:10%;
+  width:7%;
   float: left;
 }
 
 .answer_col{
-  width:90%;
+  width:93%;
   float: left;
 }
 
@@ -386,10 +404,9 @@ comment_time{
 }
 
 a{
-  color: #ffffff!important;
-  text-align: left;
+  color: #333333;
   font-family: 'Inter',Helvetica,Arial,Lucida,sans-serif;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .modal_comment, .overlay {
@@ -478,6 +495,7 @@ a{
 }
 
 .QuestionDesCol{
+  cursor: pointer;
   border-style: solid;
   width: 74.25%;
   float: none;
@@ -494,4 +512,201 @@ a{
   line-height: 1.7em;
   font-weight: 500;
   padding-right: 20px;
+  height: 120px;
+  overflow: hidden;
+  padding: 10px 0px;;
+
+}
+
+.AnswerBody{
+  overflow: hidden;
+}
+
+.Header{
+  width: 100%;
+  max-width: 100%;
+  background-color: #ffffff;
+  margin: auto;
+  position: relative;
+  border-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #ffd401; 
+  align-items: center;
+  display: flex;
+  height: 70px;
+}
+
+.LogoCol{
+  width:15%;
+  float: left;
+  z-index: 2;
+  display: flex;
+}
+
+.SearchBar{
+  width: 65%;
+  float: left;
+  position: relative;
+  z-index: 2;
+}
+
+.LoginHeader {
+  width: 20%;
+  position: relative;
+  z-index: 2;
+  padding-left: 30px;
+}
+
+.LogoCol{
+  display: flex;
+  align-items: center;
+}
+
+.SearchResults{
+  display: flex;
+  align-items: center;
+  padding: 20px 100px;
+  height: 50px;
+  border-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #666666; 
+}
+
+.LoginRegistration{ 
+  background-color: #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.LoginRegister{
+  background-color: #ffffff;
+  margin: auto;
+  position: relative;
+  width: 55%;
+  max-width: 100%;
+  border-radius: 25px;
+  overflow: hidden;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ffd401;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.PromptRegister{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.LinkText{
+  font-family: 'Inter',Helvetica,Arial,Lucida,sans-serif!important;
+  font-size: 15px!important;
+  color: #333333!important;
+  font-weight: 500!important;
+  text-decoration: none!important;
+  text-decoration-color: #333333;
+}
+
+.AskQuestion{
+  background-color: #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.QuestionColumn{  
+  background-color: #ffffff;
+  border-left: #ffd401 1px solid;
+  border-right: #ffd401 1px solid;
+  margin: auto;
+  position: relative;
+  width: 70%;
+  max-width: 100%;
+  padding: 50px 30px;
+}
+
+.button2{
+  margin-top: 10px!important;
+  text-align: center;
+  cursor: pointer;
+  color: #000000!important;
+  border: 0px;
+  border-radius: 10px;
+  font-size: 12px;
+  padding: 5px 15px;
+  background-color: #ffd401;
+  display: inline-block;
+  position: relative;
+  font-weight: 550;
+  position: relative;
+  text-align: right;
+}
+
+.Footer{
+  border-top: 1px solid #ffd401;
+  background-color: #ffffff;
+  height: 50px;
+  width: 100%;
+}
+
+.FooterText {
+  position: relative;
+  text-align: right;
+}
+
+.CommentText{
+  
+  width: 78%;
+  float: left;
+}
+
+.CommentDate{
+  width: 22%;
+  float: right;
+}
+
+.CommentDisplay{
+  border-bottom: 1px solid #ffd401!important;
+  margin: auto;
+  width: 95%;
+  padding-bottom: 30px;
+}
+
+.UserProfile{
+  padding: 10px 0px;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.QuestionAnswered{
+  border: 1px solid #ffd401;
+  padding: 30px 30px;
+  float: left;
+  width: 35%;
+}
+.QuestionAsked{
+  margin-left: 20px;
+  border: 1px solid #ffd401;
+  padding: 30px 30px;
+  float: left;
+  width: 35%;
+}
+.Logout{
+  padding: 20px 40px;
+  width: 90%;
+}
+
+.UserDetails{
+  padding: 20px 40px;
+  width: 90%;
+}
+
+.UserProfilePage{
+  min-height: 80vh;
 }

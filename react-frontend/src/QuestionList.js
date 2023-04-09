@@ -1,9 +1,16 @@
 import {Link} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
 
 function QuestionList(props) {
-  function handleQuestionClickEvent(questionId){
-    localStorage.setItem("selectedQuestionId",questionId)
+
+  const navigate = useNavigate();
+
+  function handleQuestionClickEvent(question){
+    localStorage.setItem("selectedQuestionId",question.questionID)
+    localStorage.setItem("questionUserId",question.userID)
     console.log("selected Question id: " + localStorage.getItem("selectedQuestionId"))
+    navigate('/question-answer');
   }
 
     console.log("Question List Props:"+props);
@@ -22,17 +29,17 @@ function QuestionList(props) {
         <div className='Questions'>
           <div className='QuestionListCol'>
             <div className='QuestionInfoList'>
-              <div><strong><span>0</span></strong><span> </span>Votes</div>
-              <div><strong><span>{question.answerCount}</span></strong><span> </span>Answers</div>
+              <div style={{ position: 'absolute', top: 65, left: 300  }}><strong><span>{question.answerCount}</span></strong><span> </span>Answers</div>
             </div>
           </div>
           <div className='QuestionDesCol'>
-            <div onClick={() => handleQuestionClickEvent(question.questionID)} ><Link to={"./question-answer"}><h3>{question.questionTitle}</h3></Link></div>
+            {/* <div onClick={() => handleQuestionClickEvent(question.questionID)} ><Link to={"./question-answer"}><h3>{question.questionTitle}</h3></Link></div> */}
+            <div onClick={() => handleQuestionClickEvent(question)} ><h3>{question.questionTitle}</h3></div>
             <div>{question.tags.map(tag => (
                         <tags key={tag}>{tag}</tags>
                     ))}
             </div>
-            <div className='QuestionStats'>Asked by {question.userName} at {question.questionDate}</div>
+            <div className='QuestionStats' style={{ position: 'absolute', top: 85, right: 150  }}>Asked by {question.userName} at {question.questionDate}</div>
           </div>
         </div>
       </div>

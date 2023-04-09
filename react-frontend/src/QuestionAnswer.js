@@ -1,28 +1,9 @@
-import { FunctionComponent, useState, useEffect  } from "react";
-import ButtonGroup from '@mui/material/ButtonGroup';
-import Button from '@mui/material/Button';
-import Box from '@mui/material/Box';
-import TextField from '@mui/material/TextField';
+import { useState, useEffect  } from "react";
 import "./styles.css";
-
-import { createTheme } from '@mui/material/styles';
 import axios from "axios";
 import QuestionDetails from "./QuestionDetails";
 import AnswersDisplay from "./AnswerDisplay";
 import GetAnswer from "./GetAnswer";
-import Comment from "./Comment";
-
-
-const theme = createTheme({
-  palette: {
-    primary: {
-      main: '#ffc107',
-    },
-    secondary: {
-      main: '#f44336',
-    },
-  },
-});
 
 function QuestionAnswer(){
 
@@ -45,14 +26,10 @@ function QuestionAnswer(){
 
     fetchQuestionByID();
   }, []);
-
-  console.log(questionAnswerInfo);
   
     return(
       <div className="jsBeginnerWantToInsertTeParent">
         <div class="thread">
-          {/* {questionAnswerInfo} */}
-          {/* {console.log(questionAnswerInfo)} */}
           <QuestionDetails 
             questionCode={questionAnswerInfo.questionCode}
             questionDate={questionAnswerInfo.questionDate}
@@ -60,6 +37,7 @@ function QuestionAnswer(){
             questionTitle={questionAnswerInfo.questionTitle}
             questionTags={questionAnswerInfo.tags}
             questionAnswerCount={questionAnswerInfo.answerCount}
+            allComments = {questionAnswerInfo.allComments}
           />
 
           {

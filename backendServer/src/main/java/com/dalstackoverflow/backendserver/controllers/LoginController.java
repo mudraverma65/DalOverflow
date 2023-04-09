@@ -46,35 +46,61 @@ public class LoginController {
         String encryptedPassword = getEncrypted(loginRequest.getPassword());
         loginRequest.setPassword(encryptedPassword);
         LoginResponse response = loginService.loginUser(loginRequest);
+
         if (response.getMessage().equals("Login successful!")) {
             int userId = response.getUserId();
-            response.setMessage("Login successful! Your user ID is " + userId);
+            String userName = response.getUserName();
+            String password = response.getPassword();
+            response.setMessage("Login successful! Your user ID is " + userId + ". Your username is " + userName + ". Your password is " + password);
             return ResponseEntity.ok(response);
         } else {
             response.setMessage("Invalid username or password");
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(response);
         }
+
     }
 
+
+    /**
+     * This method is used to getch the username from DB
+     * @param userId
+     * @return userName when login successful
+     */
+    @GetMapping("/{userId}")
+    public ResponseEntity<String> getUsername(@PathVariable int userId) {
+        String username = loginService.getUsername(userId);
+        if (username != null)
+        {
+            return ResponseEntity.ok(username);
+        }
+        else {
+            return ResponseEntity.notFound().build();
+        }
+    }
 
     /**
      *
      * @param password is the raw password got from UI
      * @return will return encrypted password using SHA-256 algorithm
      */
-    private static String getEncrypted(String password) {
-        String encryptedPassword = null;
-        try {
-            MessageDigest md = MessageDigest.getInstance("SHA-256");
-            byte[] hash = md.digest(password.getBytes(StandardCharsets.UTF_8));
-            StringBuilder sb = new StringBuilder();
-            for (byte b : hash) {
-                sb.append(String.format("%02x", b));
+    static String getEncrypted(String password) {
+        if(password!=null) {
+            String encryptedPassword = null;
+            try {
+                MessageDigest md = MessageDigest.getInstance("SHA-256");
+                byte[] hash = md.digest(password.getBytes(StandardCharsets.UTF_8));
+                StringBuilder sb = new StringBuilder();
+                for (byte b : hash) {
+                    sb.append(String.format("%02x", b));
+                }
+                encryptedPassword = sb.toString();
+            } catch (NoSuchAlgorithmException e) {
+                e.printStackTrace();
             }
-            encryptedPassword = sb.toString();
-        } catch (NoSuchAlgorithmException e) {
-            e.printStackTrace();
+            return encryptedPassword;
         }
-        return encryptedPassword;
+        else {
+            return null;
+        }
     }
 }

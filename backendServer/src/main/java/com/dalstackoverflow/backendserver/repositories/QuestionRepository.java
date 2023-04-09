@@ -20,4 +20,11 @@ public interface QuestionRepository extends JpaRepository<Question,Integer> {
      */
     @Query(value = "SELECT q_id,u_id,q_title,q_description,q_date,q_code FROM question ORDER BY q_date DESC LIMIT 8", nativeQuery = true)
     List<Question> findTopQuestions();
+
+    /**
+     * This method will fetch the patterns that will be matched from the keyword being sent by the user.
+     * @param keyword
+     * @return Question list that matached the keyword passed
+     */
+    List<Question> findByQuestionTitleContainingIgnoreCaseOrQuestionDescriptionContainingIgnoreCase(String titleKeyword, String descriptionKeyword);
 }

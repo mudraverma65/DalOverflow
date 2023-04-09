@@ -8,6 +8,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+/**
+ * @author Utkarsh Shah
+ * This is the service class for posting and fetching comments
+ */
 @Service
 public class CommentService {
 
@@ -16,6 +20,10 @@ public class CommentService {
     @Autowired
     CommentRepository commentRepository;
 
+    /**
+     * This methods takes comment as input and save it in the database for a particular answer id
+     * @param answerComment is a comment of a particular answer of Comment type
+     */
     @Transactional
     public void postAnswerComment(Comment answerComment){
         LOGGER.info("Posting comment for answer : "+ answerComment.getAnswerID());

@@ -7,12 +7,23 @@ public class LoginResponse {
     private String message;
     private Integer userId;
 
-    public LoginResponse() {
+    private String userName;
+
+    public String getPassword() {
+        return password;
     }
 
-    public LoginResponse(String message, Integer userId) {
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    private String password;
+
+    public LoginResponse(String message, Integer userId, String userName,String password) {
         this.message = message;
         this.userId = userId;
+        this.userName = userName;
+        this.password=password;
     }
 
     public String getMessage() {
@@ -31,11 +42,20 @@ public class LoginResponse {
         this.userId = userId;
     }
 
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
     @Override
     public String toString() {
         return "LoginResponse{" +
                 "message='" + message + '\'' +
                 ", userId=" + userId +
+                ", userName=" + userName + ", password="+password +
                 '}';
     }
 }
