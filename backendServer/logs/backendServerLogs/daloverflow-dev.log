@@ -10313,3 +10313,213 @@ java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'gaurav' for 
 09-04-2023 01:17:26.973 [http-nio-8080-exec-8] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver.logException - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "null"]
 09-04-2023 01:19:53.971 [http-nio-8080-exec-10] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
 09-04-2023 01:19:53.974 [http-nio-8080-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver.logException - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "null"]
+09-04-2023 02:55:24.029 [restartedMain] INFO  c.d.b.BackendServerApplication.logStarting - Starting BackendServerApplication using Java 19 with PID 18976 (C:\Users\bhatt\Desktop\Sem-2\ASDC\group22\backendServer\target\classes started by bhatt in C:\Users\bhatt\Desktop\Sem-2\ASDC\group22\backendServer)
+09-04-2023 02:55:24.034 [restartedMain] INFO  c.d.b.BackendServerApplication.logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+09-04-2023 02:55:24.122 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+09-04-2023 02:55:24.122 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+09-04-2023 02:55:25.258 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+09-04-2023 02:55:25.260 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+09-04-2023 02:55:25.317 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.dalstackoverflow.backendserver.repositories.AnswerRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+09-04-2023 02:55:25.319 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.dalstackoverflow.backendserver.repositories.CommentRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+09-04-2023 02:55:25.322 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.dalstackoverflow.backendserver.repositories.LoginRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+09-04-2023 02:55:25.324 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.dalstackoverflow.backendserver.repositories.QuestionRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+09-04-2023 02:55:25.325 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.dalstackoverflow.backendserver.repositories.RegistrationRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+09-04-2023 02:55:25.328 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.dalstackoverflow.backendserver.repositories.TagRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+09-04-2023 02:55:25.329 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 61 ms. Found 0 JDBC repository interfaces.
+09-04-2023 02:55:25.351 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+09-04-2023 02:55:25.353 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+09-04-2023 02:55:25.439 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 77 ms. Found 6 JPA repository interfaces.
+09-04-2023 02:55:25.906 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09-04-2023 02:55:25.950 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping.afterPropertiesSet - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+09-04-2023 02:55:26.583 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+09-04-2023 02:55:26.600 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8080"]
+09-04-2023 02:55:26.601 [restartedMain] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+09-04-2023 02:55:26.602 [restartedMain] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/10.1.5]
+09-04-2023 02:55:26.722 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+09-04-2023 02:55:26.726 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2599 ms
+09-04-2023 02:55:27.057 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+09-04-2023 02:55:27.166 [restartedMain] INFO  org.hibernate.Version.logVersion - HHH000412: Hibernate ORM core version 6.1.6.Final
+09-04-2023 02:55:27.395 [restartedMain] WARN  org.hibernate.orm.deprecation.lambda$new$1 - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+09-04-2023 02:55:27.627 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Starting...
+09-04-2023 02:55:27.918 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool.checkFailFast - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@d7334e8
+09-04-2023 02:55:27.920 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Start completed.
+09-04-2023 02:55:27.974 [restartedMain] INFO  SQL dialect.logSelectedDialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+09-04-2023 02:55:28.967 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+09-04-2023 02:55:28.987 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+09-04-2023 02:55:29.672 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+09-04-2023 02:55:30.313 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer.startServer - LiveReload server is running on port 35729
+09-04-2023 02:55:30.325 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8080"]
+09-04-2023 02:55:30.347 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+09-04-2023 02:55:30.357 [restartedMain] INFO  c.d.b.BackendServerApplication.logStarted - Started BackendServerApplication in 7.074 seconds (process running for 7.968)
+09-04-2023 02:55:30.360 [restartedMain] INFO  c.d.b.BackendServerApplication.main - ------Application startup completed-------
+09-04-2023 02:55:30.367 [restartedMain] INFO  c.d.b.BackendServerApplication.main - Host address: 192.168.56.1
+09-04-2023 03:03:34.939 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+09-04-2023 03:03:34.939 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
+09-04-2023 03:03:34.971 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 32 ms
+09-04-2023 03:03:35.081 [http-nio-8080-exec-1] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+09-04-2023 03:03:35.112 [http-nio-8080-exec-3] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver.logException - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "null"]
+09-04-2023 03:03:35.269 [http-nio-8080-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver.logException - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "null"]
+09-04-2023 03:03:35.850 [http-nio-8080-exec-5] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+09-04-2023 03:12:31.394 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+09-04-2023 03:12:31.415 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown initiated...
+09-04-2023 03:12:31.440 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown completed.
+09-04-2023 03:12:36.531 [restartedMain] INFO  c.d.b.BackendServerApplication.logStarting - Starting BackendServerApplication using Java 19 with PID 756 (C:\Users\bhatt\Desktop\Sem-2\ASDC\group22\backendServer\target\classes started by bhatt in C:\Users\bhatt\Desktop\Sem-2\ASDC\group22\backendServer)
+09-04-2023 03:12:36.537 [restartedMain] INFO  c.d.b.BackendServerApplication.logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+09-04-2023 03:12:36.679 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+09-04-2023 03:12:36.680 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+09-04-2023 03:12:38.053 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+09-04-2023 03:12:38.055 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+09-04-2023 03:12:38.116 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.dalstackoverflow.backendserver.repositories.AnswerRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+09-04-2023 03:12:38.118 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.dalstackoverflow.backendserver.repositories.CommentRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+09-04-2023 03:12:38.120 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.dalstackoverflow.backendserver.repositories.LoginRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+09-04-2023 03:12:38.123 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.dalstackoverflow.backendserver.repositories.QuestionRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+09-04-2023 03:12:38.125 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.dalstackoverflow.backendserver.repositories.RegistrationRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+09-04-2023 03:12:38.127 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.dalstackoverflow.backendserver.repositories.TagRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+09-04-2023 03:12:38.129 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 65 ms. Found 0 JDBC repository interfaces.
+09-04-2023 03:12:38.150 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+09-04-2023 03:12:38.152 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+09-04-2023 03:12:38.239 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 76 ms. Found 6 JPA repository interfaces.
+09-04-2023 03:12:38.828 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09-04-2023 03:12:38.876 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping.afterPropertiesSet - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+09-04-2023 03:12:39.621 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+09-04-2023 03:12:39.646 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8080"]
+09-04-2023 03:12:39.648 [restartedMain] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+09-04-2023 03:12:39.648 [restartedMain] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/10.1.5]
+09-04-2023 03:12:39.808 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+09-04-2023 03:12:39.811 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 3127 ms
+09-04-2023 03:12:40.134 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+09-04-2023 03:12:40.254 [restartedMain] INFO  org.hibernate.Version.logVersion - HHH000412: Hibernate ORM core version 6.1.6.Final
+09-04-2023 03:12:40.538 [restartedMain] WARN  org.hibernate.orm.deprecation.lambda$new$1 - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+09-04-2023 03:12:40.765 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Starting...
+09-04-2023 03:12:41.240 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool.checkFailFast - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4e9548d3
+09-04-2023 03:12:41.244 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Start completed.
+09-04-2023 03:12:41.345 [restartedMain] INFO  SQL dialect.logSelectedDialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+09-04-2023 03:12:42.402 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+09-04-2023 03:12:42.412 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+09-04-2023 03:12:43.196 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+09-04-2023 03:12:43.837 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer.startServer - LiveReload server is running on port 35729
+09-04-2023 03:12:43.857 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8080"]
+09-04-2023 03:12:43.890 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+09-04-2023 03:12:43.902 [restartedMain] INFO  c.d.b.BackendServerApplication.logStarted - Started BackendServerApplication in 8.269 seconds (process running for 9.27)
+09-04-2023 03:12:43.908 [restartedMain] INFO  c.d.b.BackendServerApplication.main - ------Application startup completed-------
+09-04-2023 03:12:43.918 [restartedMain] INFO  c.d.b.BackendServerApplication.main - Host address: 192.168.56.1
+09-04-2023 03:13:22.790 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+09-04-2023 03:13:22.790 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
+09-04-2023 03:13:22.806 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 16 ms
+09-04-2023 03:13:22.931 [http-nio-8080-exec-2] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+09-04-2023 03:13:23.780 [http-nio-8080-exec-4] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+09-04-2023 03:16:31.626 [http-nio-8080-exec-4] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+09-04-2023 03:16:31.957 [http-nio-8080-exec-5] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+09-04-2023 03:16:38.942 [http-nio-8080-exec-8] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+09-04-2023 03:16:39.329 [http-nio-8080-exec-9] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+09-04-2023 03:17:53.846 [http-nio-8080-exec-7] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+09-04-2023 03:17:54.398 [http-nio-8080-exec-6] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+09-04-2023 03:19:35.901 [http-nio-8080-exec-4] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+09-04-2023 03:19:36.279 [http-nio-8080-exec-5] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+09-04-2023 03:20:15.702 [http-nio-8080-exec-8] INFO  c.d.b.controllers.LoginController.loginUser - Calling Login Service
+09-04-2023 03:20:15.702 [http-nio-8080-exec-8] INFO  c.d.b.controllers.LoginController.loginUser - Request Object:LoginRequest{username='mudraverma', password='mudra#123'}
+09-04-2023 03:20:15.840 [http-nio-8080-exec-10] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+09-04-2023 03:20:16.091 [http-nio-8080-exec-1] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+09-04-2023 03:20:16.877 [http-nio-8080-exec-3] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+09-04-2023 03:20:17.096 [http-nio-8080-exec-8] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+09-04-2023 03:20:26.202 [http-nio-8080-exec-2] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+09-04-2023 03:20:26.391 [http-nio-8080-exec-3] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+09-04-2023 03:20:29.279 [http-nio-8080-exec-7] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+09-04-2023 03:20:29.296 [http-nio-8080-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver.logException - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "null"]
+09-04-2023 03:20:29.342 [http-nio-8080-exec-6] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver.logException - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "null"]
+09-04-2023 03:20:29.373 [http-nio-8080-exec-9] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver.logException - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "null"]
+09-04-2023 03:20:29.405 [http-nio-8080-exec-10] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+09-04-2023 03:24:45.231 [http-nio-8080-exec-3] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+09-04-2023 03:25:38.203 [http-nio-8080-exec-8] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+09-04-2023 03:28:07.214 [http-nio-8080-exec-2] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+09-04-2023 03:28:13.213 [http-nio-8080-exec-9] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+09-04-2023 03:29:02.857 [http-nio-8080-exec-10] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+09-04-2023 03:29:21.230 [http-nio-8080-exec-1] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+09-04-2023 03:38:35.264 [http-nio-8080-exec-8] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+09-04-2023 03:39:21.973 [http-nio-8080-exec-2] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+09-04-2023 03:39:47.212 [http-nio-8080-exec-9] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+09-04-2023 03:42:07.417 [http-nio-8080-exec-10] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Answer Service
+09-04-2023 03:42:07.419 [http-nio-8080-exec-10] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Request Object:1024
+09-04-2023 03:42:07.560 [http-nio-8080-exec-10] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Question Service:
+09-04-2023 03:42:07.659 [http-nio-8080-exec-5] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Answer Service
+09-04-2023 03:42:07.659 [http-nio-8080-exec-5] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Request Object:1024
+09-04-2023 03:42:07.723 [http-nio-8080-exec-5] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Question Service:
+09-04-2023 03:42:16.328 [http-nio-8080-exec-3] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+09-04-2023 03:42:16.551 [http-nio-8080-exec-8] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+09-04-2023 03:42:30.745 [http-nio-8080-exec-6] INFO  c.d.b.controllers.LoginController.loginUser - Calling Login Service
+09-04-2023 03:42:30.746 [http-nio-8080-exec-6] INFO  c.d.b.controllers.LoginController.loginUser - Request Object:LoginRequest{username='mudraverma', password='mudra#123'}
+09-04-2023 03:42:30.852 [http-nio-8080-exec-7] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+09-04-2023 03:42:31.049 [http-nio-8080-exec-10] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+09-04-2023 03:42:32.384 [http-nio-8080-exec-5] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+09-04-2023 03:42:32.584 [http-nio-8080-exec-8] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+09-04-2023 03:42:35.252 [http-nio-8080-exec-7] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Answer Service
+09-04-2023 03:42:35.253 [http-nio-8080-exec-7] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Request Object:1024
+09-04-2023 03:42:35.295 [http-nio-8080-exec-7] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Question Service:
+09-04-2023 03:42:35.322 [http-nio-8080-exec-1] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Answer Service
+09-04-2023 03:42:35.324 [http-nio-8080-exec-1] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Request Object:1024
+09-04-2023 03:42:35.356 [http-nio-8080-exec-1] INFO  c.d.b.controllers.QuestionController.getAnswersByQuestionID - Calling Question Service:
+09-04-2023 03:42:46.643 [http-nio-8080-exec-10] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+09-04-2023 03:42:46.829 [http-nio-8080-exec-9] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+09-04-2023 03:42:50.771 [http-nio-8080-exec-7] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+09-04-2023 03:42:50.796 [http-nio-8080-exec-3] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver.logException - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "null"]
+09-04-2023 03:42:50.817 [http-nio-8080-exec-9] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver.logException - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "null"]
+09-04-2023 03:42:50.839 [http-nio-8080-exec-5] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver.logException - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "null"]
+09-04-2023 03:42:50.937 [http-nio-8080-exec-4] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+09-04-2023 03:45:19.598 [http-nio-8080-exec-10] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+09-04-2023 03:45:40.545 [http-nio-8080-exec-6] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+09-04-2023 03:46:40.207 [http-nio-8080-exec-3] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+09-04-2023 03:47:03.277 [http-nio-8080-exec-1] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+09-04-2023 03:47:36.133 [http-nio-8080-exec-9] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+09-04-2023 03:48:14.691 [http-nio-8080-exec-7] INFO  c.d.b.controllers.QuestionController.fetchTopUserQuestions - Fetching Top user Questions!!
+09-04-2023 03:48:14.745 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener.onApplicationEvent - Restarting due to 13 class path changes (0 additions, 0 deletions, 13 modifications)
+09-04-2023 03:48:14.807 [Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol.log - Pausing ProtocolHandler ["http-nio-8080"]
+09-04-2023 03:48:14.808 [Thread-5] INFO  o.a.catalina.core.StandardService.log - Stopping service [Tomcat]
+09-04-2023 03:48:14.817 [Thread-5] INFO  o.a.catalina.core.StandardWrapper.log - Waiting for [1] instance(s) to be deallocated for Servlet [dispatcherServlet]
+09-04-2023 03:48:15.044 [Thread-5] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Destroying Spring FrameworkServlet 'dispatcherServlet'
+09-04-2023 03:48:15.073 [Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol.log - Stopping ProtocolHandler ["http-nio-8080"]
+09-04-2023 03:48:15.086 [Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol.log - Destroying ProtocolHandler ["http-nio-8080"]
+09-04-2023 03:48:15.093 [Thread-5] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+09-04-2023 03:48:15.112 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown initiated...
+09-04-2023 03:48:15.117 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown completed.
+09-04-2023 03:48:15.385 [restartedMain] INFO  c.d.b.BackendServerApplication.logStarting - Starting BackendServerApplication using Java 19 with PID 756 (C:\Users\bhatt\Desktop\Sem-2\ASDC\group22\backendServer\target\classes started by bhatt in C:\Users\bhatt\Desktop\Sem-2\ASDC\group22\backendServer)
+09-04-2023 03:48:15.386 [restartedMain] INFO  c.d.b.BackendServerApplication.logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+09-04-2023 03:48:15.847 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+09-04-2023 03:48:15.847 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+09-04-2023 03:48:15.861 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.dalstackoverflow.backendserver.repositories.AnswerRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+09-04-2023 03:48:15.863 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.dalstackoverflow.backendserver.repositories.CommentRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+09-04-2023 03:48:15.865 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.dalstackoverflow.backendserver.repositories.LoginRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+09-04-2023 03:48:15.868 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.dalstackoverflow.backendserver.repositories.QuestionRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+09-04-2023 03:48:15.869 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.dalstackoverflow.backendserver.repositories.RegistrationRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+09-04-2023 03:48:15.872 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.dalstackoverflow.backendserver.repositories.TagRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+09-04-2023 03:48:15.872 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 24 ms. Found 0 JDBC repository interfaces.
+09-04-2023 03:48:15.879 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+09-04-2023 03:48:15.879 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+09-04-2023 03:48:15.911 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 30 ms. Found 6 JPA repository interfaces.
+09-04-2023 03:48:16.030 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09-04-2023 03:48:16.034 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping.afterPropertiesSet - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+09-04-2023 03:48:16.180 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+09-04-2023 03:48:16.181 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8080"]
+09-04-2023 03:48:16.182 [restartedMain] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+09-04-2023 03:48:16.182 [restartedMain] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/10.1.5]
+09-04-2023 03:48:16.295 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+09-04-2023 03:48:16.295 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 905 ms
+09-04-2023 03:48:16.392 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+09-04-2023 03:48:16.401 [restartedMain] WARN  org.hibernate.orm.deprecation.lambda$new$1 - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+09-04-2023 03:48:16.411 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-2 - Starting...
+09-04-2023 03:48:16.485 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool.checkFailFast - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4f848bf1
+09-04-2023 03:48:16.486 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-2 - Start completed.
+09-04-2023 03:48:16.494 [restartedMain] INFO  SQL dialect.logSelectedDialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+09-04-2023 03:48:16.738 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+09-04-2023 03:48:16.739 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+09-04-2023 03:48:16.999 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+09-04-2023 03:48:17.255 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer.startServer - LiveReload server is running on port 35729
+09-04-2023 03:48:17.264 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8080"]
+09-04-2023 03:48:17.271 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+09-04-2023 03:48:17.276 [restartedMain] INFO  c.d.b.BackendServerApplication.logStarted - Started BackendServerApplication in 1.955 seconds (process running for 2142.643)
+09-04-2023 03:48:17.280 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener.onApplicationEvent - Condition evaluation unchanged
+09-04-2023 03:48:17.281 [restartedMain] INFO  c.d.b.BackendServerApplication.main - ------Application startup completed-------
+09-04-2023 03:48:17.284 [restartedMain] INFO  c.d.b.BackendServerApplication.main - Host address: 192.168.56.1
+09-04-2023 03:48:30.232 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+09-04-2023 03:48:30.232 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
+09-04-2023 03:48:30.234 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 2 ms
+09-04-2023 03:48:30.240 [http-nio-8080-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver.logException - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "null"]
