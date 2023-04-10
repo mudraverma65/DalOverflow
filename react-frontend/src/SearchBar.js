@@ -2,7 +2,7 @@ import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import { useEffect, useState } from "react";
 import SearchResult from './SearchResult';
-import {Link, useNavigate} from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
 
 function SearchBar(){
     const[SearchQuery,setSearch] = useState("");
@@ -11,13 +11,11 @@ function SearchBar(){
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log('SearchQuery updated:', SearchQuery);
-    
+
         fetch(`http://localhost:8080/api/search/searchQuestions?keyword=${SearchQuery}`)
           .then((response) => response.json())
           .then((data) => {
             setResults(data);
-            console.log("Question API response:", data);
             navigate('/search-result', { state: { results: data } });
           })
           .catch((error) => console.error(error));

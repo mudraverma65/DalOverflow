@@ -1,10 +1,8 @@
-import { FunctionComponent, useState, useEffect, useContext  } from "react";
+import { useContext  } from "react";
 import "./styles.css";
 import {Link} from "react-router-dom";
 import UserLoggedIn from './UserLoggedIn';
-import { createTheme } from '@mui/material/styles';
 import axios from "axios";
-import moment from "moment/moment";
 
 function QuestionDetails(props) {
 
@@ -12,23 +10,21 @@ function QuestionDetails(props) {
   const questionUserId = localStorage.getItem("questionUserId");
   const userLoggedin = localStorage.getItem("userId");
 
-    console.log(userLoggedin);
-    console.log(questionUserId);
   const ifUser = () => {
-    if(questionUserId == userLoggedin){
+    if(questionUserId === userLoggedin){
         deleteQuestion();
     }
     else{
         alert("Only the owner can delete the question");
     }
   }
-
+  const loginUser = () =>{
+     alert("Please login to ask questions");
+  }
   const deleteQuestion = async () => {
         try {
             const questionID = localStorage.getItem("selectedQuestionId");
-            console.log("selectedQuestionId" + questionID)
             const response = await axios.delete(`http://localhost:8080/api/questions/${questionID}`);
-            console.log(response.data);
             alert("Question deleted successfully!");
         } catch (error) {
             console.error(error);
@@ -45,11 +41,14 @@ function QuestionDetails(props) {
           <div class="question_col">
             <div class="question"><h2>{props.questionTitle}</h2></div>
           </div>
-          <div class="button_col">
+          {user && (<div class="button_col">
             <Link to="/ask">
               <div class="button1" >Ask Question</div>
             </Link>
-          </div>
+          </div>)}
+          {!user && (<div class="button_col">
+               <div class="button1" onClick={loginUser} >Ask Question</div>
+          </div>)}
           {user && (<div>
                <div class="button1" onClick={ifUser}>Delete Question</div>
           </div>)}

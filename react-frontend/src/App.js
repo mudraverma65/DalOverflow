@@ -1,12 +1,15 @@
 import { Reset } from 'styled-reset';
+<<<<<<< Updated upstream
+=======
+import {createGlobalStyle} from 'styled-components';
+>>>>>>> Stashed changes
 import Header from "./Header";
 import Footer from "./Footer";
 import QuestionsFrontPage from "./QuestionsFrontPage";
 import {
   BrowserRouter as Router,
   Routes,
-  Route,
-  Link
+  Route
 }from "react-router-dom";
 import React from 'react';
 import { useState,  useEffect } from 'react';

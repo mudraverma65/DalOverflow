@@ -27,9 +27,7 @@ function GetAnswer(props){
   const[answerDescription,setAnswerDescription] = useState()
   const[answerCode, setAnswerCode] = useState()
   const notAUser = () => {
-          if (localStorage.getItem("userId") === 'null') {
             alert("Please login to ask questions");
-          }
       };
   const handleClick = (e)=>{
     e.preventDefault()

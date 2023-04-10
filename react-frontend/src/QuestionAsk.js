@@ -46,8 +46,8 @@ export default function QuestionAsk(){
           });
     }
 
-    const [success, setSuccess] = useState(false);
-    const [errorMessage, setErrorMessage] = useState('');
+    const [setSuccess] = useState(false);
+    const [setErrorMessage] = useState('');
     const api = axios.create({
         baseURL: "http://localhost:8080"
     });
@@ -71,7 +71,6 @@ export default function QuestionAsk(){
         };
         const confirmed = window.confirm("Are you sure you want to submit the form?");
         if(confirmed){
-            console.log(api);
             await axios.post('http://localhost:8080/api/question/postQuestion', question)
                 .then(response => {
                     setSuccess(true);

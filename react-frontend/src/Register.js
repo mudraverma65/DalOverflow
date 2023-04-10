@@ -67,15 +67,10 @@ function Register(){
 
         if (Object.keys(errors).length === 0) {
             // Submit the form
-            console.log('Submitting form...');
-            console.log(userName)
-            console.log(emailId)
-            console.log(password)
             axios.post('http://127.0.0.1:8080/user/add', {userName, emailId, password})
                 .then(response => {
                     navigate('/');
                     // handle success
-                    console.log(response.data);
                 })
                 .catch(error => {
                     // handle error
@@ -91,11 +86,6 @@ function Register(){
 
     const handleClickShowConfirmPassword = () => setShowConfirmPassword((showConfirmPassword) => !showConfirmPassword);
 
-    const handleKeyDown = (event) => {
-        if (event.key === 'Enter') {
-            handleSubmit(event);
-        }
-    }
 
     return(
         <div className="LoginRegistration">
@@ -180,7 +170,7 @@ function Register(){
                         />
                     </FormControl>
                     {errors.confirmpassword && <div className="error">{errors.confirmpassword}</div>}
-                    <div className="button1"onClick={handleSubmit} onKeyDown={handleSubmit}>Register</div> <br/>
+                    <div className="button1"onClick={handleSubmit}>Register</div> <br/>
             </div>
         </div>
     );

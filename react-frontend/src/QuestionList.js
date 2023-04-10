@@ -1,4 +1,3 @@
-import {Link} from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 
@@ -9,11 +8,9 @@ function QuestionList(props) {
   function handleQuestionClickEvent(question){
     localStorage.setItem("selectedQuestionId",question.questionID)
     localStorage.setItem("questionUserId",question.userID)
-    console.log("selected Question id: " + localStorage.getItem("selectedQuestionId"))
     navigate('/question-answer');
   }
 
-    console.log("Question List Props:"+props);
     const { question } = props;
     if (!question) {
         return <div>Loading...</div>;

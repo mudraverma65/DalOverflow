@@ -2,6 +2,33 @@ import { useState, useContext,useEffect} from "react";
 import {Navigate} from "react-router-dom";
 import UserLoggedIn from './UserLoggedIn';
 
+<<<<<<< Updated upstream
+=======
+
+const Tile = ({title, content}) => {
+  return (
+    <div className="tile">
+      <h2>{title}</h2>
+      <p>{content}</p>
+    </div>
+  );
+};
+
+const TileList = ({tiles}) => {
+  return (
+    <div className="tile-list">
+      {tiles.map(tile => <Tile key={tile.id} title={tile.title} content={tile.content} />)}
+    </div>
+  );
+};
+
+const tiles = [
+    // The values for  will be dynamic in the future releases.
+  { id: 1, title: '24', content: 'Questions Answered' },
+  { id: 2, title: '32', content: 'Questions Asked' }
+];
+
+>>>>>>> Stashed changes
 function UserProfile() {
   const [BackToHomePage, setBackToHomePage] = useState(false);
   const [userId, setUserId] = useState(null);

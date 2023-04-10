@@ -9,15 +9,13 @@ function QuestionAnswer(){
 
   const [questionAnswerInfo, setQuestionAnswerInfo] = useState("");
   const questionID = localStorage.getItem("selectedQuestionId")
-  console.log("selectedQuestionId" + questionID)
-  useEffect(() => {   
+  useEffect(() => {
 
     const URL = `http://localhost:8080/api/question/${questionID}/answer`;
 
     const fetchQuestionByID = async () => {
       try { 
         const response = await axios.get(URL);
-        console.log(response.data);
         setQuestionAnswerInfo(response.data)
       } catch (error) {
         console.log(error.stack)
