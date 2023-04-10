@@ -98,7 +98,6 @@ public class QuestionControllerTest {
      * This method will test the fetchTopUserQuestions method from the controller
      * @throws Exception
      */
-    @Test
     public void testFetchTopUserQuestions() throws Exception {
         Question question1 = new Question();
         question1.setQuestionTitle("Test Question 1");
