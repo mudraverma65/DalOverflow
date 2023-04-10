@@ -44,7 +44,6 @@ function LoginPage() {
         }
         if (Object.keys(errors).length === 0) {
             // Submit the form
-            console.log('Submitting form...');
             axios.post("http://127.0.0.1:8080/user/login", {
                 username: userName,
                 password: password,

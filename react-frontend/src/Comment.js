@@ -3,6 +3,9 @@ import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import "./styles.css";
 import axios from 'axios';
+import {useContext} from 'react';
+import UserLoggedIn from './UserLoggedIn';
+
 
 function Comment(props){
 
@@ -14,6 +17,9 @@ function Comment(props){
 
     const[comment,setComment] = useState('')
 
+    const isUser = () => {
+        alert("Please login to add comments");
+    }
     const handleClick = (e) => {
         e.preventDefault();
         const userId = localStorage.getItem("userId")
@@ -27,7 +33,6 @@ function Comment(props){
             headers: { "Content-Type": "application/json" },
           })
           .then(() => {
-            console.log("Comment Posted");
             window.alert("Your comment was posted successfully!");
             window.location.reload();
           })
@@ -37,7 +42,7 @@ function Comment(props){
       }; 
 
   
-
+    const {user} = useContext(UserLoggedIn);
     return(
         <div className="jsBeginnerWantToInsertTeParent">
             <div class ="button2" onClick={toggleModel}>Comment</div>
@@ -65,7 +70,8 @@ function Comment(props){
                         <button className="close-modal" onClick={toggleModel}>
                             CLOSE
                         </button>
-                        <div class ="button1" onClick={handleClick}>Submit</div>
+                        {user && (<div class ="button1" onClick={handleClick}>Submit</div>)}
+                        {!user && (<div class ="button1" onClick={isUser}>Submit</div>)}
                     </div>
                     
                 </div>

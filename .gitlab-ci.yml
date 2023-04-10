@@ -71,7 +71,7 @@ issue-job:
     - python3 $CI_PROJECT_DIR/smells/issue.py $CI_COMMIT_SHA
 
 unit-test-job:   # This job runs in the test stage.
-  image: maven:3.8.4
+  image: maven:3.8.8
   stage: test    # It only starts when the job in the build stage completes successfully.
   script:
     - echo "Running unit tests... This will take about 60 seconds."

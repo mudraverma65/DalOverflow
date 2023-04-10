@@ -1,12 +1,12 @@
 import { Reset } from 'styled-reset';
+import {createGlobalStyle} from 'styled-components';
 import Header from "./Header";
 import Footer from "./Footer";
 import QuestionsFrontPage from "./QuestionsFrontPage";
 import {
   BrowserRouter as Router,
   Routes,
-  Route,
-  Link
+  Route
 }from "react-router-dom";
 import React from 'react';
 import { useState,  useEffect } from 'react';

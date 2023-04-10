@@ -1,11 +1,8 @@
 import { useState, useEffect, useContext } from "react";
 import ButtonGroup from '@mui/material/ButtonGroup';
 import Button from '@mui/material/Button';
-import Box from '@mui/material/Box';
-import TextField from '@mui/material/TextField';
 import "./styles.css";
 import Comment from "./Comment";
-import { createTheme } from '@mui/material/styles';
 import CommentDisplay from "./CommentDisplay";
 import axios from "axios";
 import UserLoggedIn from './UserLoggedIn';
@@ -74,9 +71,6 @@ function AnswersDisplay(props){
     }
   };
 
-  const handleLogout = () => {
-    localStorage.clear();
-  }
   const {user} = useContext(UserLoggedIn)
   return (
     <div className="jsBeginnerWantToInsertTeParent">
@@ -125,7 +119,7 @@ function AnswersDisplay(props){
                     <div class="comment">
                       <h4>Comments</h4>
                       <CommentDisplay allComments = {props.data.allComments}/>
-                      <Comment/>
+                      <Comment answerID = {props.data.answerID}/>
                     </div>
                   </div>
                 </div>

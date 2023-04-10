@@ -6,7 +6,6 @@ import {useContext} from 'react';
 
 
 function DisplayQuestionList(props) {
-    console.log('QuestionList props:', props);
     return (
         <ul>
             {props.questions.map(question => (
@@ -21,13 +20,11 @@ function DisplayQuestionList(props) {
 
 function QuestionsFrontPage() {
     const [questions, setQuestions] = useState([]);
-    console.log("Calling Fetch Top Question API");
     useEffect(() => {
         fetch('http://localhost:8080/api/question/fetchTopQuestions')
             .then(response => response.json())
             .then(data => setQuestions(data));
     }, []);
-    console.log("Question API response:"+questions);
     const handleClick = () => {
         if (localStorage.getItem("userId") === null) {
           alert("Please login to ask questions");

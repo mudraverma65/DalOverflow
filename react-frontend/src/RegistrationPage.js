@@ -80,7 +80,7 @@ class RegistrationPage extends Component{
     }
 
     isValid(str){
-        return !/[\s~`!@#$%\^&*+=\-\[\]\\';,/{}|\\":<>\?()\._]/g.test(str);
+        return !/[\s~`!@#$%\^&*+=\-\[\]\\';,/{}|\\":<>?()._]/g.test(str);
     }
     
     handleSubmit(event) {
@@ -111,7 +111,6 @@ class RegistrationPage extends Component{
 
     if (Object.keys(errors).length === 0) {
     // Submit the form
-    console.log('Submitting form...');
     axios.post('http://127.0.0.1:8080/user/add',{userName:this.state.userName, emailId:this.state.emailId, password:this.state.password})
         .then(response => {
         this.setState({redirectToHomePage: true})
