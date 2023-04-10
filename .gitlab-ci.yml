@@ -20,7 +20,7 @@ image: maven:3.8.4
 
 cache:
   paths:
-    - .m2/repository/
+    #- .m2/repository/
     - target/
     
 stages:          # List of stages for jobs, and their order of execution
@@ -76,8 +76,6 @@ unit-test-job:   # This job runs in the test stage.
   script:
     - echo "Running unit tests... This will take about 60 seconds."
     - mvn -v
-    - mvn dependency:purge-local-repository
-    - mvn dependency:tree
     - mvn clean test
 
 lint-test-job:   # This job also runs in the test stage.
