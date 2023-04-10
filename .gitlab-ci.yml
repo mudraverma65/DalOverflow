@@ -32,8 +32,11 @@ stages:          # List of stages for jobs, and their order of execution
 
 build-job:       # This job runs in the build stage, which runs first.
   stage: build
+  before_script:
+    - mvn -N io.takari:maven:wrapper -Dmaven=3.8.4
   script:
-    - mvn -v 
+    - mvn -v
+    - ./mvnw clean package
     #clean install -DskipTests=true
 
 codeQuality-job: # This job runs in the cod quality stage to fetch the code smells of the entire project.
