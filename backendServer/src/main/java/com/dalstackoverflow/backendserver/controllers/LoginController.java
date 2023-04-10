@@ -51,7 +51,7 @@ public class LoginController {
             int userId = response.getUserId();
             String userName = response.getUserName();
             String password = response.getPassword();
-            response.setMessage("Login successful! Your user ID is " + userId + ". Your username is " + userName + ". Your password is " + password);
+            response.setMessage("Login successful! Your user ID is " + userId +   userName  + password);
             return ResponseEntity.ok(response);
         } else {
             response.setMessage("Invalid username or password");
@@ -66,6 +66,7 @@ public class LoginController {
      * @param userId
      * @return userName when login successful
      */
+
     @GetMapping("/{userId}")
     public ResponseEntity<String> getUsername(@PathVariable int userId) {
         String username = loginService.getUsername(userId);
@@ -73,7 +74,8 @@ public class LoginController {
         {
             return ResponseEntity.ok(username);
         }
-        else {
+        else
+        {
             return ResponseEntity.notFound().build();
         }
     }

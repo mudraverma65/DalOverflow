@@ -36,7 +36,7 @@ class LoginControllerTest {
         ResponseEntity<LoginResponse> responseEntity = loginController.loginUser(loginRequest);
 
         assertEquals(HttpStatus.OK, responseEntity.getStatusCode());
-        assertEquals("Login successful! Your user ID is 1. Your username is username. Your password is password", responseEntity.getBody().getMessage());
+        assertEquals("Login successful! Your user ID is 1usernamepassword", responseEntity.getBody().getMessage());
     }
 
     @Test

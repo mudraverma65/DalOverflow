@@ -58,7 +58,8 @@ public class LoginResponseTest {
     @Test
     public void testToString() {
         LoginResponse loginResponse = new LoginResponse("success", 1, "testUser", "password");
-        String expectedString = "LoginResponse{message='success', userId=1, userName=testUser, password=password}";
+        String expectedString = "LoginResponse{success'1testUserpassword}";
         assertEquals(expectedString, loginResponse.toString());
     }
+
 }

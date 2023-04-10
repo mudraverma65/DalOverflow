@@ -102,8 +102,11 @@ class AnswerTest {
     void testOnCreate() {
         LocalDateTime now = LocalDateTime.now();
         answer.onCreate();
-        assertEquals(now.withNano(now.getNano() / 1000000 * 1000000), answer.getAnswerDate().withNano(now.getNano() / 1000000 * 1000000));
-        assertEquals(now.withNano(now.getNano() / 1000000 * 1000000), answer.getAnswerUpdateStamp().withNano(now.getNano() / 1000000 * 1000000));
+        LocalDateTime currentTime = now.withNano(now.getNano() / 1000000 * 1000000);
+        LocalDateTime answerDate =  (answer.getAnswerDate().withNano(now.getNano() / 1000000 * 1000000));
+        LocalDateTime answerUpdateDate =  (answer.getAnswerUpdateStamp().withNano(now.getNano() / 1000000 * 1000000));
+        assertEquals(currentTime,answerDate );
+        assertEquals(currentTime,answerUpdateDate);
     }
 
     @Test

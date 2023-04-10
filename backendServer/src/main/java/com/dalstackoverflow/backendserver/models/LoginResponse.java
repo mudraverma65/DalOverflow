@@ -53,9 +53,9 @@ public class LoginResponse {
     @Override
     public String toString() {
         return "LoginResponse{" +
-                "message='" + message + '\'' +
-                ", userId=" + userId +
-                ", userName=" + userName + ", password="+password +
+                message + '\'' +
+                userId +
+                userName + password +
                 '}';
     }
 }
