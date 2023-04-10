@@ -106,7 +106,6 @@ function AnswersDisplay(props){
                aria-label="Disabled elevation buttons"
                orientation="vertical"
                >
-
                <Button sx={{ fontSize: '10px', padding: '5px 12px' }} onClick={handleNotAUser} disabled={hasUpvoted}>
                   Up
                </Button>
@@ -126,7 +125,7 @@ function AnswersDisplay(props){
                     <div class="comment">
                       <h4>Comments</h4>
                       <CommentDisplay allComments = {props.data.allComments}/>
-                      <Comment answerID = {props.data.answerID}/>
+                      <Comment/>
                     </div>
                   </div>
                 </div>
