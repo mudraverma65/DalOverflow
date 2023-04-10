@@ -32,9 +32,6 @@ stages:          # List of stages for jobs, and their order of execution
 
 build-job:       # This job runs in the build stage, which runs first.
   stage: build
-  before_script:
-    
-    - 
   script:
     - export M2_HOME=/opt/apache-maven-3.8.8
     - export PATH=$M2_HOME/bin:$PATH
