@@ -25,18 +25,17 @@ function App() {
   const[user, setUser] = useState(null);
   const userId = localStorage.getItem("userId")
   function checkUser(){
-    axios.get(`http://127.0.0.1:8080/user/login/${userId}`)
-    .then(response => {
-      setUser({userName: response.data});
-      localStorage.setItem("username", response.data);
-    })
-    .catch(() => {
-      setUser(null);
-    })
+    if (!user) {
+      axios.get(`http://127.0.0.1:8080/user/login/${userId}`)
+        .then(response => {
+          setUser({userName: response.data});
+          localStorage.setItem("username", response.data);
+        })
+        .catch(() => {
+          setUser(null);
+        })
+    }
   }
-  useEffect(() => {
-    checkUser();
-})
 
   return (
     <div>
