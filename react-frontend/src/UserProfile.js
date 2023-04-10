@@ -2,9 +2,6 @@ import { useState, useContext,useEffect} from "react";
 import {Navigate} from "react-router-dom";
 import UserLoggedIn from './UserLoggedIn';
 
-<<<<<<< Updated upstream
-=======
-
 const Tile = ({title, content}) => {
   return (
     <div className="tile">
@@ -28,7 +25,6 @@ const tiles = [
   { id: 2, title: '32', content: 'Questions Asked' }
 ];
 
->>>>>>> Stashed changes
 function UserProfile() {
   const [BackToHomePage, setBackToHomePage] = useState(false);
   const [userId, setUserId] = useState(null);

@@ -119,7 +119,7 @@ function AnswersDisplay(props){
                     <div class="comment">
                       <h4>Comments</h4>
                       <CommentDisplay allComments = {props.data.allComments}/>
-                      <Comment/>
+                      <Comment answerID = {props.data.answerID}/>
                     </div>
                   </div>
                 </div>
