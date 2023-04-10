@@ -90,11 +90,11 @@ function AnswersDisplay(props){
             orientation="vertical"
           >
 
-            <Button onClick={handleUpVote} disabled={hasUpvoted}>
+            <Button sx={{ fontSize: '10px', padding: '5px 12px' }} onClick={handleUpVote} disabled={hasUpvoted}>
               Up
             </Button>
             <votes>{props.data.votes}</votes>
-            <Button onClick={handleDownVote} disabled={hasDownvoted}>
+            <Button sx={{ fontSize: '10px', padding: '5px 12px' }}  onClick={handleDownVote} disabled={hasDownvoted}>
               Down
             </Button>
           </ButtonGroup>)}
@@ -106,12 +106,11 @@ function AnswersDisplay(props){
                aria-label="Disabled elevation buttons"
                orientation="vertical"
                >
-
-               <Button onClick={handleNotAUser} disabled={hasUpvoted}>
+               <Button sx={{ fontSize: '10px', padding: '5px 12px' }} onClick={handleNotAUser} disabled={hasUpvoted}>
                   Up
                </Button>
                <votes>{props.data.votes}</votes>
-               <Button onClick={handleNotAUser} disabled={hasDownvoted}>
+               <Button sx={{ fontSize: '10px', padding: '5px 12px' }} onClick={handleNotAUser} disabled={hasDownvoted}>
                   Down
                </Button>
                </ButtonGroup>)}
@@ -123,9 +122,9 @@ function AnswersDisplay(props){
                     <div class="question_answer_code">{props.data.answerCode}</div>  
                   </div>
                   <div class="comment_col">
-                    <h3>Comments</h3>
                     <div class="comment">
-                      <CommentDisplay data = {props.data.allComments}/>
+                      <h4>Comments</h4>
+                      <CommentDisplay allComments = {props.data.allComments}/>
                       <Comment/>
                     </div>
                   </div>

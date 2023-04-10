@@ -1,9 +1,7 @@
 import { Reset } from 'styled-reset';
-import styled, {createGlobalStyle} from 'styled-components';
 import Header from "./Header";
 import Footer from "./Footer";
 import QuestionsFrontPage from "./QuestionsFrontPage";
-import AskQuestion from "./AskQuestion";
 import {
   BrowserRouter as Router,
   Routes,
@@ -19,23 +17,13 @@ import RegistrationPage from './RegistrationPage';
 import UserProfile from './UserProfile';
 import QuestionAnswer from './QuestionAnswer';
 import SearchResult from './SearchResult';
-import QuestionAsk from './QuestionAsk';
 import Register from './Register';
-
-const Styles = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap');
-  body{
-    background: #2d2d2d; 
-    color: #fff;
-    font-family: Times New Roman;
-  } 
-`;
+import QuestionAsk from './QuestionAsk';
 
 
 function App() {
   const[user, setUser] = useState(null);
   const userId = localStorage.getItem("userId")
-
   function checkUser(){
     axios.get(`http://127.0.0.1:8080/user/login/${userId}`)
     .then(response => {
@@ -46,26 +34,19 @@ function App() {
       setUser(null);
     })
   }
-
-
   useEffect(() => {
     checkUser();
 })
 
-
-
   return (
     <div>
-      <Reset />
-      <Styles />
+      <Reset />  
       <Router>
         <UserLoggedIn.Provider value={{user, checkUser}}>
           <Header/>
           <Routes>
-            <Route path="/ask" element = {<AskQuestion/>} />
-            <Route path="/askq" element = {<QuestionAsk/>} />
+            <Route path="/ask" element = {<QuestionAsk/>} />
             <Route path="/register" element = {<Register/>} />
-
             <Route path="/profile" element = {<UserProfile/>} />
             <Route path="/" element = {<QuestionsFrontPage/>} />
             <Route path="/question-answer" element = {<QuestionAnswer/>} />
@@ -74,8 +55,7 @@ function App() {
             <Route path="/search-result" element = {<SearchResult/>} />
           </Routes >
           <Footer/>
-          </UserLoggedIn.Provider>
-        
+          </UserLoggedIn.Provider> 
       </Router>
 
     </div>

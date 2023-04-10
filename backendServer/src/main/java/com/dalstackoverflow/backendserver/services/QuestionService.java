@@ -98,4 +98,19 @@ public class QuestionService {
         List<Tag> questiontags = tagRepository.findByQuestionID(questionID);
         return questiontags;
     }
+
+    /**
+     * This method will be called when delete button from the front end is hit.
+     * @param questionID
+     */
+    public void deleteQuestion(Integer questionID) {
+        Optional<Question> question = questionRepository.findById(questionID);
+        if (question.isPresent()) {
+            LOGGER.info("Question Found. Proceeding with delete");
+            questionRepository.deleteById(questionID);
+            LOGGER.info("Question with ID " + questionID + " has been deleted.");
+        } else {
+            LOGGER.info("Question with ID " + questionID + " does not exist.");
+        }
+    }
 }
